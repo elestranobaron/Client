@@ -1,0 +1,22 @@
+// cwctype standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _CWCTYPE_
+#define _CWCTYPE_
+ #pragma warning(disable: 4514)
+#ifdef _STD_USING
+ #undef _STD_USING
+ #include <wctype.h>
+ #define _STD_USING
+#else
+ #include <wctype.h>
+#endif /* _STD_USING */
+#endif /* _CWCTYPE_ */
+
+/*
+ * Copyright (c) 1994-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

@@ -1,0 +1,108 @@
+// utility standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _UTILITY_
+#define _UTILITY_
+#include <iosfwd>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// TEMPLATE STRUCT pair
+template<class _T1, class _T2> struct pair {
+	typedef _T1 first_type;
+	typedef _T2 second_type;
+	pair()
+		: first(_T1()), second(_T2()) {}
+	pair(const _T1& _V1, const _T2& _V2)
+		: first(_V1), second(_V2) {}
+	template<class _U1, class _U2>
+		pair(const pair<_U1, _U2>& _X)
+		: first(_X.first), second(_X.second) {}
+	_T1 first;
+	_T2 second;
+	};
+
+		// pair TEMPLATE OPERATORS
+template<class _T1, class _T2> inline
+	bool __cdecl operator==(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (_X.first == _Y.first && _X.second == _Y.second); }
+template<class _T1, class _T2> inline
+	bool __cdecl operator!=(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (!(_X == _Y)); }
+template<class _T1, class _T2> inline
+	bool __cdecl operator<(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (_X.first < _Y.first ||
+		!(_Y.first < _X.first) && _X.second < _Y.second); }
+template<class _T1, class _T2> inline
+	bool __cdecl operator>(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (_Y < _X); }
+template<class _T1, class _T2> inline
+	bool __cdecl operator<=(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (!(_Y < _X)); }
+template<class _T1, class _T2> inline
+	bool __cdecl operator>=(const pair<_T1, _T2>& _X,
+		const pair<_T1, _T2>& _Y)
+	{return (!(_X < _Y)); }
+template<class _T1, class _T2> inline
+	pair<_T1, _T2> __cdecl make_pair(const _T1& _X, const _T2& _Y)
+	{return (pair<_T1, _T2>(_X, _Y)); }
+
+		// TEMPLATE OPERATORS
+	namespace rel_ops {
+template<class _Ty> inline
+	bool __cdecl operator!=(const _Ty& _X, const _Ty& _Y)
+	{return (!(_X == _Y)); }
+template<class _Ty> inline
+	bool __cdecl operator>(const _Ty& _X, const _Ty& _Y)
+	{return (_Y < _X); }
+template<class _Ty> inline
+	bool __cdecl operator<=(const _Ty& _X, const _Ty& _Y)
+	{return (!(_Y < _X)); }
+template<class _Ty> inline
+	bool __cdecl operator>=(const _Ty& _X, const _Ty& _Y)
+	{return (!(_X < _Y)); }
+	}
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _UTILITY_ */
+
+/*
+ * Copyright (c) 1995-1998 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ */
+
+/*
+ * This file is derived from software bearing the following
+ * restrictions:
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this
+ * software and its documentation for any purpose is hereby
+ * granted without fee, provided that the above copyright notice
+ * appear in all copies and that both that copyright notice and
+ * this permission notice appear in supporting documentation.
+ * Hewlett-Packard Company makes no representations about the
+ * suitability of this software for any purpose. It is provided
+ * "as is" without express or implied warranty.
+ V2.33:099I */

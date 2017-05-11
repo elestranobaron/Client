@@ -1,0 +1,165 @@
+// locale standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _LOCALE_
+#define _LOCALE_
+#include <string>
+#include <xlocmes>
+#include <xlocmon>
+#include <xlocnum>
+#include <xloctime>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// TEMPLATE CLASS collate
+template<class _E>
+	class collate : public locale::facet {
+public:
+	typedef _E char_type;
+	typedef basic_string<_E, char_traits<_E>,
+		allocator<_E> > string_type;
+	int compare(const _E *_F1, const _E *_L1,
+		const _E *_F2, const _E *_L2) const
+		{return (do_compare(_F1, _L1, _F2, _L2)); }
+	string_type transform(const _E *_F, const _E *_L) const
+		{return (do_transform(_F, _L)); }
+	long hash(const _E *_F, const _E *_L) const
+		{return (do_hash(_F, _L)); }
+	static locale::id id;
+	explicit collate(size_t _R = 0)
+		: locale::facet(_R) {_Init(_Locinfo()); }
+	collate(const _Locinfo& _Lobj, size_t _R = 0)
+		: locale::facet(_R) {_Init(_Lobj); }
+	static size_t __cdecl _Getcat(const locale::facet **_Ppf = 0)
+		{if (_Ppf != 0 && *_Ppf == 0)
+			*_Ppf = new collate<_E>;
+		return (_X_COLLATE); }
+_PROTECTED:
+	~collate()
+		{}
+protected:
+	void _Init(const _Locinfo& _Lobj)
+		{_Coll = _Lobj._Getcoll(); }
+	virtual int do_compare(const _E *_F1, const _E *_L1,
+		const _E *_F2, const _E *_L2) const
+		{return (_LStrcoll(_F1, _L1, _F2, _L2, &_Coll)); }
+	virtual string_type do_transform(const _E *_F,
+		const _E *_L) const
+		{size_t _I, _N;
+		string_type _Str;
+		for (_N = _L - _F; ; )
+			{_Str.append(_N, '\0');
+			if ((_I = _LStrxfrm(&*_Str.begin(), &*_Str.end(),
+					_F, _L, &_Coll)) <= _Str.size())
+				break;
+			_N = _Str.size() < _I ? _I - _Str.size() : 1; }
+		_Str.resize(_I);
+		return (_Str); }
+	virtual long do_hash(const _E *_F, const _E *_L) const
+		{unsigned long _V = 0;
+		for (; _F != _L; ++_F)
+			_V = (_V << 8 | _V >> 24) + *_F;
+		return ((long)_V); }
+private:
+	_Locinfo::_Collvec _Coll;
+	};
+template<class _E>
+	locale::id collate<_E>::id;
+
+ #ifdef  _DLL
+  #ifdef __FORCE_INSTANCE
+template class _CRTIMP2 collate<char>;
+template class _CRTIMP2 collate<wchar_t>;
+  #else           // __FORCE_INSTANCE
+   #pragma warning(disable:4231) /* extern before template is non-standard */
+extern template class _CRTIMP2 collate<char>;
+extern template class _CRTIMP2 collate<wchar_t>;
+   #pragma warning(default:4231) /* restore previous warning */
+  #endif          // __FORCE_INSTANCE
+ #endif          // _DLL
+
+		// TEMPLATE CLASS collate_byname
+template<class _E>
+	class collate_byname : public collate<_E> {
+public:
+	explicit collate_byname(const char *_S, size_t _R = 0)
+		: collate<_E>(_Locinfo(_S), _R) {}
+_PROTECTED:
+	virtual ~collate_byname()
+		{}
+	};
+		// locale SUPPORT TEMPLATES
+ #define _HAS(loc, fac)	has_facet(loc, (fac *)0)
+template<class _F> inline
+	bool has_facet(const locale& _L, const _F *) //	_THROW0()
+	{size_t _Id = _F::id;
+	return (_L._Getfacet(_Id) != 0
+		|| _F::_Getcat() != (size_t)(-1)); }
+typedef collate<char> _Collchar;
+inline bool locale::operator()(const string& _X,
+	const string& _Y) const
+	{const _Collchar& _Fac = _USE(*this, _Collchar);
+	return (_Fac.compare(_X.c_str(), _X.c_str() + _X.size(),
+		_Y.c_str(), _Y.c_str() + _Y.size()) < 0); }
+		// ctype TEMPLATE FUNCTIONS
+template<class _E> inline
+	bool (isalnum)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::alnum, _C)); }
+template<class _E> inline
+	bool (isalpha)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::alpha, _C)); }
+template<class _E> inline
+	bool (iscntrl)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::cntrl, _C)); }
+template<class _E> inline
+	bool (isdigit)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::digit, _C)); }
+template<class _E> inline
+	bool (isgraph)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::graph, _C)); }
+template<class _E> inline
+	bool (islower)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::lower, _C)); }
+template<class _E> inline
+	bool (isprint)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::print, _C)); }
+template<class _E> inline
+	bool (ispunct)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::punct, _C)); }
+template<class _E> inline
+	bool (isspace)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::space, _C)); }
+template<class _E> inline
+	bool (isupper)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::upper, _C)); }
+template<class _E> inline
+	bool (isxdigit)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).is(ctype_base::xdigit, _C)); }
+template<class _E> inline
+	_E (tolower)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).tolower(_C)); }
+template<class _E> inline
+	_E (toupper)(_E _C, const locale& _L)
+	{return (_USE(_L, ctype<_E>).toupper(_C)); }
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _LOCALE_ */
+
+/*
+ * Copyright (c) 1995-1998 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

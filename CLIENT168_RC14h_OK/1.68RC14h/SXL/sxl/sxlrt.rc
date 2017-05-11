@@ -1,0 +1,36 @@
+#include "winver.h"
+
+VS_VERSION_INFO VERSIONINFO
+PRODUCTVERSION 2,3,3,0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+FILEFLAGS VS_FF_DEBUG
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+FILESUBTYPE 0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Dinkumware, Ltd."
+#ifdef _DEBUG
+            VALUE "InternalName", "SXLRT233D.DLL"
+            VALUE "OriginalFilename", "SXLRT233D.DLL"
+#else
+            VALUE "InternalName", "SXLRT233.DLL"
+            VALUE "OriginalFilename", "SXLRT233.DLL"
+#endif
+            VALUE "LegalCopyright", "Copyright\xa9 1992-1999 by P.J. Plauger"
+            VALUE "ProductName", "Dinkum\xae C++ Library for VC++"
+            VALUE "ProductVersion", "2.33"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

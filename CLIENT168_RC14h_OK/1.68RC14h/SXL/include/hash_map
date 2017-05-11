@@ -1,0 +1,181 @@
+// hash_map standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _HASH_MAP_
+#define _HASH_MAP_
+#include <xhash>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// TEMPLATE CLASS _Hmap_traits
+template<class _K, class _Ty, class _Pr, class _Ax, bool _Mfl>
+	class _Hmap_traits {
+public:
+	typedef _K key_type;
+	typedef pair<const _K, _Ty> value_type;
+	typedef _Pr key_compare;
+	typedef _Ax allocator_type;
+	enum {_Multi = _Mfl};
+	_Hmap_traits()
+		: comp()
+		{}
+	_Hmap_traits(_Pr _Parg)
+		: comp(_Parg)
+		{}
+	class value_compare
+		: public binary_function<value_type, value_type, bool> {
+		friend class _Hmap_traits<_K, _Ty, _Pr, _Ax, _Mfl>;
+	public:
+		bool operator()(const value_type& _X,
+			const value_type& _Y) const
+			{return (comp(_X.first, _Y.first)); }
+		value_compare(key_compare _Pred)
+			: comp(_Pred) {}
+	protected:
+		key_compare comp;
+		};
+	struct _Kfn {
+		const _K& operator()(const value_type& _X) const
+			{return (_X.first); }
+		};
+	_Pr comp;
+	};
+
+		// TEMPLATE CLASS hash_map
+template<class _K, class _Ty,
+	class _Pr = hash_compare<_K, less<_K> >,
+	class _A = allocator<pair<const _K, _Ty> > >
+	class hash_map
+		: public _Hash<_Hmap_traits<_K, _Ty, _Pr, _A, false> > {
+public:
+	typedef hash_map<_K, _Ty, _Pr, _A> _Myt;
+	typedef _Hash<_Hmap_traits<_K, _Ty, _Pr, _A, false> >
+		_Mybase;
+	typedef _K key_type;
+	typedef _Ty mapped_type;
+	typedef _Ty referent_type;
+	typedef _Pr key_compare;
+	typedef typename _Mybase::value_compare value_compare;
+	typedef typename _Mybase::allocator_type allocator_type;
+	typedef typename _Mybase::size_type size_type;
+	typedef typename _Mybase::difference_type difference_type;
+	typedef typename _Mybase::pointer pointer;
+	typedef typename _Mybase::const_pointer const_pointer;
+	typedef typename _Mybase::reference reference;
+	typedef typename _Mybase::const_reference const_reference;
+	typedef typename _Mybase::iterator iterator;
+	typedef typename _Mybase::const_iterator const_iterator;
+	typedef typename _Mybase::reverse_iterator reverse_iterator;
+	typedef typename _Mybase::const_reverse_iterator
+		const_reverse_iterator;
+	typedef typename _Mybase::value_type value_type;
+	hash_map()
+		: _Mybase(key_compare(), allocator_type()) {}
+	explicit hash_map(const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type()) {}
+	hash_map(const key_compare& _Pred, const allocator_type& _Al)
+		: _Mybase(_Pred, _Al) {}
+	template<class _It>
+		hash_map(_It _F, _It _L)
+		: _Mybase(key_compare(), allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		hash_map(_It _F, _It _L, const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		hash_map(_It _F, _It _L, const key_compare& _Pred,
+		const allocator_type& _Al)
+		: _Mybase(_Pred, _Al)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	mapped_type& operator[](const key_type& _Kv)
+		{iterator _P =
+			insert(value_type(_Kv, mapped_type())).first;
+		return ((*_P).second); }
+	};
+
+		// TEMPLATE CLASS hash_multimap
+template<class _K, class _Ty,
+	class _Pr = hash_compare<_K, less<_K> >,
+	class _A = allocator<pair<const _K, _Ty> > >
+	class hash_multimap
+		: public _Hash<_Hmap_traits<_K, _Ty, _Pr, _A, true> > {
+public:
+	typedef hash_multimap<_K, _Ty, _Pr, _A> _Myt;
+	typedef _Hash<_Hmap_traits<_K, _Ty, _Pr, _A, true> >
+		_Mybase;
+	typedef _K key_type;
+	typedef _Ty mapped_type;
+	typedef _Ty referent_type;	// old name, magically gone
+	typedef _Pr key_compare;
+	typedef typename _Mybase::value_compare value_compare;
+	typedef typename _Mybase::allocator_type allocator_type;
+	typedef typename _Mybase::size_type size_type;
+	typedef typename _Mybase::difference_type difference_type;
+	typedef typename _Mybase::pointer pointer;
+	typedef typename _Mybase::const_pointer const_pointer;
+	typedef typename _Mybase::reference reference;
+	typedef typename _Mybase::const_reference const_reference;
+	typedef typename _Mybase::iterator iterator;
+	typedef typename _Mybase::const_iterator const_iterator;
+	typedef typename _Mybase::reverse_iterator reverse_iterator;
+	typedef typename _Mybase::const_reverse_iterator
+		const_reverse_iterator;
+	typedef typename _Mybase::value_type value_type;
+	hash_multimap()
+		: _Mybase(key_compare(), allocator_type()) {}
+	explicit hash_multimap(const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type()) {}
+	hash_multimap(const key_compare& _Pred,
+		const allocator_type& _Al)
+		: _Mybase(_Pred, _Al) {}
+	template<class _It>
+		hash_multimap(_It _F, _It _L)
+		: _Mybase(key_compare(), allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		hash_multimap(_It _F, _It _L, const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		hash_multimap(_It _F, _It _L, const key_compare& _Pred,
+		const allocator_type& _Al)
+		: _Mybase(_Pred, _Al)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	iterator insert(const value_type& _X)
+		{return (_Mybase::insert(_X).first); }
+	iterator insert(iterator _P, const value_type& _X)
+		{return (_Mybase::insert(_P, _X)); }
+	template<class _It>
+		void insert(_It _F, _It _L)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	};
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _HASH_MAP_ */
+
+/*
+ * Copyright (c) 1998 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

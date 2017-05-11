@@ -1,0 +1,116 @@
+// new standard header for Microsoft
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _NEW_
+#define _NEW_
+#include <exception>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// CLASS bad_alloc
+class bad_alloc : public exception {
+public:
+	bad_alloc(const char *_S = _MESG("bad allocation"))
+		_THROW0()
+		: exception(_S) {}
+	virtual ~bad_alloc() _THROW0()
+		{}
+protected:
+	virtual void _Doraise() const
+		{_RAISE(*this); }
+	};
+
+		// SUPPORT TYPES
+ #if !defined(_INC_NEW) || !defined(_MSC_EXTENSIONS)
+typedef void (__cdecl *new_handler)();
+ #endif
+struct nothrow_t {};
+extern _CRTIMP2 const nothrow_t nothrow;
+
+		// FUNCTION AND OBJECT DECLARATIONS
+_CRTIMP2 new_handler __cdecl set_new_handler(new_handler) _THROW0();
+extern new_handler _New_hand;
+_STD_END
+
+		// new AND delete DECLARATIONS (NB: NOT IN std)
+void __cdecl operator delete(void *) _THROW0();
+void *__cdecl operator new(size_t) _THROW0(/* std::bad_alloc */);
+void *__cdecl operator new(size_t, const std::nothrow_t&)
+	_THROW0();
+
+ #ifndef __PLACEMENT_NEW_INLINE
+  #define __PLACEMENT_NEW_INLINE
+inline void *__cdecl operator new(size_t, void *_P) _THROW0()
+	{return (_P); }
+ #if _HAS_PLACEMENT_DELETE
+inline void __cdecl operator delete(void *, void *) _THROW0()
+	{}
+ #else
+ #endif
+ #endif
+
+ #if _HAS_ARRAY_NEW
+void __cdecl operator delete[](void *) _THROW0();
+void *__cdecl operator new[](size_t) _THROW0(/* std::bad_alloc */);
+void *__cdecl operator new[](size_t, const std::nothrow_t&)
+	_THROW0();
+inline void *__cdecl operator new[](size_t, void *_P) _THROW0()
+	{return (_P); }
+ #else
+ #endif /* _HAS_ARRAY_NEW */
+
+ #ifdef _DEBUG
+void *__cdecl operator new(size_t, const char *, int);
+
+ #if _HAS_ARRAY_NEW
+inline void *__cdecl operator new[](size_t _S, const char *_N, int _L)
+	{return operator new(_S, _N, _L); }
+ #else
+ #endif /* _HAS_ARRAY_NEW */
+
+ #if _HAS_PLACEMENT_DELETE
+void __cdecl operator delete(void *, const char *, int);
+inline void __cdecl operator delete[](void *_P, const char *_N, int _L)
+	{operator delete(_P, _N, _L); }
+ #else
+ #endif /* _HAS_PLACEMENT_DELETE */
+ #endif /* _DEBUG */
+
+ #if _HAS_PLACEMENT_DELETE
+inline void __cdecl operator delete(void *_P,
+	const std::nothrow_t&) _THROW0()
+	{delete(_P); }
+//inline void __cdecl operator delete(void *, void *) _THROW0()
+//	{}
+inline void __cdecl operator delete[](void *_P,
+	const std::nothrow_t&) _THROW0()
+	{delete[](_P); }
+inline void __cdecl operator delete[](void *, void *) _THROW0()
+	{}
+ #else
+ #endif /* _HAS_PLACEMENT_DELETE */
+
+ #if !defined(_INC_NEW) || !defined(_MSC_EXTENSIONS)
+using std::new_handler;
+ #endif
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _NEW_ */
+
+/*
+ * Copyright (c) 1994-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

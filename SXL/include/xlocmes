@@ -1,0 +1,95 @@
+// xlocmes internal header (from <locale>)
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _XLOCMES_
+#define _XLOCMES_
+#include <xiosbase>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// STRUCT messages_base
+struct _CRTIMP2 messages_base : public locale::facet {
+	typedef int catalog;
+	explicit messages_base(size_t _R = 0)
+		: locale::facet(_R) {}
+	};
+		// TEMPLATE CLASS messages
+template<class _E>
+	class messages : public messages_base {
+public:
+	typedef _E char_type;
+	typedef basic_string<_E, char_traits<_E>,
+		allocator<_E> > string_type;
+	catalog open(const string& _X, const locale& _L) const
+		{return (do_open(_X, _L)); }
+	string_type get(catalog _C, int _S, int _M,
+		const string_type& _D) const
+		{return (do_get(_C, _S, _M, _D)); }
+	void close(catalog _C) const
+		{do_close(_C); }
+	static locale::id id;
+	explicit messages(size_t _R = 0)
+		: messages_base(_R) {_Init(_Locinfo()); }
+	messages(const _Locinfo& _Lobj, size_t _R = 0)
+		: messages_base(_R) {_Init(_Lobj); }
+	static size_t __cdecl _Getcat(const locale::facet **_Ppf = 0)
+		{if (_Ppf != 0 && *_Ppf == 0)
+			*_Ppf = new messages<_E>;
+		return (_X_MESSAGE); }
+protected:
+	void _Init(const _Locinfo&)
+		{}
+	virtual catalog do_open(const string&, const locale&) const
+		{return (0); }
+	virtual string_type do_get(catalog, int,
+		int, const string_type& _D) const
+		{return (_D); }
+	virtual void do_close(catalog) const
+		{}
+	};
+template<class _E>
+	locale::id messages<_E>::id;
+		// TEMPLATE CLASS messages_byname
+template<class _E>
+	class messages_byname : public messages<_E> {
+public:
+	explicit messages_byname(const char *_S, size_t _R = 0)
+		: messages<_E>(_Locinfo(_S), _R) {}
+_PROTECTED:
+	virtual ~messages_byname()
+		{}
+	};
+
+ #ifdef  _DLL
+  #ifdef __FORCE_INSTANCE
+template class _CRTIMP2 messages<char>;
+template class _CRTIMP2 messages<wchar_t>;
+  #else           // __FORCE_INSTANCE
+   #pragma warning(disable:4231) /* extern before template is non-standard */
+extern template class _CRTIMP2 messages<char>;
+extern template class _CRTIMP2 messages<wchar_t>;
+   #pragma warning(default:4231) /* restore previous warning */
+  #endif          // __FORCE_INSTANCE
+ #endif          // _DLL
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _XLOCMES_ */
+
+/*
+ * Copyright (c) 1995-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

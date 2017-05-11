@@ -1,0 +1,145 @@
+// exception standard header for Microsoft
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _EXCEPTION_
+#define _EXCEPTION_
+#include <xstddef>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+
+ #define _USE_EX	using::exception;
+
+ #if _HAS_EXCEPTIONS
+ _STD_END
+ #include <eh.h>
+
+ #if !defined(_WIN32) && !defined(_MAC)
+  #error ERROR: Only Mac or Win32 targets supported!
+ #endif
+
+ #ifndef _CRTIMP
+  #ifdef	_NTSDK
+/* definition compatible with NT SDK */
+   #define _CRTIMP
+  #else	/* ndef _NTSDK */
+/* current definition */
+   #ifdef	_DLL
+    #define _CRTIMP __declspec(dllimport)
+   #else	/* ndef _DLL */
+    #define _CRTIMP
+   #endif	/* _DLL */
+  #endif	/* _NTSDK */
+ #endif	/* _CRTIMP */
+
+typedef const char *__exString;
+
+class _CRTIMP exception {
+public:
+	exception();
+	exception(const char *const&);
+	exception(const exception&);
+	exception& operator=(const exception&);
+	virtual ~exception();
+	virtual const char *what() const;
+private:
+	const char *_m_what;
+	int _m_doFree;
+	};
+
+ _STD_BEGIN
+
+_USE_EX
+typedef void (*_Prhand)(const exception&);
+extern _CRTIMP2 _Prhand _Raise_handler;
+_CRTIMP2 bool __cdecl uncaught_exception();
+
+ #else /* _HAS_EXCEPTIONS */
+		// CLASS exception
+class exception;
+typedef void (*_Prhand)(const exception&);
+extern _CRTIMP2 _Prhand _Raise_handler;
+_CRTIMP2 void __cdecl _Throw(const exception&);
+
+class exception {
+public:
+	static _Prhand _Set_raise_handler(_Prhand _Pn)
+		{const _Prhand _Po = _Raise_handler;
+		_Raise_handler = _Pn;
+		return (_Po); }
+	explicit exception(const char *_S = _MESG("unknown"))
+		_THROW0()
+		: _Ptr(_S) {}
+	exception(const exception& _R) _THROW0()
+		: _Ptr(_R._Ptr) {}
+	exception& operator=(const exception& _R) _THROW0()
+		{_Ptr = _R._Ptr;
+		return (*this); }
+	virtual ~exception()
+		{}
+	virtual const char *what() const _THROW0()
+		{return (_Ptr); }
+	void _Raise() const
+		{if (_Raise_handler != 0)
+			(*_Raise_handler)(*this);
+		_Doraise();
+		_RAISE(*this); }
+protected:
+	virtual void _Doraise() const
+		{}
+	const char *_Ptr;
+	};
+
+		// TYPES
+typedef void (__cdecl *terminate_handler)();
+typedef void (__cdecl *unexpected_handler)();
+
+		// DUMMY FUNCTION DECLARATIONS
+inline terminate_handler __cdecl set_terminate(terminate_handler)
+	_THROW0()
+	{return 0; }
+inline unexpected_handler __cdecl set_unexpected(unexpected_handler)
+	_THROW0()
+	{return 0; }
+inline void __cdecl terminate()
+	{}
+inline void __cdecl unexpected()
+	{}
+_CRTIMP2 bool __cdecl uncaught_exception();
+ #endif /* _HAS_EXCEPTIONS */
+
+		// CLASS bad_exception
+class bad_exception : public exception {
+public:
+	bad_exception(const char *_S = _MESG("bad exception"))
+		_THROW0()
+		: exception(_S) {}
+	virtual ~bad_exception() _THROW0()
+		{}
+protected:
+	virtual void _Doraise() const
+		{_RAISE(*this); }
+	};
+
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _EXCEPTION_ */
+
+/*
+ * Copyright (c) 1994-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

@@ -1,0 +1,161 @@
+// set standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _SET_
+#define _SET_
+#include <xtree>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+		// TEMPLATE CLASS _Tset_traits
+template<class _K, class _Pr, class _Ax, bool _Mfl>
+	class _Tset_traits {
+public:
+	typedef _K key_type;
+	typedef _K value_type;
+	typedef _Pr key_compare;
+	typedef _Ax allocator_type;
+	enum {_Multi = _Mfl};
+	_Tset_traits()
+		: comp()
+		{}
+	_Tset_traits(_Pr _Parg)
+		: comp(_Parg)
+		{}
+	typedef key_compare value_compare;
+	struct _Kfn {
+		const _K& operator()(const value_type& _X) const
+			{return (_X); }
+		};
+	_Pr comp;
+	};
+
+		// TEMPLATE CLASS set
+template<class _K,
+	class _Pr = less<_K>,
+	class _A = allocator<_K> >
+	class set
+		: public _Tree<_Tset_traits<_K, _Pr, _A, false> > {
+public:
+	typedef set<_K, _Pr, _A> _Myt;
+	typedef _Tree<_Tset_traits<_K, _Pr, _A, false> >
+		_Mybase;
+	typedef _K key_type;
+	typedef _Pr key_compare;
+	typedef typename _Mybase::value_compare value_compare;
+	typedef typename _Mybase::allocator_type allocator_type;
+	typedef typename _Mybase::size_type size_type;
+	typedef typename _Mybase::difference_type difference_type;
+	typedef typename _Mybase::pointer pointer;
+	typedef typename _Mybase::const_pointer const_pointer;
+	typedef typename _Mybase::reference reference;
+	typedef typename _Mybase::const_reference const_reference;
+	typedef typename _Mybase::iterator iterator;
+	typedef typename _Mybase::const_iterator const_iterator;
+	typedef typename _Mybase::reverse_iterator reverse_iterator;
+	typedef typename _Mybase::const_reverse_iterator
+		const_reverse_iterator;
+	typedef typename _Mybase::value_type value_type;
+	set()
+		: _Mybase(key_compare(), allocator_type()) {}
+	explicit set(const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type()) {}
+	set(const key_compare& _Pred, const allocator_type& _Al)
+		: _Mybase(_Pred, _Al) {}
+	template<class _It>
+		set(_It _F, _It _L)
+		: _Mybase(key_compare(), allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		set(_It _F, _It _L, const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		set(_It _F, _It _L, const key_compare& _Pred,
+		const allocator_type& _Al)
+		: _Mybase(_Pred, _Al)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	};
+
+		// TEMPLATE CLASS multiset
+template<class _K,
+	class _Pr = less<_K>,
+	class _A = allocator<_K> >
+	class multiset
+		: public _Tree<_Tset_traits<_K, _Pr, _A, true> > {
+public:
+	typedef multiset<_K, _Pr, _A> _Myt;
+	typedef _Tree<_Tset_traits<_K, _Pr, _A, true> >
+		_Mybase;
+	typedef _K key_type;
+	typedef _Pr key_compare;
+	typedef typename _Mybase::value_compare value_compare;
+	typedef typename _Mybase::allocator_type allocator_type;
+	typedef typename _Mybase::size_type size_type;
+	typedef typename _Mybase::difference_type difference_type;
+	typedef typename _Mybase::pointer pointer;
+	typedef typename _Mybase::const_pointer const_pointer;
+	typedef typename _Mybase::reference reference;
+	typedef typename _Mybase::const_reference const_reference;
+	typedef typename _Mybase::iterator iterator;
+	typedef typename _Mybase::const_iterator const_iterator;
+	typedef typename _Mybase::reverse_iterator reverse_iterator;
+	typedef typename _Mybase::const_reverse_iterator
+		const_reverse_iterator;
+	typedef typename _Mybase::value_type value_type;
+	multiset()
+		: _Mybase(key_compare(), allocator_type()) {}
+	explicit multiset(const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type()) {}
+	multiset(const key_compare& _Pred, const allocator_type& _Al)
+		: _Mybase(_Pred, _Al) {}
+	template<class _It>
+		multiset(_It _F, _It _L)
+		: _Mybase(key_compare(), allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		multiset(_It _F, _It _L, const key_compare& _Pred)
+		: _Mybase(_Pred, allocator_type())
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	template<class _It>
+		multiset(_It _F, _It _L, const key_compare& _Pred,
+		const allocator_type& _Al)
+		: _Mybase(_Pred, _Al)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	iterator insert(const value_type& _X)
+		{return (_Mybase::insert(_X).first); }
+	iterator insert(iterator _P, const value_type& _X)
+		{return (_Mybase::insert(_P, _X)); }
+	template<class _It>
+		void insert(_It _F, _It _L)
+		{for (; _F != _L; ++_F)
+			insert(*_F); }
+	};
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _SET_ */
+
+/*
+ * Copyright (c) 1998 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

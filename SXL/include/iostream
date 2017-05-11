@@ -1,0 +1,52 @@
+// iostream standard header for Microsoft
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _IOSTREAM_
+#define _IOSTREAM_
+#include <istream>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+_STD_BEGIN
+
+		// OBJECTS
+extern _CRTIMP2 istream cin, *_Ptr_cin;
+extern _CRTIMP2 ostream cout, *_Ptr_cout;
+extern _CRTIMP2 ostream cerr, *_Ptr_cerr;
+extern _CRTIMP2 ostream clog, *_Ptr_clog;
+
+		// CLASS _Winit
+class _CRTIMP2 _Winit {
+public:
+	_Winit();
+	~_Winit();
+private:
+	static int _Init_cnt;
+	};
+
+		// WIDE OBJECTS
+extern _CRTIMP2 wistream wcin, *_Ptr_wcin;
+extern _CRTIMP2 wostream wcout, *_Ptr_wcout;
+extern _CRTIMP2 wostream wcerr, *_Ptr_wcerr;
+extern _CRTIMP2 wostream wclog, *_Ptr_wclog;
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _IOSTREAM_ */
+
+/*
+ * Copyright (c) 1998 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

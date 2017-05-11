@@ -1,0 +1,642 @@
+// xutility internal header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _XUTILITY_
+#define _XUTILITY_
+#include <utility>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+ #pragma warning(disable:4284 4786)
+_STD_BEGIN
+
+//	ITERATOR STUFF (from <iterator>)
+
+		// ITERATOR TAGS
+struct input_iterator_tag {};
+struct output_iterator_tag {};
+struct forward_iterator_tag
+	: public input_iterator_tag {};
+struct bidirectional_iterator_tag
+	: public forward_iterator_tag {};
+struct random_access_iterator_tag
+	: public bidirectional_iterator_tag  {};
+struct _Int_iterator_tag {};
+
+		// TEMPLATE CLASS iterator
+template<class _C, class _Ty, class _D = ptrdiff_t,
+	class _Pt = _Ty *, class _Rt = _Ty&>
+	struct iterator {
+	typedef _C iterator_category;
+	typedef _Ty value_type;
+	typedef _D difference_type;
+	typedef _D distance_type;	// retained
+	typedef _Pt pointer;
+	typedef _Rt reference;
+	};
+
+template<class _Ty, class _D, class _Pt, class _Rt>
+	struct _Bidit : public iterator<bidirectional_iterator_tag,
+		_Ty, _D, _Pt, _Rt> {};
+template<class _Ty, class _D, class _Pt, class _Rt>
+	struct _Ranit : public iterator<random_access_iterator_tag,
+		_Ty, _D, _Pt, _Rt> {};
+struct _Outit : public iterator<output_iterator_tag,
+	void, void, void, void> {};
+
+		// TEMPLATE CLASS iterator_traits
+template<class _It>
+	struct iterator_traits {
+	typedef typename _It::iterator_category iterator_category;
+	typedef typename _It::value_type value_type;
+	typedef typename _It::difference_type difference_type;
+	typedef difference_type distance_type;	// retained
+	typedef typename _It::pointer pointer;
+	typedef typename _It::reference reference;
+	};
+
+		// TEMPLATE FUNCTION _Iter_cat
+template<class _C, class _Ty, class _D,
+	class _Pt, class _Rt> inline
+	_C _Iter_cat(const iterator<_C, _Ty, _D, _Pt, _Rt>&)
+	{_C _X;
+	return (_X); }
+template<class _Ty> inline
+	random_access_iterator_tag _Iter_cat(const _Ty *)
+	{random_access_iterator_tag _X;
+	return (_X); }
+
+		// INTEGER FUNCTION _Iter_cat
+inline _Int_iterator_tag _Iter_cat(_Bool)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(char)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(signed char)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(unsigned char)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(short)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(unsigned short)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(int)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(unsigned int)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(long)
+	{_Int_iterator_tag _X;
+	return (_X); }
+inline _Int_iterator_tag _Iter_cat(unsigned long)
+	{_Int_iterator_tag _X;
+	return (_X); }
+
+		// TEMPLATE FUNCTION _Distance
+template<class _II> inline
+	_CNTSIZ(_II) distance(_II _F, _II _L)
+	{_CNTSIZ(_II) _N = 0;
+	_Distance2(_F, _L, _N, _Iter_cat(_F));
+	return (_N); }
+template<class _II, class _D> inline
+	void _Distance(_II _F, _II _L, _D& _N)
+	{_Distance2(_F, _L, _N, _Iter_cat(_F)); }
+template<class _II, class _D> inline
+	void _Distance2(_II _F, _II _L, _D& _N,
+		input_iterator_tag)
+	{for (; _F != _L; ++_F)
+		++_N; }
+template<class _II, class _D> inline
+	void _Distance2(_II _F, _II _L, _D& _N,
+		forward_iterator_tag)
+	{for (; _F != _L; ++_F)
+		++_N; }
+template<class _II, class _D> inline
+	void _Distance2(_II _F, _II _L, _D& _N,
+		bidirectional_iterator_tag)
+	{for (; _F != _L; ++_F)
+		++_N; }
+template<class _RI, class _D> inline
+	void _Distance2(_RI _F, _RI _L, _D& _N,
+		random_access_iterator_tag)
+	{_N += _L - _F; }
+
+		// TEMPLATE CLASS _Ptrit
+template<class _Ty, class _D, class _Pt, class _Rt,
+	class _Pt2, class _Rt2>
+	class _Ptrit : public iterator<random_access_iterator_tag,
+		_Ty, _D, _Pt, _Rt> {
+public:
+	typedef _Ptrit<_Ty, _D, _Pt, _Rt, _Pt2, _Rt2> _Myt;
+	_Ptrit()
+		{}
+	_Ptrit(_Pt _P)
+		: current(_P) {}
+	_Ptrit(const _Ptrit<_Ty, _D, _Pt2, _Rt2, _Pt2, _Rt2>& _X)
+		: current(_X.base()) {}
+	_Pt base() const
+		{return (current); }
+	_Rt operator*() const
+		{return (*current); }
+	_Pt operator->() const
+		{return (&**this); }
+	_Myt& operator++()
+		{++current;
+		return (*this); }
+	_Myt operator++(int)
+		{_Myt _Tmp = *this;
+		++current;
+		return (_Tmp); }
+	_Myt& operator--()
+		{--current;
+		return (*this); }
+	_Myt operator--(int)
+		{_Myt _Tmp = *this;
+		--current;
+		return (_Tmp); }
+	bool operator==(int _Y) const
+		{return (current == (_Pt)_Y); }
+	bool operator==(const _Myt& _Y) const
+		{return (current == _Y.current); }
+	bool operator!=(const _Myt& _Y) const
+		{return (!(*this == _Y)); }
+	_Myt& operator+=(_D _N)
+		{current += _N;
+		return (*this); }
+	_Myt operator+(_D _N) const
+		{return (_Myt(current + _N)); }
+	_Myt& operator-=(_D _N)
+		{current -= _N;
+		return (*this); }
+	_Myt operator-(_D _N) const
+		{return (_Myt(current - _N)); }
+	_Rt operator[](_D _N) const
+		{return (*(*this + _N)); }
+	bool operator<(const _Myt& _Y) const
+		{return (current < _Y.current); }
+	bool operator>(const _Myt& _Y) const
+		{return (_Y < *this); }
+	bool operator<=(const _Myt& _Y) const
+		{return (!(_Y < *this)); }
+	bool operator>=(const _Myt& _Y) const
+		{return (!(*this < _Y)); }
+	_D operator-(const _Myt& _Y) const
+		{return (current - _Y.current); }
+protected:
+	_Pt current;
+	};
+
+template<class _Ty, class _D, class _Pt, class _Rt,
+	class _Pt2, class _Rt2> inline
+	_Ptrit<_Ty, _D, _Pt, _Rt, _Pt2, _Rt2>
+		__cdecl operator+(_D _N,
+			const _Ptrit<_Ty, _D, _Pt, _Rt, _Pt2, _Rt2>& _Y)
+	{return (_Y + _N); }
+
+		// TEMPLATE CLASS reverse_iterator
+template<class _RI>
+	class reverse_iterator : public iterator<
+		typename iterator_traits<_RI>::iterator_category,
+		typename iterator_traits<_RI>::value_type,
+		typename iterator_traits<_RI>::difference_type,
+		typename iterator_traits<_RI>::pointer,
+		typename iterator_traits<_RI>::reference> {
+public:
+	typedef reverse_iterator<_RI> _Myt;
+	typedef typename iterator_traits<_RI>::difference_type _D;
+	typedef typename iterator_traits<_RI>::pointer _Pt;
+	typedef typename iterator_traits<_RI>::reference _Rt;
+	typedef _RI iterator_type;
+	reverse_iterator()
+		{}
+	explicit reverse_iterator(_RI _X)
+		: current(_X) {}
+	template<class _U>
+		reverse_iterator(const reverse_iterator<_U>& _X)
+		: current(_X.base()) {}
+	_RI base() const
+		{return (current); }
+	_Rt operator*() const
+		{_RI _Tmp = current;
+		return (*--_Tmp); }
+	_Pt operator->() const
+		{return (&**this); }
+	_Myt& operator++()
+		{--current;
+		return (*this); }
+	_Myt operator++(int)
+		{_Myt _Tmp = *this;
+		--current;
+		return (_Tmp); }
+	_Myt& operator--()
+		{++current;
+		return (*this); }
+	_Myt operator--(int)
+		{_Myt _Tmp = *this;
+		++current;
+		return (_Tmp); }
+	bool _Eq(const _Myt& _Y) const
+		{return (current == _Y.current); }
+		// random-access only beyond this point
+	_Myt& operator+=(_D _N)
+		{current -= _N;
+		return (*this); }
+	_Myt operator+(_D _N) const
+		{return (_Myt(current - _N)); }
+	_Myt& operator-=(_D _N)
+		{current += _N;
+		return (*this); }
+	_Myt operator-(_D _N) const
+		{return (_Myt(current + _N)); }
+	_Rt operator[](_D _N) const
+		{return (*(*this + _N)); }
+	bool _Lt(const _Myt& _Y) const
+		{return (_Y.current < current); }
+	_D _Mi(const _Myt& _Y) const
+		{return (_Y.current - current); }
+protected:
+	_RI current;
+	};
+
+		// reverse_iterator TEMPLATE OPERATORS
+template<class _RI, class _D> inline
+	reverse_iterator<_RI> __cdecl operator+(_D _N,
+		const reverse_iterator<_RI>& _Y)
+	{return (_Y + _N); }
+template<class _RI> inline
+	size_t __cdecl operator-(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (_X._Mi(_Y)); }
+template<class _RI> inline
+	bool __cdecl operator==(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (_X._Eq(_Y)); }
+template<class _RI> inline
+	bool __cdecl operator!=(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (!(_X == _Y)); }
+template<class _RI> inline
+	bool __cdecl operator<(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (_X._Lt(_Y)); }
+template<class _RI> inline
+	bool __cdecl operator>(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (_Y < _X); }
+template<class _RI> inline
+	bool __cdecl operator<=(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (!(_Y < _X)); }
+template<class _RI> inline
+	bool __cdecl operator>=(const reverse_iterator<_RI>& _X,
+		const reverse_iterator<_RI>& _Y)
+	{return (!(_X < _Y)); }
+
+		// TEMPLATE CLASS reverse_bidirectional_iterator
+template<class _BI, class _Ty, class _Rt = _Ty&,	// retained
+	class _Pt = _Ty *, class _D = ptrdiff_t>
+	class reverse_bidirectional_iterator : public iterator<
+		bidirectional_iterator_tag, _Ty, _D, _Pt, _Rt> {
+public:
+	typedef reverse_bidirectional_iterator<_BI, _Ty, _Rt,
+		_Pt, _D> _Myt;
+	typedef _BI iterator_type;
+	reverse_bidirectional_iterator()
+		{}
+	explicit reverse_bidirectional_iterator(_BI _X)
+		: current(_X) {}
+	_BI base() const
+		{return (current); }
+	_Rt operator*() const
+		{_BI _Tmp = current;
+		return (*--_Tmp); }
+	_Pt operator->() const
+		{_Rt _Tmp = **this;
+		return (&_Tmp); }
+	_Myt& operator++()
+		{--current;
+		return (*this); }
+	_Myt operator++(int)
+		{_Myt _Tmp = *this;
+		--current;
+		return (_Tmp); }
+	_Myt& operator--()
+		{++current;
+		return (*this); }
+	_Myt operator--(int)
+		{_Myt _Tmp = *this;
+		++current;
+		return (_Tmp); }
+	bool operator==(const _Myt& _Y) const
+		{return (current == _Y.current); }
+	bool operator!=(const _Myt& _Y) const
+		{return (!(*this == _Y)); }
+protected:
+	_BI current;
+	};
+
+		// TEMPLATE CLASS _Revbidit
+template<class _BI>
+	class _Revbidit : public iterator<
+		typename iterator_traits<_BI>::iterator_category,
+		typename iterator_traits<_BI>::value_type,
+		typename iterator_traits<_BI>::difference_type,
+		typename iterator_traits<_BI>::pointer,
+		typename iterator_traits<_BI>::reference> {
+public:
+	typedef _Revbidit<_BI> _Myt;
+	typedef typename iterator_traits<_BI>::difference_type _D;
+	typedef typename iterator_traits<_BI>::pointer _Pt;
+	typedef typename iterator_traits<_BI>::reference _Rt;
+	typedef _BI iterator_type;
+	_Revbidit()
+		{}
+	explicit _Revbidit(_BI _X)
+		: current(_X) {}
+	_BI base() const
+		{return (current); }
+	_Rt operator*() const
+		{_BI _Tmp = current;
+		return (*--_Tmp); }
+	_Pt operator->() const
+		{_Rt _Tmp = **this;
+		return (&_Tmp); }
+	_Myt& operator++()
+		{--current;
+		return (*this); }
+	_Myt operator++(int)
+		{_Myt _Tmp = *this;
+		--current;
+		return (_Tmp); }
+	_Myt& operator--()
+		{++current;
+		return (*this); }
+	_Myt operator--(int)
+		{_Myt _Tmp = *this;
+		++current;
+		return (_Tmp); }
+	bool operator==(const _Myt& _Y) const
+		{return (current == _Y.current); }
+	bool operator!=(const _Myt& _Y) const
+		{return (!(*this == _Y)); }
+protected:
+	_BI current;
+	};
+
+		// TEMPLATE CLASS istreambuf_iterator
+template<class _E, class _Tr>
+	class istreambuf_iterator
+		: public iterator<input_iterator_tag,
+			_E, typename _Tr::off_type, _E *, _E&> {
+public:
+	typedef istreambuf_iterator<_E, _Tr> _Myt;
+	typedef _E char_type;
+	typedef _Tr traits_type;
+	typedef basic_streambuf<_E, _Tr> streambuf_type;
+	typedef basic_istream<_E, _Tr> istream_type;
+	typedef typename traits_type::int_type int_type;
+
+	istreambuf_iterator(streambuf_type *_Sb = 0) _THROW0()
+		: _Sbuf(_Sb), _Got(_Sb == 0) {}
+	istreambuf_iterator(istream_type& _I) _THROW0()
+		: _Sbuf(_I.rdbuf()), _Got(_I.rdbuf() == 0) {}
+	const _E& operator*() const
+		{if (!_Got)
+			((_Myt *)this)->_Peek();
+		return (_Val); }
+	const _E *operator->() const
+		{return (&**this); }
+	_Myt& operator++()
+		{_Inc();
+		return (*this); }
+	_Myt operator++(int)
+		{if (!_Got)
+			_Peek();
+		_Myt _Tmp = *this;
+		_Inc();
+		return (_Tmp); }
+	bool equal(const _Myt& _X) const
+		{if (!_Got)
+			((_Myt *)this)->_Peek();
+		if (!_X._Got)
+			((_Myt *)&_X)->_Peek();
+		return (_Sbuf == 0 && _X._Sbuf == 0
+			|| _Sbuf != 0 && _X._Sbuf != 0); }
+private:
+	void _Inc()
+		{if (_Sbuf == 0
+			|| traits_type::eq_int_type(traits_type::eof(),
+				_Sbuf->sbumpc()))
+			_Sbuf = 0, _Got = true;
+		else
+			_Got = false; }
+	_E _Peek()
+		{int_type _C;
+		if (_Sbuf == 0
+			|| traits_type::eq_int_type(traits_type::eof(),
+				_C = _Sbuf->sgetc()))
+			_Sbuf = 0;
+		else
+			_Val = traits_type::to_char_type(_C);
+		_Got = true;
+		return (_Val); }
+	streambuf_type *_Sbuf;
+	bool _Got;
+	_E _Val;
+	};
+
+		// istreambuf_iterator TEMPLATE OPERATORS
+template<class _E, class _Tr> inline
+	bool __cdecl operator==(const istreambuf_iterator<_E, _Tr>& _X,
+		const istreambuf_iterator<_E, _Tr>& _Y)
+	{return (_X.equal(_Y)); }
+template<class _E, class _Tr> inline
+	bool __cdecl operator!=(const istreambuf_iterator<_E, _Tr>& _X,
+		const istreambuf_iterator<_E, _Tr>& _Y)
+	{return (!(_X == _Y)); }
+
+		// TEMPLATE CLASS ostreambuf_iterator
+template<class _E, class _Tr>
+	class ostreambuf_iterator
+		: public _Outit {
+	typedef ostreambuf_iterator<_E, _Tr> _Myt;
+public:
+	typedef _E char_type;
+	typedef _Tr traits_type;
+	typedef basic_streambuf<_E, _Tr> streambuf_type;
+	typedef basic_ostream<_E, _Tr> ostream_type;
+
+	ostreambuf_iterator(streambuf_type *_Sb) _THROW0()
+		: _Failed(false), _Sbuf(_Sb) {}
+	ostreambuf_iterator(ostream_type& _O) _THROW0()
+		: _Failed(false), _Sbuf(_O.rdbuf()) {}
+	_Myt& operator=(_E _X)
+		{if (_Sbuf == 0
+			|| traits_type::eq_int_type(_Tr::eof(),
+				_Sbuf->sputc(_X)))
+			_Failed = true;
+		return (*this); }
+	_Myt& operator*()
+		{return (*this); }
+	_Myt& operator++()
+		{return (*this); }
+	_Myt& operator++(int)
+		{return (*this); }
+	bool failed() const _THROW0()
+		{return (_Failed); }
+private:
+	bool _Failed;
+	streambuf_type *_Sbuf;
+	};
+
+//	ALGORITHM STUFF (from <algorithm>)
+
+		// TEMPLATE FUNCTION copy
+template<class _II, class _OI> inline
+	_OI copy(_II _F, _II _L, _OI _X)
+	{for (; _F != _L; ++_X, ++_F)
+		*_X = *_F;
+	return (_X); }
+
+		// TEMPLATE FUNCTION copy_backward
+template<class _BI1, class _BI2> inline
+	_BI2 copy_backward(_BI1 _F, _BI1 _L, _BI2 _X)
+	{while (_F != _L)
+		*--_X = *--_L;
+	return (_X); }
+
+		// TEMPLATE FUNCTION equal
+template<class _II1, class _II2> inline
+	bool equal(_II1 _F, _II1 _L, _II2 _X)
+	{return (mismatch(_F, _L, _X).first == _L); }
+
+		// TEMPLATE FUNCTION equal WITH PRED
+template<class _II1, class _II2, class _Pr> inline
+	bool equal(_II1 _F, _II1 _L, _II2 _X, _Pr _P)
+	{return (mismatch(_F, _L, _X, _P).first == _L); }
+
+		// TEMPLATE FUNCTION fill
+template<class _FI, class _Ty> inline
+	void fill(_FI _F, _FI _L, const _Ty& _X)
+	{for (; _F != _L; ++_F)
+		*_F = _X; }
+
+		// TEMPLATE FUNCTION fill_n
+template<class _OI, class _Sz, class _Ty> inline
+	void fill_n(_OI _F, _Sz _N, const _Ty& _X)
+	{for (; 0 < _N; --_N, ++_F)
+		*_F = _X; }
+
+		// TEMPLATE FUNCTION lexicographical_compare
+template<class _II1, class _II2> inline
+	bool lexicographical_compare(_II1 _F1, _II1 _L1,
+		_II2 _F2, _II2 _L2)
+	{for (; _F1 != _L1 && _F2 != _L2; ++_F1, ++_F2)
+		if (*_F1 < *_F2)
+			return (true);
+		else if (*_F2 < *_F1)
+			return (false);
+	return (_F1 == _L1 && _F2 != _L2); }
+
+		// TEMPLATE FUNCTION lexicographical_compare WITH PRED
+template<class _II1, class _II2, class _Pr> inline
+	bool lexicographical_compare(_II1 _F1, _II1 _L1,
+		_II2 _F2, _II2 _L2, _Pr _P)
+	{for (; _F1 != _L1 && _F2 != _L2; ++_F1, ++_F2)
+		if (_P(*_F1, *_F2))
+			return (true);
+		else if (_P(*_F2, *_F1))
+			return (false);
+	return (_F1 == _L1 && _F2 != _L2); }
+
+ #ifndef _MAX
+  #define _MAX	(max)
+  #define _MIN	(min)
+ #endif
+
+		// TEMPLATE FUNCTION max
+template<class _Ty> inline
+	const _Ty& _MAX(const _Ty& _X, const _Ty& _Y)
+	{return (_X < _Y ? _Y : _X); }
+
+		// TEMPLATE FUNCTION max WITH PRED
+template<class _Ty, class _Pr> inline
+	const _Ty& _MAX(const _Ty& _X, const _Ty& _Y, _Pr _P)
+	{return (_P(_X, _Y) ? _Y : _X); }
+
+		// TEMPLATE FUNCTION min
+template<class _Ty> inline
+	const _Ty& _MIN(const _Ty& _X, const _Ty& _Y)
+	{return (_Y < _X ? _Y : _X); }
+
+		// TEMPLATE FUNCTION min WITH PRED
+template<class _Ty, class _Pr> inline
+	const _Ty& _MIN(const _Ty& _X, const _Ty& _Y, _Pr _P)
+	{return (_P(_Y, _X) ? _Y : _X); }
+
+		// TEMPLATE FUNCTION mismatch
+template<class _II1, class _II2> inline
+	pair<_II1, _II2> mismatch(_II1 _F, _II1 _L, _II2 _X)
+	{for (; _F != _L && *_F == *_X; ++_F, ++_X)
+		;
+	return (pair<_II1, _II2>(_F, _X)); }
+
+		// TEMPLATE FUNCTION mismatch WITH PRED
+template<class _II1, class _II2, class _Pr> inline
+	pair<_II1, _II2> mismatch(_II1 _F, _II1 _L, _II2 _X, _Pr _P)
+	{for (; _F != _L && _P(*_F, *_X); ++_F, ++_X)
+		;
+	return (pair<_II1, _II2>(_F, _X)); }
+
+		// TEMPLATE FUNCTION swap
+template<class _Ty> inline
+	void swap(_Ty& _X, _Ty& _Y)
+	{_Ty _Tmp = _X;
+	_X = _Y, _Y = _Tmp; }
+ #if 1200 <= _MSC_VER
+ #pragma warning(default:4284 4786)
+ #endif
+_STD_END
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _XUTILITY_ */
+
+/*
+ * Copyright (c) 1995-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ */
+
+/*
+ * This file is derived from software bearing the following
+ * restrictions:
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this
+ * software and its documentation for any purpose is hereby
+ * granted without fee, provided that the above copyright notice
+ * appear in all copies and that both that copyright notice and
+ * this permission notice appear in supporting documentation.
+ * Hewlett-Packard Company makes no representations about the
+ * suitability of this software for any purpose. It is provided
+ * "as is" without express or implied warranty.
+ V2.33:099I */

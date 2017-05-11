@@ -1,0 +1,16 @@
+// climits standard header
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _CLIMITS_
+#define _CLIMITS_
+ #pragma warning(disable: 4514)
+#include <limits.h>
+#endif /* _CLIMITS_ */
+
+/*
+ * Copyright (c) 1994-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ V2.33:099I */

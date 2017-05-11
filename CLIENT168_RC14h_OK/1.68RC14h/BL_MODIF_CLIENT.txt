@@ -1,0 +1,51 @@
+RC BL 165b5 :
+=============
+[fix] correctif sur librairie MP3
+[fix] correctif sur variables non initialisées
+[fix] correctif sur la modif du config file
+[fix] suppression des lignes jamais utilisées
+[new] ajout d'un message d'info si le programme tourne pas en mode administrateur
+[fix] changé l'ordre d'utilisation des images ISP.PCX / LOAD.PCX
+[fix] désactivation de l'appel webpatch
+
+RC BL 165b6 :
+=============
+[fix] réactivation de l'appel webpatch
+[new] chargement des sprites de la robe liche
+
+RC BL 165RC10 :
+===============
+[new] ajout antiplug
+[new] commande .xpstat
+[fix] corrigé affichage ailes dechu
+[fix] correction d'un algo de tri à bulles pour les visualobjects
+[new] changed name of cc "Main" into "English"
+[new] on n'affiche plus les joueurs sur la minimap
+[new] modifié les images du Launcher
+
+RC BL 165RC11 :
+==============
+[fix] changé à Ctrl+N pour le copier/coller (au lieu de Ctrl+V)
+[new] changé la police à Tahoma au lieu de systeme
+[new] linké 2 effets de sorts supplémentaires
+[new] ajout du type de sol : lave
+[fix] correction d'un pointeur defectueux sur les sprites transparents
+[new] ajout de l'XP restante sur la vieille barre d'XP
+
+RC BL 168RC14 :
+==============
+[fix] réorganisation de la stratégie d'ACKS pour les paquets
+[fix] on vire la fonction copy/paste
+[dev] documentation de packet.cpp (détail des types de paks)
+[fix] changement de la place & taille de l'affichage !pos
+[fix] on ne cherche pas à afficher un tile qui n'est pas encore chargé 
+[fix] on n'essaye plus de charger un sprite qui n'a pas de nom
+
+RC BL 168RC14F :
+=================
+[fix] simplification du procédé des safe packs, stockage en booléan
+[new] on peut tenter de se reconnecter en re-cliquant le bouton connect
+
+RC BL 168RCH :
+==============
+[fix] viré le système qui crash volontairement le réseau du client aléatoirement.
