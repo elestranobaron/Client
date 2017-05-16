@@ -4406,13 +4406,13 @@ BOOL DecriptVSB(BOOL f, int S)
 		return FALSE;
 
 
-	//////////////////////////////////////////////////////////////////////////////////////////
-	// steph gamefiles au lieu de Game Files
-	//////////////////////////////////////////////////////////////////////////////////////////
+   //////////////////////////////////////////////////////////////////////////////////////////
+   // steph gamefiles au lieu de Game Files
+   //////////////////////////////////////////////////////////////////////////////////////////
    index = fopen("gamefiles\\SNMCI._", "rb");
-	data2 = fopen("gamefiles\\SNMCD._", "rb");
+   data2 = fopen("gamefiles\\SNMCD._", "rb");
    data3 = fopen("gamefiles\\SNMCF._", "rb");
-	vsb   = fopen("gamefiles\\T4CGameFile.VSB", "wb+");//BLBL test d'overwrite systématique des VSB
+   vsb   = fopen("gamefiles\\T4CGameFile.VSB", "wb+");//BLBL test d'overwrite systématique des VSB
 
 
 

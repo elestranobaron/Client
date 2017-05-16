@@ -1313,7 +1313,7 @@ int WINAPI WinMain
 	// Set the Exception handler.
 	CExpFltr &ExpFltr = CExpFltr::GetInstance();
 	char Temp[1000];
-	sprintf(Temp, "The 4th Coming Client %s", Version::GetVersionText() );
+	sprintf(Temp, "T4C Client %s", Version::GetVersionText() );
 	ExpFltr.SetAppTitle(Temp);
 	ExpFltr.SetReportFile("Client.GP");
 	ExpFltr.InitFilter(NULL, 1);
@@ -1471,7 +1471,7 @@ bool CreateWnd ( void )
 
 	hWnd = CreateWindow ( 
 		"AppClass", // Window Class Name
-		"The 4th Coming: Rebirth", // Application Name // steph ajout de : Rebirth
+		"T4C: Rebirth", // Application Name
 		WS_POPUP,// | WS_MAXIMIZE, // Style
 		(GetSystemMetrics(SM_CXSCREEN)-g_Global.GetScreenW())/2, // left
 		(GetSystemMetrics(SM_CYSCREEN)-g_Global.GetScreenH())/2, // top
@@ -2951,7 +2951,7 @@ void InitializeTFCData(void)
 		 Connect_D_Anim[aa].LoadSprite(strNameTmp);
      } */ // steph désactivation
 	 
-     Connect_Title2    .LoadSprite("Connect_Title2");
+	 Connect_Title2    .LoadSprite(""); // steph Connect_Title2 retiré
      /* Connect_D         .LoadSprite("Connect2_Dialsoft");
 	 
      Connect_V         .LoadSprite("Connect2_Vircom"); */ // steph désactivation

@@ -639,7 +639,7 @@ ClientConfig *Global::ReadClientConfig()
    //set le path de save...
    if(SHGetSpecialFolderPath(NULL,m_ClientConfig.strSavePath,CSIDL_PERSONAL   ,FALSE) != 1)
       GetTempPath(MAX_PATH,m_ClientConfig.strSavePath);
-   strcat(m_ClientConfig.strSavePath,"\\Dialsoft");
+   strcat(m_ClientConfig.strSavePath,"\\Rebirth");
    _mkdir(m_ClientConfig.strSavePath);
    strcat(m_ClientConfig.strSavePath,"\\T4CV2");
    _mkdir(m_ClientConfig.strSavePath);

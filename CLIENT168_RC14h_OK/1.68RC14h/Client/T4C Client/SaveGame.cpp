@@ -120,7 +120,7 @@ BOOL CSaveGame::bLoad(char *pstrAccountName,char *pstrPlayerName)
 
    sprintf(m_strAccountName,"%s",pstrAccountName);
    sprintf(m_strPlayerName ,"%s",pstrPlayerName);
-   sprintf(m_strFileName,"%sT4C168V2_%s_%s.dat",strSaveGameDir,pstrAccountName,pstrPlayerName); // steph T4C168V2 au lieu de T4C163B
+   sprintf(m_strFileName,"%sT4C_%s_%s.dat",strSaveGameDir,pstrAccountName,pstrPlayerName);
 
    // LOAD SAVEGAME
    FILE *pf = fopen(m_strFileName,"rb");

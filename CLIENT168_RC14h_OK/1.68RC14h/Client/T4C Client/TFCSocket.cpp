@@ -1913,7 +1913,7 @@ void TFCSocket::MenuThread(void)
    Credits.SetText(">-- 1.6 Coordination Unit --<");
    Credits.SetText("<>");
    Credits.SetText("<>");
-   Credits.SetText("Marc Frega, Dialsoft Foundator && CEO");
+   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
    Credits.SetText("<>");
    Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
    Credits.SetText("<>");
@@ -1991,7 +1991,7 @@ void TFCSocket::MenuThread(void)
    Credits.SetText(">-- 1.5 Coordination Unit --<");
    Credits.SetText("<>");
    Credits.SetText("<>");
-   Credits.SetText("Marc Frega, Dialsoft Foundator && CEO");
+   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
    Credits.SetText("<>");
    Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
    Credits.SetText("<>");
@@ -2080,7 +2080,7 @@ void TFCSocket::MenuThread(void)
    Credits.SetText(">-- 1.4 Coordination Unit --<");
    Credits.SetText("<>");
    Credits.SetText("<>");
-   Credits.SetText("Marc Frega, Dialsoft Foundator && CEO");
+   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
    Credits.SetText("<>");
    Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
    Credits.SetText("<>");
@@ -2146,7 +2146,7 @@ void TFCSocket::MenuThread(void)
    Credits.SetText(">-- 1.3 Coordination Unit --<");
    Credits.SetText("<>");
    Credits.SetText("<>");
-   Credits.SetText("Marc Frega, Dialsoft Foundator && CEO");
+   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
    Credits.SetText("<>");
    Credits.SetText("Kilivan, Project Leader");
    Credits.SetText("<>");
@@ -2319,7 +2319,7 @@ void TFCSocket::MenuThread(void)
             
 
 
-            Connect_Title2.DrawSpriteN((g_Global.GetScreenW()-Connect_Title2.GetWidth())/2, dwOffset, &vsffx2);
+            //Connect_Title2.DrawSpriteN((g_Global.GetScreenW()-Connect_Title2.GetWidth())/2, dwOffset, &vsffx2); // steph désactivation
             //Connect_D    .DrawSpriteN(10                           , g_Global.GetScreenH()-85, &vsffx2);
 
             /* Connect_D_Anim[dwDisplayIndexLA].DrawSpriteN(15 , g_Global.GetScreenH()-Connect_D_Anim[dwDisplayIndexLA].GetHeight()-15, &vsffx2);
@@ -3065,8 +3065,8 @@ void TFCSocket::MenuThread(void)
 
 
                           //Connect_Title.Release();
-                          Connect_Title2.Release();
-                          /* Connect_D.Release();
+						  /* Connect_Title2.Release();
+                          Connect_D.Release();
                           Connect_V.Release(); */ // steph désactivation
                           Connect_Main_Back.Release();
                           Connect_Main_BtnN.Release();
@@ -3572,8 +3572,8 @@ void TFCSocket::MenuThread(void)
                                 Connect_D_Anim[i].Release(); */ // steph désactivation
                         
                            //Connect_Title.Release();
-                           Connect_Title2.Release();
-                           /* Connect_D.Release();
+						   /* Connect_Title2.Release();
+                           Connect_D.Release();
                            Connect_V.Release(); */ // steph désactivation
                            Connect_Main_Back.Release();
                            Connect_Main_BtnN.Release();

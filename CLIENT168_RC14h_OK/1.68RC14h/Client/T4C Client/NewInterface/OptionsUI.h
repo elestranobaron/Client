@@ -105,10 +105,10 @@ private:
 
     class FileNamePopup : public BoxUI{
     public:
-        class OkEvent : public EventVisitor{ // steph n'existe pas sur origine - début
+        class OkEvent : public EventVisitor{
         public:
             void LeftClicked();
-        } okEvent; // steph n'existe pas sur origine - fin
+        } okEvent;
 
         FileNamePopup();
         void Draw( V2SPRITEFX *vsfFX );
@@ -119,10 +119,6 @@ private:
             fileName.SetText( ifileName );
         }        
     private:
-        /* class OkEvent : public EventVisitor{ // steph actif sur origine - début
-        public:
-            void LeftClicked();
-        } okEvent; */ // steph actif sur origine - fin
         EditUI   fileName;
         ButtonUI cancelButton;
         ButtonUI okButton;

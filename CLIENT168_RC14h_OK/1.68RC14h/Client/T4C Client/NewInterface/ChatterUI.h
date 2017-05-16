@@ -99,10 +99,10 @@ private:
     class JoinButtonEvent;
     class JoinPopupUI : public BoxUI{
     public:
-        class AcceptEvent : public EventVisitor{ // steph n'existe pas sur origine - début
+        class AcceptEvent : public EventVisitor{
         public:
             void LeftClicked( void );
-        } acceptEvent; // steph n'existe pas sur origine - fin
+        } acceptEvent;
         JoinPopupUI();
 
         void ResetUI( void );
@@ -115,11 +115,6 @@ private:
         int  TxtOff(Font *, HDC, char*,int) ;
 
     private:
-        /* class AcceptEvent : public EventVisitor{ // steph actif sur origine - début
-        public:
-            void LeftClicked( void );
-        } acceptEvent; */ // steph actif sur origine - fin
-
         ButtonUI acceptButton;
         ButtonUI cancelButton;
         EditUI   channelEdit;

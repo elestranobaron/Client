@@ -378,7 +378,7 @@ BOOL CMainDialog::OnInitDialog()
    s += m_strVersion;
    s += "</font><br><br><br>";
    s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>About</font><br><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>(T4C)The 4th Coming <br>Copyright © Dialsoft </font>";
+   s += "<font color='200,200,200' size='14' face='Arial'>T4C <br>Copyright © Rebirth </font>";
    //s += "<br><img src='#%d'><br><br>";
    //s += "<font color='200,200,200' size='14' face='Arial'>(T4C)The 4th Coming</font><font color='230,50,10' size='16' style='b'> V2</font><font color='200,200,200' size='14'><br>Created with original T4C Sources and Copyright © Dialsoft </font>";
    s += "<br><br><img src='#%d'><br><br><br>";
@@ -391,7 +391,7 @@ BOOL CMainDialog::OnInitDialog()
    //////////////////////////////////////////////////////////////////////////////////////////
    // steph ajout
    //////////////////////////////////////////////////////////////////////////////////////////
-   s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>== The 4th Coming: Rebirth Project Team ==</font><br><br>";
+   s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>== T4C: Rebirth Project Team ==</font><br><br>";
 	// -- 1.6 Coordination Unit --
    s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- Coordination Unit --</font><br>";
    s += "<font color='200,200,200' size='14' face='Arial'>";
@@ -416,7 +416,7 @@ BOOL CMainDialog::OnInitDialog()
    // -- 1.6 Coordination Unit --
    s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Coordination Unit --</font><br>";
    s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frega, Dialsoft Foundator && CEO<br>";
+   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
    s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
    s += "Carl \"Nightmare\" Vachon, Core, Interface && Security Coders Leader<br>";
    s += "Kitten, Writing Unit Leader<br>";
@@ -468,7 +468,7 @@ BOOL CMainDialog::OnInitDialog()
     // -- 1.5 coordination unit --
    s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 Coordination Unit --</font><br>";
    s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frega, Dialsoft Foundator && CEO<br>";
+   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
    s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
    s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
    s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
@@ -520,7 +520,7 @@ BOOL CMainDialog::OnInitDialog()
     // -- 1.4 coordination unit --
    s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 Coordination Unit --</font><br>";
    s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frega, Dialsoft Foundator && CEO<br>";
+   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
    s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
    s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
    s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
@@ -563,7 +563,7 @@ BOOL CMainDialog::OnInitDialog()
     // -- 1.3 coordination unit --
    s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.3 Coordination Unit --</font><br>";
    s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frega, Dialsoft Foundator && CEO<br>";
+   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
    s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
    s += "Kilivan, Project Leader<br>";
    s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
@@ -1138,7 +1138,7 @@ void CMainDialog::OnBtnLink1()
 
 void CMainDialog::OnBtnLink2()
 {
-	ShellExecute(0, 0, "https://t4c-rebirth.com/shop.php", 0, 0, 1);
+	ShellExecute(0, 0, "https://t4c-rebirth.com/shop/", 0, 0, 1);
 }
 
 void CMainDialog::OnBtnLink3()
@@ -1148,7 +1148,7 @@ void CMainDialog::OnBtnLink3()
 
 void CMainDialog::OnBtnLink4()
 {
-	ShellExecute(0, 0, "https://t4c-rebirth.com/forum", 0, 0, 1);
+	ShellExecute(0, 0, "https://t4c-rebirth.com/forum/", 0, 0, 1);
 }
 
 

@@ -58,10 +58,10 @@ private:
 
     class MacroPopupUI : public BoxUI{
     public:
-		class AcceptButtonEvent : public EventVisitor { // steph n'existe pas sur origine - début
+		class AcceptButtonEvent : public EventVisitor {
 		public:
 			void LeftClicked();
-		} acceptButtonEvent; // steph n'existe pas sur origine - fin
+		} acceptButtonEvent;
         MacroPopupUI();
         void Draw( V2SPRITEFX *vsfFX );
         int  TxtOff(Font *pFont, HDC hdc, char *pStr,int dwBoxZise);
@@ -81,10 +81,6 @@ private:
         public:
             void LeftClicked();
         } clearButtonEvent;
-        /* class AcceptButtonEvent : public EventVisitor{ // steph actif sur origine - début
-        public:
-            void LeftClicked();
-        } acceptButtonEvent; */  // steph actif sur origine - fin
         class CancelButtonEvent : public EventVisitor{
         public:
             void LeftClicked();
