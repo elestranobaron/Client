@@ -1,12 +1,3 @@
-/***************************************************************************
- *
- * Copyright (c) Microsoft Corporation.  All rights reserved.
- *
- * File:     xma2defs.h
- * Content:  Constants, data types and functions for XMA2 compressed audio.
- *
- ***************************************************************************/
-
 #ifndef __XMA2DEFS_INCLUDED__
 #define __XMA2DEFS_INCLUDED__
 

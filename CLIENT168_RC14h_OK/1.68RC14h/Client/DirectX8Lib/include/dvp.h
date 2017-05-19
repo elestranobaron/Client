@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1996-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:	dvp.h
- *  Content:	DirectDrawVideoPort include file
- *
- ***************************************************************************/
-
 #ifndef __DVP_INCLUDED__
 #define __DVP_INCLUDED__
 

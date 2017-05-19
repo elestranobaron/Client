@@ -1,8 +1,5 @@
-// SkillTeachUI.cpp
-//
 #include "../pch.h"
 #include "SkillTeachUI.h"
-#include "../MemoryManager.h"
 #include "RootBoxUI.h"
 #include "../Global.h"
 #include "../PacketTypes.h"

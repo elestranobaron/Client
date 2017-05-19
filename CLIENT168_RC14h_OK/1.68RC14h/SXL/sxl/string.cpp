@@ -1,4 +1,3 @@
-// string -- template string support functions
 #include <istream>
 _STD_BEGIN
 

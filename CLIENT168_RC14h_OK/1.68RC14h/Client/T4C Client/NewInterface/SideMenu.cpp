@@ -1,6 +1,3 @@
-// SideMenu.cpp: implementation of the SideMenu class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 
 #include "SideMenu.h"

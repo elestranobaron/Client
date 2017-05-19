@@ -1,6 +1,3 @@
-// EmptyEvent.h
-//
-
 #if !defined(EmptyEvent_h)
 #define EmptyEvent_h
 

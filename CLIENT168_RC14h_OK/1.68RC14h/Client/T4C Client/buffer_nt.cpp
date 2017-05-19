@@ -1,11 +1,3 @@
-/* this file is a part of amp software
-
-   buffer.c: written by Andrew Richards  <A.Richards@phys.canterbury.ac.nz>
-             (except printout())
-
-   Last modified by:
-*/
-
 #include <string.h> // steph activation
 #include <sys/types.h>
 #include <stdio.h>
@@ -16,7 +8,6 @@
 #include "audio.h"
 #include "Global.h"
 
-#include "MemoryManager.h"
 
 void printout(void)
 {

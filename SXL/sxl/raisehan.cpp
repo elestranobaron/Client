@@ -1,4 +1,3 @@
-// raisehan -- pointer to raise handler
 #include <exception>
 _STD_BEGIN
 

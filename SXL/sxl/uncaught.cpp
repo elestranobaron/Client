@@ -1,4 +1,3 @@
-// uncaught -- dummy uncaught_exception
 #include <exception>
 _STD_BEGIN
 

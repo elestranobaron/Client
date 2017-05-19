@@ -1,24 +1,3 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: SystemAction.cpp
-//      Project:   TFC Client
-//      Creation:  19/11/1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Change History
-//
-//         Date            Ver.      Author         Purpose
-//         19/11/1997      1.0       TH             Initial developpement
-//
-//      Description
-//          Set the CallBack function pour les actions du jeux.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***         Copyright (c) 1997-1998 Vircom. All rights reserved.                        ***
-
 #include "pch.h"
 #include <windows.h>
 #include "System.h"
@@ -28,7 +7,6 @@
 #include "SystemAction.h"
 #include "VisualObjectList.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "NewInterface/RTHelp.h"
 
 

@@ -1,4 +1,3 @@
-// clog -- initialize standard log stream
 #include <fstream>
 #include <iostream>
 

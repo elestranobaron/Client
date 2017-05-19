@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AudEvCod.h
-//
-// Desc: List of Audio device error event codes and the expected params.
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
-
 #ifndef __AUDEVCOD__
 #define __AUDEVCOD__
 

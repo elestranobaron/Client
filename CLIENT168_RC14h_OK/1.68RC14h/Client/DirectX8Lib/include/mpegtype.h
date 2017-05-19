@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: MPEGType.h
-//
-// Desc: MPEG system stream compound type definition
-//
-// Copyright (c) 1996 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __MPEGTYPE__
 #define __MPEGTYPE__
 

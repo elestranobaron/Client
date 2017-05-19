@@ -1,7 +1,3 @@
-// NMDShow.cpp: implementation of the CNMDShow class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "stdafx.h"
 #include "t4clauncher.h"
 #include "NMDShow.h"

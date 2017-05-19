@@ -1,10 +1,7 @@
-// OptionsUI.cpp
-//
 #include "../pch.h"
 
 #include "OptionsUI.h"
 #include "RootBoxUI.h"
-#include "../MemoryManager.h"
 #include "ChatterUI.h"
 #include "EffectStatusUI.h"
 #include "..\SaveGame.h"

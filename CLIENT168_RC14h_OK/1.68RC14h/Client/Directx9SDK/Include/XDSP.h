@@ -1,25 +1,3 @@
-/*-========================================================================-_
- |                                 - XDSP -                                 |
- |        Copyright (c) Microsoft Corporation.  All rights reserved.        |
- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
- |PROJECT: XDSP                         MODEL:   Unmanaged User-mode        |
- |VERSION: 1.2                          EXCEPT:  No Exceptions              |
- |CLASS:   N / A                        MINREQ:  WinXP, Xbox360             |
- |BASE:    N / A                        DIALECT: MSC++ 14.00                |
- |>------------------------------------------------------------------------<|
- | DUTY: DSP functions with CPU extension specific optimizations            |
- ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-  NOTES:
-    1.  Definition of terms:
-            DSP: Digital Signal Processing.
-            FFT: Fast Fourier Transform.
-            Frame: A block of samples, one per channel,
-                   to be played simultaneously.
-
-    2.  All buffer parameters must be 16-byte aligned.
-
-    3.  All FFT functions support only FLOAT32 audio.                       */
-
 #pragma once
 //--------------<D-E-F-I-N-I-T-I-O-N-S>-------------------------------------//
 #include <windef.h> // general windows types

@@ -1,6 +1,3 @@
-// RootBoxUI.h
-//
-
 #if !defined(RootBoxUI_h)
 #define RootBoxUI_h
 

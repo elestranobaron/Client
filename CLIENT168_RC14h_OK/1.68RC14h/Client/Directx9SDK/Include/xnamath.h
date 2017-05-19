@@ -1,16 +1,3 @@
-/*++
-
-Copyright (c) Microsoft Corporation. All rights reserved.
-
-Module Name:
-
-    xnamath.h
-
-Abstract:
-
-	XNA math library for Windows and Xbox 360
---*/
-
 #if defined(_MSC_VER) && (_MSC_VER > 1000)
 #pragma once
 #endif

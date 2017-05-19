@@ -1,4 +1,3 @@
-// throw -- terminate on thrown exception REPLACEABLE
 #include <cstdio>
 #include <cstdlib>
 #include <exception>

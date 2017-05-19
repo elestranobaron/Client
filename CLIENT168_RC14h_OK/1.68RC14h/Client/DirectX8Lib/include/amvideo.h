@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AMVideo.h
-//
-// Desc: Video related definitions and interfaces for ActiveMovie.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __AMVIDEO__
 #define __AMVIDEO__
 

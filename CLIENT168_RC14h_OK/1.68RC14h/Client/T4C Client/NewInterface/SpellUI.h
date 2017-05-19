@@ -1,6 +1,3 @@
-// SpellUI.h
-//
-
 #if !defined(SpellUI_h)
 #define SpellUI_h
 

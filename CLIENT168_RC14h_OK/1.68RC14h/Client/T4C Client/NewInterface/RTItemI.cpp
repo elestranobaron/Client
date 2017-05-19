@@ -1,6 +1,3 @@
-// RTItemI.cpp: implementation of the RTItemI class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 
 #include "RTItemI.h"

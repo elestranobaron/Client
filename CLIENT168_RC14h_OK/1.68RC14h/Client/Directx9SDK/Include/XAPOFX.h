@@ -1,21 +1,3 @@
-/*-========================================================================-_
- |                                - XAPOFX -                                |
- |        Copyright (c) Microsoft Corporation.  All rights reserved.        |
- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
- |PROJECT: XAPOFX                       MODEL:   Unmanaged User-mode        |
- |VERSION: 1.3                          EXCEPT:  No Exceptions              |
- |CLASS:   N / A                        MINREQ:  WinXP, Xbox360             |
- |BASE:    N / A                        DIALECT: MSC++ 14.00                |
- |>------------------------------------------------------------------------<|
- | DUTY: Cross-platform Audio Processing Objects                            |
- ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-  NOTES:
-    1.  USE THE DEBUG DLL TO ENABLE PARAMETER VALIDATION VIA ASSERTS!
-        Here's how:
-        Copy XAPOFXDX_X.dll to where your application exists.
-        The debug DLL can be found under %WINDIR%\system32.
-        Rename XAPOFXDX_X.dll to XAPOFXX_X.dll to use the debug version.    */
-
 #pragma once
 //--------------<D-E-F-I-N-I-T-I-O-N-S>-------------------------------------//
 #include "comdecl.h" // for DEFINE_CLSID

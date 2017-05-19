@@ -1,13 +1,8 @@
-// UIMouseEvent.cpp: implementation of the UIMouseEvent class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include "UIMouseEvent.h"
 #include "Lock.h"
 #include "NewInterface/RootBoxUI.h"
 #include <deque>
-#include "MemoryManager.h"
 
 using namespace std;
 

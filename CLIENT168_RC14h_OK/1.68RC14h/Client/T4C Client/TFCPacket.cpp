@@ -1,7 +1,3 @@
-// TFCPacket.cpp: implementation of the TFCPacket class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #pragma warning( disable : 4291 )
 
 //#include <stdio.h>
@@ -26,7 +22,6 @@
 #include <functional>
 #include "Global.h"
 
-#include "MemoryManager.h"
 
 #ifdef  TRACE
 #undef  TRACE

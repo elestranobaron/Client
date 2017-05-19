@@ -1,4 +1,3 @@
-// wclog -- initialize standard wide log stream
 #include <fstream>
 #include <iostream>
 

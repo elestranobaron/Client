@@ -1,12 +1,9 @@
-// DropZoneUI.cpp
-//
 #include "../pch.h"
 
 #include "DropZoneUI.h"
 #include "EventVisitor.h"
 
 #include "InventoryUI.h"
-#include "../MemoryManager.h"
 
 DropZoneUI::DropZoneUI( EventVisitor &eventVisitor )
     :   dropzoneEvent( eventVisitor ),

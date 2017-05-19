@@ -3,7 +3,6 @@
 #include "NewSound.h"
 #include "Global.h"
 #include "Packet.h"
-#include "MemoryManager.h"
 #include "App.h"
 #include "SaveGame.h"
 extern CSaveGame g_SaveGame;

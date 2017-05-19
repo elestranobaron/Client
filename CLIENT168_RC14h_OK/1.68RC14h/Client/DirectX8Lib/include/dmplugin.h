@@ -1,12 +1,3 @@
-/************************************************************************
-*                                                                       *
-*   dmplugin.h -- This module contains the API for plugins for the      *
-*                 DirectMusic performance layer                         *
-*                                                                       *
-*   Copyright (c) 1998-1999 Microsoft Corporation                       *
-*                                                                       *
-************************************************************************/
-
 #ifndef _DMPLUGIN_
 #define _DMPLUGIN_
 

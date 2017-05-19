@@ -1,9 +1,3 @@
-/* this file is a part of amp software
-
-	util.c: created by Andrew Richards
-
-*/
-
 #define AMP_UTIL
 
 #include <string.h> // steph ajout
@@ -15,7 +9,6 @@
 #include "audio.h"
 #include "global.h"
 
-#include "MemoryManager.h"
 
 struct debugFlags_t debugFlags;
 

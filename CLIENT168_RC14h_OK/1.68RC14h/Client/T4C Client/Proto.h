@@ -1,4 +1,3 @@
-/* From: util.c */
 void die(char *, ...);
 void warn(char *, ...);
 void msg(char *, ...);

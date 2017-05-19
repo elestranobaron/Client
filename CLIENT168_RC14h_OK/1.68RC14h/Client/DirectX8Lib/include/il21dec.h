@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: IL21Dec.h
-//
-// Desc: Line 21 Decoder related definitions and interfaces for ActiveMovie.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __IL21DEC__
 #define __IL21DEC__
 

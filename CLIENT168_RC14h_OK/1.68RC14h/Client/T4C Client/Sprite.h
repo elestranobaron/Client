@@ -1,24 +1,3 @@
-// PAS BON
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Sprite.cpp
-//      Project:   TFC Client
-//      Creation:  29 June, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         06-29-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide fonction to load a Sprite from a Image or an ID
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***
-
 #ifndef __Vircom_Sprite_083612062797
 #define __Vircom_Sprite_083612062797
 

@@ -1,8 +1,5 @@
-// SkillTrainUI.cpp
-//
 #include "../pch.h"
 #include "SkillTrainUI.h"
-#include "../MemoryManager.h"
 #include "RootBoxUI.h"
 #include "../Global.h"
 #include "../PacketTypes.h"

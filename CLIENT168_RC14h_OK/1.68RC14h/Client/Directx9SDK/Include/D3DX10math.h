@@ -1,12 +1,3 @@
-//////////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) Microsoft Corporation.  All Rights Reserved.
-//
-//  File:       D3DX10math.h
-//  Content:    D3DX10 math types and functions
-//
-//////////////////////////////////////////////////////////////////////////////
-
 #include "D3DX10.h"
 
 // D3DX10 and D3DX9 math look the same. You can include either one into your project.

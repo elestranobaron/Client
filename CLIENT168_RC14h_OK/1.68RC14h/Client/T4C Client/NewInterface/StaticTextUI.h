@@ -1,6 +1,3 @@
-// StaticTextUI.h
-//
-
 #if !defined(StaticTextUI_h)
 #define StaticTextUI_h
 

@@ -1,23 +1,3 @@
-/***************************************************************************
- *
- *  Copyright (c) Microsoft Corporation.  All rights reserved.
- *
- *  File:     audiodefs.h
- *  Content:  Basic constants and data types for audio work.
- *
- *  Remarks:  This header file defines all of the audio format constants and
- *            structures required for XAudio2 and XACT work.  Providing these
- *            in a single location avoids certain dependency problems in the
- *            legacy audio headers (mmreg.h, mmsystem.h, ksmedia.h).
- *
- *            NOTE: Including the legacy headers after this one may cause a
- *            compilation error, because they define some of the same types
- *            defined here without preprocessor guards to avoid multiple
- *            definitions.  If a source file needs one of the old headers,
- *            it must include it before including audiodefs.h.
- *
- ***************************************************************************/
-
 #ifndef __AUDIODEFS_INCLUDED__
 #define __AUDIODEFS_INCLUDED__
 

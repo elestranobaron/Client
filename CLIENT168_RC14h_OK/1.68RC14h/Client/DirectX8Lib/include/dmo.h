@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DMO.h
-//
-// Desc: Headers needed by almost all DMOs.
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __DMO_H__
 #define __DMO_H__
 

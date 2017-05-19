@@ -1,9 +1,6 @@
-// ControlUI.cpp
-//
 #include "../pch.h"
 
 #include "ControlUI.h"
-#include "../MemoryManager.h"
 
 ControlUI::ControlUI(){
     Show();

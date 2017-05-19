@@ -1,23 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: DirectXInput.h
-//      Project:   TFC Client
-//      Creation:  15 July, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         07-15-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide an Interface to interract with the mouse.
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***
-
 #ifndef __Vircom_DirectXInput_080233071597
 #define __Vircom_DirectXInput_080233071597
 

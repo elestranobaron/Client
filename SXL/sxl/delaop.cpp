@@ -1,4 +1,3 @@
-// delaop -- operator delete[](void *) REPLACEABLE
 #include <xstddef>
 
  #if _HAS_ARRAY_NEW

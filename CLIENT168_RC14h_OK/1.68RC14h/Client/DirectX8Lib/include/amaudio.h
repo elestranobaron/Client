@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AMAudio.h
-//
-// Desc: Audio related definitions and interfaces for ActiveMovie.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __AMAUDIO__
 #define __AMAUDIO__
 

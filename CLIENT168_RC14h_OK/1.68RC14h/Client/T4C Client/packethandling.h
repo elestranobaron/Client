@@ -1,13 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: PacketHandling.cpp
-//      Project:   The 4th Coming
-//      Creation:  5 May, 1999
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #ifndef PACKETHANDLING_H
 #define PACKETHANDLING_H
 

@@ -1,32 +1,7 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: ChestUI.cpp
-//      Project:   TFC Client
-//      Plateform: Win32
-//      Creation:  11/04/2004
-//      Author:    Scotch
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Change History
-//
-//         Date            Ver.      Author         Purpose
-//         11/04/2004      1.0       Scotch         Initial developpement
-//
-//      Description
-//          In Game Chest Interface.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***           Copyright (c) 2004 Dialsoft           . All rights reserved.              ***
-
-// Includes
-
 #include "../pch.h"
 #include "ChestUI.h"
 #include "RootBoxUI.h"
 #include "GraphUI.h"
-#include "../MemoryManager.h"
 #include "ChatterUI.h"
 #include "..\SaveGame.h"
 #include "..\GUILocalString.h"  //g_GUILocalString[]

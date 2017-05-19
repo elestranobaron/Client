@@ -1,8 +1,5 @@
-// EmptyEvent.cpp
-//
 #include "../pch.h"
 #include "EmptyEvent.h"
-#include "../MemoryManager.h"
 
 //////////////////////////////////////////////////////////////////////////////////////////
 EmptyEvent &EmptyEvent::GetInstance( void )

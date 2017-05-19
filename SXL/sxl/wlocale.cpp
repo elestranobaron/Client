@@ -1,4 +1,3 @@
-// wlocale -- class locale wide member functions
 #include <istream>
 #include <locale>
 _STD_BEGIN

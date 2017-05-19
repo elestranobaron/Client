@@ -1,4 +1,3 @@
-// iosptrs -- iostream object pointers for Microsoft
 #include <iostream>
 _STD_BEGIN
 

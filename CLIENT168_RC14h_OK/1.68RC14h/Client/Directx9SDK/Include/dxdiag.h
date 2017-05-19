@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dxdiag.h
- *  Content:    DirectX Diagnostic Tool include file
- *
- ****************************************************************************/
-
 #ifndef _DXDIAG_H_
 #define _DXDIAG_H_
 

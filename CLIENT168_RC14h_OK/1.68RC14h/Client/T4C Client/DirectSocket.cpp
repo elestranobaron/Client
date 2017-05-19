@@ -4,7 +4,6 @@
 #include "DirectSocket.h"
 #include "PowerDebug.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 
 //********************************************************//

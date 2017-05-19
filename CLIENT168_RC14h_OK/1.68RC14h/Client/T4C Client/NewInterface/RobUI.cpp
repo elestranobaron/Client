@@ -1,6 +1,3 @@
-// RobUI.cpp: implementation of the RobUI class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 #pragma warning(disable: 4786 )
 #include "RobUI.h"

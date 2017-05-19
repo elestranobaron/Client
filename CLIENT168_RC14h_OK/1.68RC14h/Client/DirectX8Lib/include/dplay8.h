@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1998-2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:		DPlay8.h
- *  Content:	DirectPlay8 include file
- *
- ***************************************************************************/
-
 #ifndef __DIRECTPLAY8_H__
 #define __DIRECTPLAY8_H__
 

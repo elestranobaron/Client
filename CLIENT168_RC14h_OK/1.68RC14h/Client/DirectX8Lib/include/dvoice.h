@@ -1,11 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1999 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dpvoice.h
- *  Content:    DirectPlayVoice include file
- ***************************************************************************/
-
 #ifndef __DVOICE__
 #define __DVOICE__
 

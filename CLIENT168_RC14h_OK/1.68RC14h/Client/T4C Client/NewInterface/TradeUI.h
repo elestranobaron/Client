@@ -1,22 +1,3 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: TradeUI.h
-//      Project:   TFC Client
-//      Plateform: Win32
-//      Creation:  08/12/2004
-//      Author:    Carlos
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Description
-//          In Game Trade Interface header file.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***           Copyright (c) 2004 Dialsoft           . All rights reserved.              ***
-
-// Includes
-
 #if !defined(TradeUI_h)
 #define TradeUI_h
 

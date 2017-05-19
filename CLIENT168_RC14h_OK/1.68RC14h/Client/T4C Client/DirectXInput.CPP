@@ -1,30 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: DirectXInput.Cpp
-//      Project:   TFC Client
-//      Creation:  15 July, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         07-15-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide an Interface to interract with the mouse.
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***
-
-// QUESTION:
-// Est-ce possible que quand je call DEVICECREATE qu'il me retourne ok
-// et que le device soit pas attacher ?
-
-// UPDATE INFORMATION:
-// Work with IDirectXDraw Version 1.0
-
 #include "pch.h"
 #include <windows.h>
 #include "DirectXInput.h"
@@ -34,7 +7,6 @@
 #include "SystemInfo.h"
 #include "IDirectXFont.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "MacroHandler.h"
 #include "LocalString.h"
 #include "App.h"

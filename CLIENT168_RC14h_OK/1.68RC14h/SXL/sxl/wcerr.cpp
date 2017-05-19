@@ -1,4 +1,3 @@
-// wcerr -- initialize standard wide error stream
 #include <fstream>
 #include <iostream>
 

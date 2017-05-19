@@ -1,4 +1,3 @@
-// cout -- initialize standard output stream
 #include <fstream>
 #include <iostream>
 

@@ -1,34 +1,3 @@
-// FILE DEFINITION
-//
-/*! \file
-   
-   Method(Public)       Description
-   SetBackColor         BackGround Button Color
-   SetForeColor         Fore Color text
-   SetText              Text Caption (CString)
-   SetFontSize          The Font Size 
-   SetFontBold          Bold or Normal
-   SetFontName          The Font Name
-   SetFont3D            Text Effect Raised, Sunken, Normal
-   SetToolTipText       ToolTip  Text
-   SetIcon              Add Icon form Resource
-   SetIconAlign         How the Icon should be aligned.
-   Refresh              Ask control to redraw.
-   SetScale             Dimension of Pict to Scale.
-
-   If you are using the Graphic Option (2 Methods)
-
-   SetBitmap            Simple Picture Graphic Button
-
-   SetScale             For Strech Effect on Bitmap Bouton
-                        Use as % 100 = 1 = Original Size
-
-   Modifications:
-
-   Name        Date        Notes
- 
-*/
-//
 #if !defined(AFX_SKINBUTTON_H__5C9D8DD3_150E_11D5_8923_204C4F4F5020__INCLUDED_)
 #define AFX_SKINBUTTON_H__5C9D8DD3_150E_11D5_8923_204C4F4F5020__INCLUDED_
 

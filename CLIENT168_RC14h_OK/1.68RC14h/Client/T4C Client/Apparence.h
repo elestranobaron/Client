@@ -335,7 +335,7 @@ const unsigned int __OBJGROUP_SKAVEN_CORPSE_I4          = 550;
 const unsigned int __OBJGROUP_RIBCAGE					= 551;
 const unsigned int __OBJGROUP_HEART						= 552;
 
-// New added by Dialsoft - BEGIN
+
 const unsigned int __OBJGROUP_BRACELET_RUBIS			= 553;
 const unsigned int __OBJGROUP_BELT_JEWELS_BROWN			= 554;
 const unsigned int __OBJGROUP_BELT_JEWELS_PURPLE		= 555;
@@ -708,7 +708,7 @@ const unsigned int __OBJGROUP_SERAPH_DECHU2_WINGS  = 918;
 
 
 
-// New added by Dialsoft - END
+
 
 const unsigned int __OBJGROUP_LASTGROUP                 = 919;
 

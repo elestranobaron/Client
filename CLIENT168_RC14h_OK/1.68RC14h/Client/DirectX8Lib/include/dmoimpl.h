@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DMOImpl.h
-//
-// Desc: Classes to implement a DMO.
-//
-// Copyright (c) 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef _dmoimpl_h_
 #define _dmoimpl_h_
 

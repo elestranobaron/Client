@@ -1,11 +1,8 @@
-// EditUI.cpp
-//
 #pragma warning( disable : 4291 )
 
 #include "../pch.h"
 #include "EditUI.h"
 #include "StaticTextUI.h"
-#include "../MemoryManager.h"
 
 
 EditUI::EditUI( const std::string defaultText, unsigned long defaultMaxTextLength )

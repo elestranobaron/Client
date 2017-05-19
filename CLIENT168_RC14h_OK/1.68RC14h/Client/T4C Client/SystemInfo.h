@@ -1,10 +1,3 @@
-//
-//
-//
-
-
-
-// Include Files.
 #ifndef __SYSTEMINFO
 #define __SYSTEMINFO
 

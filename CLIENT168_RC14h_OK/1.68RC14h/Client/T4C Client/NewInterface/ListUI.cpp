@@ -1,10 +1,7 @@
-// ListUI.cpp
-//
 #include "../pch.h"
 
 #include "ListUI.h"
 #include "EventVisitor.h"
-#include "../MemoryManager.h"
 
 namespace{
     T3VSBSound *selectSound = NULL;

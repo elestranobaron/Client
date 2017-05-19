@@ -1,24 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: IDirectXDraw.Cpp
-//      Project:   The Fourth Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         03-25-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide Simplified class for DirectDraw, DirectSurface and 
-//         DirectPalette.
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom.             All rights reserved. ***
-
 #include "pch.h"
 #include <windows.h>
 #include <stdlib.h>
@@ -28,7 +7,6 @@
 #include "LocalString.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "MacroHandler.h"
 
 extern Global g_Global;

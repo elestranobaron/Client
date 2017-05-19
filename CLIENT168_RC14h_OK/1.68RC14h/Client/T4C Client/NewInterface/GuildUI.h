@@ -1,6 +1,3 @@
-// GuildUI.h
-//
-
 #if !defined(GuildUI_h)
 #define GuildUI_h
 

@@ -1,7 +1,3 @@
-// VKey.h: interface for the VKey class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_VKEY_H__79380E38_9C3D_11D3_85BE_00E02922FA40__INCLUDED_)
 #define AFX_VKEY_H__79380E38_9C3D_11D3_85BE_00E02922FA40__INCLUDED_
 

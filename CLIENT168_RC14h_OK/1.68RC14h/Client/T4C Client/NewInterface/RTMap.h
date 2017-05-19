@@ -1,7 +1,3 @@
-// RTMap.h: interface for the RTMap class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_RTMAP_H__INCLUDED_)
 #define AFX_RTMAP_H__INCLUDED_
 

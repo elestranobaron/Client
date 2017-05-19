@@ -1,6 +1,3 @@
-// SellUI.h
-//
-
 #if !defined(SellUI_h)
 #define SellUI_h
 

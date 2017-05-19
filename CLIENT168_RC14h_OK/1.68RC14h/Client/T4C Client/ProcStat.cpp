@@ -1,9 +1,3 @@
-/******************************************
-	Statistics of a Process/Threads
-	Copyright 1999 Vircom Inc.
-	Benoit Martin
-*******************************************/
-
 #include "pch.h"
 #include <windows.h>
 #include <stdio.h>

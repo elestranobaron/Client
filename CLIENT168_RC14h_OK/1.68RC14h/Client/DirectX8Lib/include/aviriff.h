@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AVIRIFF.h
-//
-// Desc: Structures and defines for the RIFF AVI file format extended to
-//       handle very large/long files.
-//
-// Copyright (c) 1996 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #pragma warning(disable: 4097 4511 4512 4514 4705)
 
 

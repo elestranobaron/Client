@@ -1,6 +1,3 @@
-// NMVideoCapture.cpp: implementation of the Global class.
-//
-//////////////////////////////////////////////////////////////////////
 #include <windows.h>
 #include <malloc.h>
 #include <stdio.h>

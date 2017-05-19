@@ -1,4 +1,3 @@
-#include "../T4C Client/MemoryManager.h"
 #include "T3Sound.h"
 
 LPWAVEFORMATEX T3WaveFilter::GetWaveFormatEx( VOID ) {

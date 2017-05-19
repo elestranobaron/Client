@@ -1,11 +1,3 @@
-/************************************************************************
-*                                                                       *
-*   dmusics.h -- Definitions for created a DirectMusic software synth   *
-*                                                                       *
-*   Copyright (c) 1998-1999 Microsoft Corporation
-*                                                                       *
-************************************************************************/
-
 #ifndef _DMUSICS_
 #define _DMUSICS_
 

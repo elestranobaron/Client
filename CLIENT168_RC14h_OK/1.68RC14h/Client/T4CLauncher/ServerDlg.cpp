@@ -1,6 +1,3 @@
-// ServerDlg.cpp : implementation file
-//
-
 #include "stdafx.h"
 #include "t4clauncher.h"
 #include "ServerDlg.h"

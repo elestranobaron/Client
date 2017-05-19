@@ -1,12 +1,3 @@
-//+--------------------------------------------------------------------------
-//
-//  Copyright (c) Microsoft Corporation.  All rights reserved.
-//
-//  Abstract:
-//     Public API definitions for DWrite and D2D
-//
-//----------------------------------------------------------------------------
-
 #ifndef DCOMMON_H_INCLUDED
 #define DCOMMON_H_INCLUDED
 

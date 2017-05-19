@@ -1,6 +1,3 @@
-// AnimUI.cpp: implementation of the AnimUI class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "..\pch.h"
 
 #include "AnimUI.h"

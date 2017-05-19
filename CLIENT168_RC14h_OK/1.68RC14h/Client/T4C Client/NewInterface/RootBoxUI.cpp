@@ -1,9 +1,6 @@
-// RootBoxUI.cpp
-//
 #include "../pch.h"
 #include "RootBoxUI.h"
 #include <mmsystem.h>
-#include "../MemoryManager.h"
 
 #include "ChatterUI.h"
 #include "SideMenu.h"

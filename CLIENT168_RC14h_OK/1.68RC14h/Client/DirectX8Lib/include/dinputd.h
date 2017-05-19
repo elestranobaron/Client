@@ -1,11 +1,3 @@
-/****************************************************************************
- *
- *  Copyright (C) 1995-2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dinputd.h
- *  Content:    DirectInput include file for device driver implementors
- *
- ****************************************************************************/
 #ifndef __DINPUTD_INCLUDED__
 #define __DINPUTD_INCLUDED__
 

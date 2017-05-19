@@ -1,8 +1,3 @@
-/* BASS 1.8 C/C++ header file, copyright (c) 1999-2003 Ian Luck.
-   Please report bugs/suggestions/etc... to bass@un4seen.com
-
-   See the BASS.CHM file for more complete documentation */
-
 #ifndef BASS_H
 #define BASS_H
 

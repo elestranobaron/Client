@@ -1,6 +1,3 @@
-// ChatterUI.h
-//
-
 #if !defined(ChatterUI_h)
 #define ChatterUI_h
 

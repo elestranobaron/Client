@@ -1,4 +1,3 @@
-
 #ifndef __dxgitype_h__
 #define __dxgitype_h__
 

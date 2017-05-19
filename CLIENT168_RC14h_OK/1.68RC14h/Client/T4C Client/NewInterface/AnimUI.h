@@ -1,7 +1,3 @@
-// AnimUI.h: interface for the AnimUI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_ANIMUI_H__5A72D64A_FAD4_11D3_864D_00E02922FA40__INCLUDED_)
 #define AFX_ANIMUI_H__5A72D64A_FAD4_11D3_864D_00E02922FA40__INCLUDED_
 

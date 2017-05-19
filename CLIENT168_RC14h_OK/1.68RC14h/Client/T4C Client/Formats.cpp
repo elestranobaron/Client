@@ -1,10 +1,3 @@
-/* this file is a part of amp software, (C) tomislav uzelac 1996,1997
-*/
- 
-/* formats.c  put functions for different audio formats in here. currently
- *	      only .wav, .au would be fine  
- * Created by: tomislav uzelac  May 1996
- */
 #include "audio.h"
 
 #include "global.h"
@@ -12,7 +5,6 @@
 #define FORMATS
 #include "formats.h"
 
-#include "MemoryManager.h"
 
 /* leave room for .wav header
 */

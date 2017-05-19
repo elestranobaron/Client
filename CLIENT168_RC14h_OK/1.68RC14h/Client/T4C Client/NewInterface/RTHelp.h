@@ -1,7 +1,3 @@
-// RTHelp.h: interface for the RTHelp class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_RTHELP_H__INCLUDED_)
 #define AFX_RTHELP_H__INCLUDED_
 

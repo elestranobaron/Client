@@ -1,23 +1,3 @@
-// **************************************************************************
-// ***                                                                    ***
-//      File Name: TFCSocket.Cpp
-//      Project:   The Fourth Coming
-//      Creation:  May 30th, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                    ***
-// **************************************************************************
-// ***                                                                    ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         06-27-1997      1.0    TH             Initial development.
-//
-//		  Fonctions:
-//			  Provide Socket Receive Function
-//
-// ***                                                                    ***
-// **************************************************************************
-// *** Copyright (c) 1996-2003 Vircom inc.         All rights reserved.   ***
 #include "pch.h"
 #pragma warning( disable : 4291 )
 
@@ -63,7 +43,6 @@
 #include "NewInterface/SideMenu.h"
 #include "NewInterface/ChestUI.h"
 #include "NewInterface/TradeUI.h"
-#include "MemoryManager.h"
 #include "ProcStat.h"
 #include "CombatCursor.h"
 #include "SysMsg.h"
@@ -399,23 +378,23 @@ UINT WINAPI DrawThread(LPVOID pParam)
    int RndCrh = (rand() % 1000)+1000;
 
 #if 0
-   //sprintf(Buf2, "%s","NightMare"); 
-   //sprintf(Buf2, "%s","Marc");     //1-3   (3)
-   //sprintf(Buf2, "%s","Lemming");  //2-4   (2)
-   //sprintf(Buf2, "%s","Destiny");  //1-4   (1)
-   //sprintf(Buf2, "%s","crush");    //1-2-3 (3)
-   //sprintf(Buf2, "%s","Heschal");  //3-4   (1)
+   //sprintf(Buf2, "%s","Alpha"); 
+   //sprintf(Buf2, "%s","Bêta");     //1-3   (3)
+   //sprintf(Buf2, "%s","Gamma");  //2-4   (2)
+   //sprintf(Buf2, "%s","Delta");  //1-4   (1)
+   //sprintf(Buf2, "%s","Epsilon");    //1-2-3 (3)
+   //sprintf(Buf2, "%s","Zêta");  //3-4   (1)
 #endif
    int dwCode1 = 0; //0 to block code
    int dwCode2 = 0; //0 to block code
    char strCode[20];
    switch(dwCode1)
    {
-      case 1: sprintf(strCode,"%s","Marc"); break;
-      case 2: sprintf(strCode,"%s","Lemming"); break;
-      case 3: sprintf(strCode,"%s","Destiny"); break;
-      case 4: sprintf(strCode,"%s","Crush"); break;
-      case 5: sprintf(strCode,"%s","Heschal"); break;
+      case 1: sprintf(strCode,"%s","Alpha"); break;
+      case 2: sprintf(strCode,"%s","Bêta"); break;
+      case 3: sprintf(strCode,"%s","Gamma"); break;
+      case 4: sprintf(strCode,"%s","Delta"); break;
+      case 5: sprintf(strCode,"%s","Epsilon"); break;
    } 
    
    while (!g_boQuitApp) 
@@ -1877,339 +1856,7 @@ void TFCSocket::MenuThread(void)
 
 
 
-   //////////////////////////////////////////////////////////////////////////////////////////
-   // steph ajout
-   //////////////////////////////////////////////////////////////////////////////////////////
-   Credits.SetText(g_LocalString[9]);
-   Credits.SetText("<>");
-   Credits.SetText(g_LocalString[10]);
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText(">== Rebirth RC custom release ==<");
-   Credits.SetText("<>");
-   Credits.SetText("Henry, Project Leader");
-   Credits.SetText("Shainon, Steph, Debugging/Coding");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
 
-
-
-
-   Credits.SetText(">== Abomination RC BL custom release ==<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Debugging/Coding");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText(">==T4C V2.0 Project Team==<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 Coordination Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Carl [Nightmare] Vachon, Programmer Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Kitten, Writing Unit Leader");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 Coding Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Carl [Nightmare] Vachon, programmer Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Sébastien [The Destiny] Mériot, Editor's Coder");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima, Begin Network layer");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 Graphics Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Jonathan [Heschal] Pelletier");
-   Credits.SetText("<>");
-   Credits.SetText("Nadine [Lune] Pelletier");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 World Design Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Nadine [Lune] Pelletier");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 Sounds & Musics --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.6 Writers Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Kitten");
-   Credits.SetText("<>");
-   Credits.SetText("Mouse");
-   Credits.SetText("<>");
-   Credits.SetText("Kujo");
-   Credits.SetText("<>");
-   Credits.SetText("Scarlett");
-   Credits.SetText("<>");
-   Credits.SetText("Redskull");
-   Credits.SetText("<>");
-   Credits.SetText("Kenko");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("-----");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-
-
-   Credits.SetText(">-- 1.5 Coordination Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima, Coders Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Kitten, Writing Unit Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner, World Design Unit Leader");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.5 Coding Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima");
-   Credits.SetText("<>");
-   Credits.SetText("Ophise");
-   Credits.SetText("<>");
-   Credits.SetText("Tiamat");
-   Credits.SetText("<>");
-   Credits.SetText("Scotch");
-   Credits.SetText("<>");
-   Credits.SetText("Sébastien [The Destiny] Mériot");
-   Credits.SetText("<>");
-   Credits.SetText("Desboys");
-   Credits.SetText("<>");
-   Credits.SetText("Nara");
-   Credits.SetText("<>");
-   Credits.SetText("Tyrion");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.5 Graphics Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Jonathan [Heschal] Pelletier");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.5 World Design Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner");
-   Credits.SetText("<>");
-   Credits.SetText("Anadroow");
-   Credits.SetText("<>");
-   Credits.SetText("Clariss");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.5 Sounds & Musics --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.5 Writers Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Kitten");
-   Credits.SetText("<>");
-   Credits.SetText("Blade");
-   Credits.SetText("<>");
-   Credits.SetText("Ostian");
-   Credits.SetText("<>");
-   Credits.SetText("Reorx");
-   Credits.SetText("<>");
-   Credits.SetText("Redskull");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("-----");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-
-   Credits.SetText(">-- 1.4 Coordination Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand, Project Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima, Coders Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Blade, Writing Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner, World Design Unit Leader");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.4 Coding Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima");
-   Credits.SetText("<>");
-   Credits.SetText("Ophise");
-   Credits.SetText("<>");
-   Credits.SetText("Tiamat");
-   Credits.SetText("<>");
-   Credits.SetText("Scotch");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.4 Graphics Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.4 World Design Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner");
-   Credits.SetText("<>");
-   Credits.SetText("Anadroow");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.4 Writers Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Blade");
-   Credits.SetText("<>");
-   Credits.SetText("Ostian");
-   Credits.SetText("<>");
-   Credits.SetText("Reorx");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("-----");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-
-
-   Credits.SetText(">-- 1.3 Coordination Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Marc Frigo, Rebirth Foundator && CEO");
-   Credits.SetText("<>");
-   Credits.SetText("Kilivan, Project Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima, Coders Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Blade, Writing Leader");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner, World Design Unit Leader");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.3 Coding Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Carlos [FPGA] Lima");
-   Credits.SetText("<>");
-   Credits.SetText("Scotch");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.3 Graphics Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Loïc [Black Lemming] Jean-Fulcrand");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText(">-- 1.3 World Design Unit --<");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Romain [Leo] Wagner");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("-----");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-
-   Credits.SetText("<>");
-   Credits.SetText("<>");
-   Credits.SetText("Thanks to all the Sysops, HGM and GM who shared their");
-   Credits.SetText("<>");
-   Credits.SetText("time to help us hunting the bugs !");
-   Credits.SetText("<>");
-   Credits.SetText("Thanks to all players, thanks for your patience");
-   Credits.SetText("<>");
-   Credits.SetText("suggestions and support ! Thanks to Marc, who made this");
-   Credits.SetText("<>");
-   Credits.SetText("project possible.");
-   Credits.SetText("<>");
-   Credits.SetText("Thanks to all people we forgot and who helped us");
-   Credits.SetText("<>");
-   Credits.SetText("at one time or an other !");
-   Credits.SetText("<>");
-   Credits.SetText("Thanks to Darkfang for giving gold to newbies..");
-   Credits.SetText("<>");
-   Credits.SetText("Thanks Mestoph & Chaotikmind for your help debugging !");
-   Credits.SetText("<>");
-   Credits.Format(600, fMenuLittleFont);
 
   
    

@@ -1,18 +1,3 @@
-//------------------------------------------------------------------------------
-// File: ksuuids.h
-//
-// Desc: Contains the GUIDs for the MediaType type, subtype fields and format
-//       types for DVD/MPEG2 media types.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
-//
-// --- MPEG 2 definitions ---
-//
-
-// 36523B13-8EE5-11d1-8CA3-0060B057664A
 OUR_GUID_ENTRY(MEDIATYPE_MPEG2_PACK,
 0x36523B13, 0x8EE5, 0x11d1, 0x8C, 0xA3, 0x00, 0x60, 0xB0, 0x57, 0x66, 0x4A)
 

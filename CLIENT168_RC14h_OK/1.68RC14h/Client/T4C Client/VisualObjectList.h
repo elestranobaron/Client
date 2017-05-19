@@ -1,7 +1,3 @@
-// VisualObjectList.h: interface for the VisualObjectList class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_VISUALOBJECTLIST_H__003154E2_FA13_11D0_BEAA_444553540000__INCLUDED_)
 #define AFX_VISUALOBJECTLIST_H__003154E2_FA13_11D0_BEAA_444553540000__INCLUDED_
 

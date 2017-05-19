@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       d3d9types.h
- *  Content:    Direct3D capabilities include file
- *
- ***************************************************************************/
-
 #ifndef _d3d9TYPES_H_
 #define _d3d9TYPES_H_
 

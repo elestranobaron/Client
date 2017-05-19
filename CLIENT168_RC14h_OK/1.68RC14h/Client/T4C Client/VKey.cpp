@@ -1,7 +1,3 @@
-// VKey.cpp: implementation of the VKey class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include "VKey.h"
 #include <windows.h>

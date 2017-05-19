@@ -417,7 +417,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\LINK.CUR" />
     <None Include="res\NORMAL01.CUR" />
     <None Include="res\T4CLauncher.rc2" />
     <None Include="T4CLauncher.def" />
@@ -446,26 +445,17 @@
     <ClInclude Include="T4CLauncher.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\BackIntro.bmp" />
     <Image Include="res\BtnFrame2.bmp" />
     <Image Include="res\BtnFrame3.bmp" />
     <Image Include="res\BtnFrame4.bmp" />
     <Image Include="res\CCHSB.bmp" />
-    <Image Include="res\CreditDialsoft.bmp" />
-    <Image Include="res\CreditIntro.bmp" />
-    <Image Include="res\CreditV2.bmp" />
-    <Image Include="res\CreditVircom.bmp" />
     <Image Include="res\IpContour.bmp" />
-    <Image Include="res\logo.bmp" />
     <Image Include="res\MainDlg.bmp" />
     <Image Include="res\ServerDlg.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\DirectX8Lib\Lib\quartz.lib" />
     <Library Include="..\DirectX8Lib\Lib\strmiids.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,23 +1,3 @@
-/*++
-
-Copyright (c) 1997-1999  Microsoft Corporation
-
-Module Name:
-
-    basetsd.h
-
-Abstract:
-
-    Type definitions for the basic sized types.
-
-Author:
-
-    Jeff Havens (jhavens)   23-Oct-1997
-
-Revision History:
-
---*/
-
 #ifndef _BASETSD_H_
 #define _BASETSD_H_
 

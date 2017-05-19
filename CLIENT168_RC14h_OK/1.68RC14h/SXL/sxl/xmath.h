@@ -1,4 +1,3 @@
-/* xmath.h internal header for Microsoft C */
 #ifndef _XMATH
 #define _XMATH
 #include <errno.h>

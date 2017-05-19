@@ -29,7 +29,6 @@
 #include "Global.h"
 #include "App.h"
 #include "Packet.h"
-#include "MemoryManager.h"
 #include "ProcStat.h"
 #include "FileLogger.h"
 #include "GameIcons.h"
@@ -2264,7 +2263,7 @@ void VisualObjectList::LoadObject(int x)
             Object3DSound[119][3] = 39;
             break;
 
-		// New added by Dialsoft - BEGIN
+
 		case 120:
             VObject3D[120] = new Sprite3D;
             VObject3D[120]->LoadSprite3D2(12, 9, 0, 0, 11, "DG", 0, 0, 0); 
@@ -2590,8 +2589,8 @@ void VisualObjectList::LoadObject(int x)
             VObject3D[151] = new Sprite3D;
             VObject3D[151]->LoadSprite3D(13, 9, 0, 0, 0, "fgamemaster", 0, 0, 0); 
 			break;
-		//New added by Dialsoft - END
-         // BEGIN DIALSOFT SPELLS NEW
+
+
       case 152:
          VObject3D[152] = new Sprite3D;
          VObject3D[152]->LoadSprite3D(6, "64kSpellFireBall", 2);
@@ -2778,7 +2777,7 @@ void VisualObjectList::LoadObject(int x)
          SoundFX[116].Create("Spark", TS_MEMORY);
          Object3DSound[182][0] = 116;
          break;
-         // END DIALSOFT SPELLS NEW
+
       case 183:  
             VObject3D[183] = new Sprite3D;
             VObject3D[183]->LoadSprite3D(10, 10, 0, 0, 11, "Yeti", 0, 0, 0); 
@@ -3697,7 +3696,7 @@ void VisualObjectList::Create(void)
     DefaultMouseCursor[__OBJGROUP_SKAVEN_CORPSE_I4]          = USE;
     DefaultMouseCursor[__OBJGROUP_RIBCAGE]		   			= TALK;
     DefaultMouseCursor[__OBJGROUP_HEART]                = GET;
-	//New added by Dialsoft - BEGIN
+
 	DefaultMouseCursor[__OBJGROUP_BRACELET_RUBIS]			= GET;
 	DefaultMouseCursor[__OBJGROUP_BELT_JEWELS_BROWN]		= GET;
 	DefaultMouseCursor[__OBJGROUP_BELT_JEWELS_PURPLE]		= GET;
@@ -4012,7 +4011,7 @@ void VisualObjectList::Create(void)
     DefaultMouseCursor[__OBJLIGHT_POUTRE]     = NONE;
     DefaultMouseCursor[__OBJLIGHT_CHANDELLE2] = NONE;
 
-	 // New added by Dialsoft - END
+
     GetVSFObject(  1)->CreateSprite("ShortSword");
     GetVSFObject(  2)->CreateSprite("NormalSword");
     GetVSFObject(  3)->CreateSprite("Flail");
@@ -4576,7 +4575,7 @@ void VisualObjectList::Create(void)
     VObject[__OBJGROUP_SKAVEN_CORPSE_I4].CreateSprite("64kSkavenWarriorC-s");
     VObject[__OBJGROUP_RIBCAGE].CreateSprite("Object_Ribcage");
     VObject[__OBJGROUP_HEART].CreateSprite("Object_Ground_Heart");
-    // New added by Dialsoft - BEGIN
+
     VObject[__OBJGROUP_BRACELET_RUBIS].CreateSprite("Bracelet");
     VObject[__OBJGROUP_BELT_JEWELS_BROWN].CreateSprite("GroundBeltBrownJewels");
     VObject[__OBJGROUP_BELT_JEWELS_PURPLE].CreateSprite("GroundBeltVioletJewels");
@@ -4968,7 +4967,7 @@ void VisualObjectList::Create(void)
 
     //Static sprites summonable added (like cauldron, adding some trees and tables..)
     VObject[__OBJGROUP_TREE1].CreateSprite("Oaktree2");//BLBLBL test Oaktree2=>MissingSprite (BarBar funny)
-    // New added by Dialsoft - END
+
 
     KEEPALIVE_NM;
     
@@ -5347,7 +5346,7 @@ void VisualObjectList::Create(void)
     ItemIcons.BindSprite( IGEM, __OBJGROUP_SMALL_PURPLE_GEM );
     ItemIcons.BindSprite( IGEM, __OBJGROUP_SMALL_RED_GEM );
 
-	// New added by Dialsoft - BEGIN
+
 	ItemIcons.BindSprite( IRING, __OBJGROUP_BRACELET_RUBIS );
 	ItemIcons.BindSprite( IRING, __OBJGROUP_BRACELET_AZURE );
 	ItemIcons.BindSprite( IRING, __OBJGROUP_BRACELET_SQUARE_WHITE );
@@ -5626,7 +5625,7 @@ void VisualObjectList::Create(void)
     KEEPALIVE_NM;
     
 
-	// New added by Dialsoft - END
+
     
     
     //ItemIcons.BindSprite( __OBJGROUP_PORTAL );
@@ -6016,7 +6015,7 @@ void VisualObjectList::Create(void)
     BIND_INV( __OBJGROUP_SMALL_PURPLE_GEM, "64kInvSmallGemPurple" );
     BIND_INV( __OBJGROUP_SMALL_RED_GEM, "64kInvSmallGemRed" );
     BIND_INV( __OBJGROUP_HEART, "Object_Inventory_Heart");
-	//New added by Dialsoft - BEGIN
+
 	BIND_INV( __OBJGROUP_BRACELET_RUBIS, "InvBraceletRubis");
 	BIND_INV( __OBJGROUP_BELT_JEWELS_BROWN, "InvBeltBrownJewels");
 	BIND_INV( __OBJGROUP_BELT_JEWELS_PURPLE, "InvBeltVioletJewels");
@@ -6305,7 +6304,7 @@ void VisualObjectList::Create(void)
     KEEPALIVE_NM;
     
 
-	//New added by Dialsoft - END
+
     
     SkillIcons.BindSprite( "64kIconStunBlow", 1 );
     SkillIcons.BindSprite( "64kIconPowerBlow", 2 );
@@ -6723,7 +6722,7 @@ void VisualObjectList::Create(void)
     ItemDragSounds.BindSound( SDEF, __OBJGROUP_RED_GEM );
     ItemDragSounds.BindSound( SDEF, __OBJGROUP_SMALL_PURPLE_GEM );
     ItemDragSounds.BindSound( SDEF, __OBJGROUP_SMALL_RED_GEM );
-	//New added by Dialsoft - BEGIN
+
 	ItemDragSounds.BindSound( SDEF, __OBJGROUP_BRACELET_RUBIS );    
 	ItemDragSounds.BindSound( SDEF, __OBJGROUP_BELT_JEWELS_BROWN );    
 	ItemDragSounds.BindSound( SDEF, __OBJGROUP_BELT_JEWELS_PURPLE );    
@@ -7002,7 +7001,7 @@ void VisualObjectList::Create(void)
     KEEPALIVE_NM;
 
 
-	//New added by Dialsoft - END
+
     
     SoundFX[0].Create("Open Wooden Door", TS_MEMORY);
     SoundFX[1].Create("Close Wooden Door", TS_MEMORY);
@@ -8039,18 +8038,18 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
             break;
             
             
-        //Dialsoft added
+
 		case __OBJGROUP_FIREFLAIL:
-		//Dialsoft end
+
 		case __OBJGROUP_FLAIL:
             Object->Up = 2;
             Object->Left	= 1;
             Object->Right = 0;
             break;
             
-        //Dialsoft added
+
 		case __OBJGROUP_SPIKEDLEATHER:
-		//dialsoft end
+
 		case __OBJGROUP_LEATHER_ARMOR:
             Object->Up = 2;
             Object->Left	= 1;
@@ -8568,9 +8567,9 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
             Object->Right = 0;
             break;
             
-		//Dialsoft new helm
+
 		case __OBJGROUP_REDFEATHER: 
-		//Dialsoft END
+
 		//Tiamat Changes Start
 		case __OBJGROUP_PLATE_HELM_GOLD:
 		case __OBJGROUP_PLATE_HELM_SILVER:
@@ -9333,7 +9332,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_SEMIBIGEXPLOSION_WITH_RED_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_RED_BALL:
         case __SPELL_FIRECIRCLE_WITH_RED_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_RED_BALL:
         case __SPELL_METEOR_WHITE_WITH_RED_BALL:
         case __SPELL_METEOR_PURPLE_WITH_RED_BALL:
@@ -9353,7 +9352,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_RED_BALL:
         case __SPELL_GREATBOLT_RED_WITH_RED_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_RED_BALL:
-        // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 88;
             SetMonsterStats(Type, Object);
@@ -9372,7 +9371,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_HEALSERIOUS_WITH_BLUE_BALL:
         case __SPELL_ICECLOUD_WITH_BLUE_BALL:
         case __SPELL_POISONCLOUD_WITH_BLUE_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_BLUE_BALL:
         case __SPELL_METEOR_BLACK_WITH_BLUE_BALL:
         case __SPELL_METEOR_WHITE_WITH_BLUE_BALL:
@@ -9393,7 +9392,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_BLUE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_BLUE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_BLUE_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 89;
             SetMonsterStats(Type, Object);
@@ -9409,7 +9408,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GATEWAY_1_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_WITH_YELLOW_BALL:
         case __SPELL_ICECLOUD_WITH_YELLOW_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_YELLOW_BALL:
         case __SPELL_METEOR_BLACK_WITH_YELLOW_BALL:
         case __SPELL_METEOR_WHITE_WITH_YELLOW_BALL:
@@ -9430,7 +9429,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_RED_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_YELLOW_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 90;
             SetMonsterStats(Type, Object);
@@ -9447,7 +9446,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_PENTACLE_WITH_GREEN_BALL:
         case __SPELL_POISONCLOUD_WITH_GREEN_BALL:
         case __SPELL_ROCKFLY_WITH_GREEN_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_GREEN_BALL:
         case __SPELL_METEOR_BLACK_WITH_GREEN_BALL:
         case __SPELL_METEOR_WHITE_WITH_GREEN_BALL:
@@ -9468,7 +9467,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_GREEN_BALL:
         case __SPELL_GREATBOLT_RED_WITH_GREEN_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_GREEN_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 91;
             SetMonsterStats(Type, Object);
@@ -9485,7 +9484,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_HEALING_WITH_WHITE_BALL:
         case __SPELL_HEALSERIOUS_WITH_WHITE_BALL:
         case __SPELL_ICECLOUD_WITH_WHITE_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_WHITE_BALL:
         case __SPELL_METEOR_BLACK_WITH_WHITE_BALL:
         case __SPELL_METEOR_WHITE_WITH_WHITE_BALL:
@@ -9506,7 +9505,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_WHITE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_WHITE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_WHITE_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 92;
             SetMonsterStats(Type, Object);
@@ -9524,7 +9523,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_SEMIBIGEXPLOSION_WITH_BLACK_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_BLACK_BALL:
         case __SPELL_FIRECIRCLE_WITH_BLACK_BALL:
-        // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_BLACK_BALL:
         case __SPELL_METEOR_WHITE_WITH_BLACK_BALL:
         case __SPELL_METEOR_PURPLE_WITH_BLACK_BALL:
@@ -9544,7 +9543,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_BLACK_BALL:
         case __SPELL_GREATBOLT_RED_WITH_BLACK_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_BLACK_BALL:
-           // END DIALSOFT NEW SPELLS
+
             Object->Type3D = 93;
             SetMonsterStats(Type, Object);
             Object->onAttack[0].Play(FALSE);
@@ -9565,7 +9564,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_SEMIBIGEXPLOSION_WITH_PURPLE_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_PURPLE_BALL:
         case __SPELL_FIRECIRCLE_WITH_PURPLE_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_PURPLE_BALL:
         case __SPELL_METEOR_WHITE_WITH_PURPLE_BALL:
         case __SPELL_METEOR_PURPLE_WITH_PURPLE_BALL:
@@ -9585,7 +9584,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
         case __SPELL_GREATBOLT_CANDY_WITH_PURPLE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_PURPLE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_PURPLE_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->Type3D = 94;
             SetMonsterStats(Type, Object);
@@ -9604,7 +9603,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
             Object->onAttack[0].Play(FALSE);
             break;
         
-		// New added by Dialsoft - BEGIN
+
 		case __SPELL_MEDIUM_HEALING:
             Object->Type3D = 121;
             SetMonsterStats(Type, Object);
@@ -9621,7 +9620,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
             Object->onAttack[0].Play(FALSE);
             break;
             
-      // BEGIN DIALSOFT NEW SPELLS
+
       // FIREBALLS
       case __SPELL_NEWFIREBALL_BLACK:
          Object->Type3D = 152;
@@ -9859,10 +9858,10 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
 
          
          
-         // END DIALSOFT NEW SPELLS
 
 
-		// New added by Dialsoft - END
+
+
       //++NMNMNM [NEW TEST SPELL Link]
       /*
       case __SPELL_A_BOULDER_FIRE:
@@ -10321,7 +10320,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
             Object->Type3D = 116;
             SetMonsterStats(Type, Object);
             break;  
-//Dialsoft new code - BEGIN
+
 		case __MONSTER_DARKGOBLIN: case __MONSTER_DARKGOBLIN_CORPSE:
             Object->Type3D = 120;
             SetMonsterStats(Type, Object);
@@ -10604,7 +10603,7 @@ void VisualObjectList::Add(unsigned long ID, unsigned short Type, unsigned short
 
      
 
-		//Dialsoft new code - END
+
       /*
       //++NMNMNM [NEW TROWING Weopen Link]
       case __SPELL_TROWING_STAR1:
@@ -12088,7 +12087,7 @@ void VisualObjectList::DrawObjectSelect(int XCor, int YCor, bool Draw, LPDIRECTD
                         case __MONSTER_SKELETON:
                         case __MONSTER_SANTA_CLAUS:
                         
-                           //Dialsoft new code - BEGIN
+
                         case __MONSTER_DARKGOBLIN:
                         case __MONSTER_DARKGOBLIN_ICE:
                         case __MONSTER_BURNTREE:
@@ -12130,7 +12129,7 @@ void VisualObjectList::DrawObjectSelect(int XCor, int YCor, bool Draw, LPDIRECTD
                         case __MONSTER_BLOB_G:
                         case __MONSTER_DEMONSKULL:
                         case __MONSTER_TWIGLEE:
-                        //Dialsoft new code -END
+
                         {
                            if(boOutline)
                            {
@@ -12298,7 +12297,7 @@ void VisualObjectList::DrawObjectSelect(int XCor, int YCor, bool Draw, LPDIRECTD
                            case __MONSTER_DEMON:
                            case __MONSTER_MINOTAUR:
                            case __MONSTER_RAT:
-                              //Dialsoft new code - BEGIN
+
                            case __MONSTER_DARKGOBLIN:
                            case __MONSTER_DARKGOBLIN_ICE:
                            case __MONSTER_BURNTREE:
@@ -12688,7 +12687,7 @@ void VisualObjectList::DrawObjectShadow(int XCor, int YCor, bool Draw, LPDIRECTD
                         case __MONSTER_SKELETON:
                         case __MONSTER_SANTA_CLAUS:
                         
-                           //Dialsoft new code - BEGIN
+
                         case __MONSTER_DARKGOBLIN:
                         case __MONSTER_DARKGOBLIN_ICE:
                         case __MONSTER_BURNTREE:
@@ -12739,7 +12738,7 @@ void VisualObjectList::DrawObjectShadow(int XCor, int YCor, bool Draw, LPDIRECTD
                         case __MONSTER_BLOB_G:
                         case __MONSTER_DEMONSKULL:
                         case __MONSTER_TWIGLEE:
-                        //Dialsoft new code -END
+
                         {
                            VsfFX->lpClipRect = Clip;
                            VsfFX->lpDirectDrawSurface = lpBlitSurface;
@@ -12855,7 +12854,7 @@ void VisualObjectList::DrawObjectShadow(int XCor, int YCor, bool Draw, LPDIRECTD
                            case __MONSTER_DEMON:
                            case __MONSTER_MINOTAUR:
                            case __MONSTER_RAT:
-                              //Dialsoft new code - BEGIN
+
                            case __MONSTER_DARKGOBLIN:
                            case __MONSTER_DARKGOBLIN_ICE:
                            case __MONSTER_BURNTREE:
@@ -13463,7 +13462,6 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                      case __MONSTER_SKELETON:
                      case __MONSTER_SANTA_CLAUS:
                         
-                        //Dialsoft new code - BEGIN
                      case __MONSTER_DARKGOBLIN:
                      case __MONSTER_DARKGOBLIN_ICE:
                      case __MONSTER_BURNTREE:
@@ -13515,7 +13513,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                      case __MONSTER_DEMONSKULL:
                      case __MONSTER_TWIGLEE:
                         
-                        //Dialsoft new code -END
+
                         {
                            if(!Object3DLoad[Object->Type3D]) {
                               LoadObject(Object->Type3D);
@@ -14628,7 +14626,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                                  }
                               }
                            } break;
-                           // BEGIN DIALSOFT NEW SPELLS
+
                         case __SPELL_METEOR_BLACK:
                         case __SPELL_METEOR_WHITE:
                         case __SPELL_METEOR_PURPLE:
@@ -14640,7 +14638,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_METEOR_DARK:
                         case __SPELL_METEOR_BLUE:
                         case __SPELL_METEOR_VIOLET:
-                           // END DIALSOFT NEW SPELLS
+
                         case __SPELL_METEORS:
                            {
                               int XXX = 0, YYY = 0;
@@ -14698,7 +14696,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_FLAK:
                         case __SPELL_GREATBOLT:
                         case __SPELL_FIRECIRCLE:
-                           // BEGIN DIALSOFT NEW SPELLS
+
                         case __SPELL_GREATBOLT_AZURE:
                         case __SPELL_GREATBOLT_CRIMSON:
                         case __SPELL_GREATBOLT_LIME:
@@ -14707,9 +14705,9 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_GREATBOLT_CANDY:
                         case __SPELL_GREATBOLT_RED:
                         case __SPELL_GREATBOLT_BLACK:
-                           // END DIALSOFT NEW SPELLS
 
-                           //Dialsoft added code
+
+
                         case __SPELL_MEDIUM_HEALING:
                         case __SPELL_ICE_TREE:
                         case __SPELL_SUPRAHEAL:
@@ -14720,7 +14718,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_NEW_POISON1:
                         case __SPELL_NEW_SUPRAHEAL://BLBL tentative d'ajouter 2 nouveau sorts des DDA
                         case __SPELL_NEW_BOULDERS://BLBL tentative d'ajouter 2 nouveau sorts des DDA
-                           //dialsoft END
+
                            
                               
                         //++NMNMNM [NEW TEST SPELL Draw Sprite]
@@ -14828,7 +14826,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_FIREBALL:
                         case __SPELL_NEWFIREBALL:
                         case __SPELL_NEWFIREBALL2:
-                           // BEGIN DIALSOFT NEW SPELLS
+
                            // FIREBALL
                         case __SPELL_NEWFIREBALL_BLACK:
                         case __SPELL_NEWFIREBALL_WHITE:
@@ -14836,11 +14834,11 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_NEWFIREBALL_MAGENTA:
                         case __SPELL_NEWFIREBALL_YELLOW:
                         case __SPELL_NEWFIREBALL_PURPLE:
-                           // END DIALSOFT NEW SPELLS
+
 
                            // Drake3
                         case __SPELL_FIREBOLT:
-                           // BEGIN DIALSOFT NEW SPELLS
+
                            // FIREBOLT
                         case __SPELL_FIREBOLT_BLACK:
                         case __SPELL_FIREBOLT_WHITE:
@@ -14848,7 +14846,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_FIREBOLT_GREEN:
                         case __SPELL_FIREBOLT_BLUE:
                         case __SPELL_FIREBOLT_PURPLE:
-                           // END DIALSOFT NEW SPELLS
+
                            
 
                         //++NMNMNM [NEW TROWING Weopen Draw Sprite]
@@ -14946,7 +14944,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_FIRECIRCLE_WITH_RED_BALL:
                         case __SPELL_FIRECIRCLE_WITH_BLACK_BALL:
                         case __SPELL_FIRECIRCLE_WITH_PURPLE_BALL:
-                           // BEGIN DIALSOFT NEW SPELLS
+
                            // METEORS
                         case __SPELL_METEOR_BLACK_WITH_RED_BALL:
                         case __SPELL_METEOR_WHITE_WITH_RED_BALL:
@@ -15086,7 +15084,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __SPELL_GREATBOLT_CANDY_WITH_PURPLE_BALL:
                         case __SPELL_GREATBOLT_RED_WITH_PURPLE_BALL:
                         case __SPELL_GREATBOLT_BLACK_WITH_PURPLE_BALL:
-                           // END DIALSOFT NEW SPELLS
+
 
                            
                            if (MultiPass == 1) {
@@ -15203,7 +15201,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __MONSTER_DEMON:
                         case __MONSTER_MINOTAUR:
                         case __MONSTER_RAT:
-                           //Dialsoft new code - BEGIN
+
                         case __MONSTER_DARKGOBLIN:
                         case __MONSTER_DARKGOBLIN_ICE:
                         case __MONSTER_BURNTREE:
@@ -15256,7 +15254,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __MONSTER_TWIGLEE:
 
                           
-                           //Dialsoft new code - END
+
                            if (MultiPass == 1) {
                               if(!Object3DLoad[Object->Type3D]) 
                               {
@@ -15392,7 +15390,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __MONSTER_BEHOLDER_CORPSE:
                         case __MONSTER_GREEN_TROLL_CORPSE:
                         case __MONSTER_SKELETON_CORPSE:
-                           //Dialsoft new code - BEGIN
+
                         case __MONSTER_DARKGOBLIN_CORPSE:
                         case __MONSTER_DARKGOBLIN_ICE_CORPSE:
                         case __MONSTER_BURNTREE_CORPSE:
@@ -15443,7 +15441,7 @@ void VisualObjectList::DrawObject(int XCor, int YCor, bool Draw, LPDIRECTDRAWSUR
                         case __MONSTER_BLOB_G_CORPSE:
                         case __MONSTER_DEMONSKULL_CORPSE:
                         case __MONSTER_TWIGLEE_CORPSE:
-                           //Dialsoft new code - END
+
                            if ((MultiPass == 0 && Object->CurrentCorpseFrame == Object->CorpseFaces-1) || (MultiPass == 1 && Object->CurrentCorpseFrame != Object->CorpseFaces-1)) {
                               if(!Object3DLoad[Object->Type3D]) {
                                  LoadObject(Object->Type3D);
@@ -16496,7 +16494,7 @@ void VisualObjectList::SetSet(BOOL kP) {
     case __MONSTER_PIG:              Set = 68; break;
     case __MONSTER_ORI:              Set = 69; break;
     case __MONSTER_SANTA_CLAUS:      Set = 116; break;
-	//Dialsoft new code BEGIN
+
 	case __MONSTER_DARKGOBLIN:		 Set = 120; break;
 	case __MONSTER_BURNTREE:		 Set = 123; break;
 	case __MONSTER_GROUNDMUMMY:		 Set = 124; break;
@@ -16569,7 +16567,7 @@ void VisualObjectList::SetSet(BOOL kP) {
    case __MONSTER_DRAGON_NOIR:            Set = 226;  break;
 
 
-		//Dialsoft new code - END
+
     }
     LoadObject(Set);
     //	if (!kP) {
@@ -16829,7 +16827,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
     case __OBJGROUP_SKELETON_SWORD:
         Object->PuppetInfo[PUP_WEAPON] = PUPEQ_SKELSWORD;
         break;
-//Dialsoft new weapon
+
 	case __OBJGROUP_FIREFLAIL:
         Object->PuppetInfo[PUP_WEAPON] = PUPEQ_FIREFLAIL;
         break;
@@ -17076,7 +17074,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
      
 
       
-//Dialsoft end
+
     }
     
     switch (HELM) {
@@ -17150,7 +17148,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
     case __OBJGROUP_SKELETON_HELM:
         Object->PuppetInfo[PUP_HAT] = PUPEQ_SKEL;
         break;
- //Dialsoft new helmet:
+
     case __OBJGROUP_REDFEATHER:
         Object->PuppetInfo[PUP_HAT] = PUPEQ_REDFEATHER;
         break;
@@ -17207,7 +17205,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
         break;
       
     }
-//Dialsoft end
+
     switch (GLOVES) {
     case __OBJGROUP_PADDED_GLOVE:
         Object->PuppetInfo[PUP_HAND_RIGHT] = PUPEQ_LEATHER;
@@ -17750,7 +17748,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
         Object->PuppetInfo[PUP_ARM_LEFT]  = PUPEQ_SET1;
         Object->PuppetInfo[PUP_ARM_RIGHT] = PUPEQ_SET1;
         break;
-	//Dialsoft added
+
 	case __OBJGROUP_SPIKEDLEATHER: 
         Object->PuppetInfo[PUP_BODY]      = PUPEQ_SPIKEDLEATHER;
         Object->PuppetInfo[PUP_ARM_RIGHT] = PUPEQ_SPIKEDLEATHER;
@@ -17855,7 +17853,7 @@ void Puppetize( TFCObject *Object, WORD BODY, WORD FEET, WORD GLOVES, WORD HELM,
         Object->PuppetInfo[PUP_ARM_RIGHT] = PUPEQ_V2_MAN_ARMOR01BL;
         Object->PuppetInfo[PUP_ARM_LEFT]  = PUPEQ_V2_MAN_ARMOR01BL;
         break;
-	//Dialsoft end
+
     }	
 }
 
@@ -18613,7 +18611,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Right = 0;
             break;
             
-            // BEGIN DIALSOFT SPELLS NEW
+
             // FIREBOLT
         case __SPELL_FIREBOLT_BLACK:
         case __SPELL_FIREBOLT_WHITE:
@@ -18621,7 +18619,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_FIREBOLT_GREEN:
         case __SPELL_FIREBOLT_BLUE:
         case __SPELL_FIREBOLT_PURPLE:
-           // END DIALSOFT SPELLS NEW
+
         case __SPELL_FIREBOLT:
             Object->onAttack[0].CopyWave(&SoundFX[65]);
             Object->Up = 0;
@@ -18726,7 +18724,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Left = 0;
             Object->Right = 0;
             break;
-            // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK:
         case __SPELL_METEOR_WHITE:
         case __SPELL_METEOR_PURPLE:
@@ -18738,7 +18736,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_METEOR_DARK:
         case __SPELL_METEOR_BLUE:
         case __SPELL_METEOR_VIOLET:
-           // END DIALSOFT NEW SPELLS
+
         case __SPELL_METEORS:
             Object->onAttack[0].CopyWave(&SoundFX[82]);
             Object->Up = 0;
@@ -18907,7 +18905,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Right = 0;
             break;
         
-            // BEGIN DIALSOFT NEW SPELLS
+
             // CALL LIGHTNING
         case __SPELL_GREATBOLT_AZURE:
         case __SPELL_GREATBOLT_CRIMSON:
@@ -18917,7 +18915,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY:
         case __SPELL_GREATBOLT_RED:
         case __SPELL_GREATBOLT_BLACK:
-           // END DIALSOFT NEW SPELLS
+
         case __SPELL_GREATBOLT:
             Object->onAttack[0].CopyWave(&SoundFX[116]);
             Object->Up = 0;
@@ -18934,8 +18932,8 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Left = 0;
             Object->Right = 0;
             break;
-            //Dialsoft added code
-            // BEGIN DIALSOFT SPELLS NEW
+
+
             // FIREBALL
         case __SPELL_NEWFIREBALL_BLACK:
         case __SPELL_NEWFIREBALL_WHITE:
@@ -18943,7 +18941,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_NEWFIREBALL_MAGENTA:
         case __SPELL_NEWFIREBALL_YELLOW:
         case __SPELL_NEWFIREBALL_PURPLE:
-           // END DIALSOFT SPELLS NEW
+
         case __SPELL_NEWFIREBALL:
         case __SPELL_NEWFIREBALL2:
             Object->onAttack[0].CopyWave(&SoundFX[117]);
@@ -18952,7 +18950,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Left = 0;
             Object->Right = 0;
             break;
-//Dialsoft added code
+
 		case __SPELL_MEDIUM_HEALING:
 		case __SPELL_ICE_TREE:
 		case __SPELL_SUPRAHEAL:
@@ -18962,7 +18960,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Left = 0;
             Object->Right = 0;
             break;
-//Dialsoft END
+
         case __SPELL_RED_ENERGY_BALL:
         case __SPELL_CURSE_WITH_RED_BALL:
         case __SPELL_FIREWIPE_WITH_RED_BALL:
@@ -18976,7 +18974,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_SEMIBIGEXPLOSION_WITH_RED_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_RED_BALL:
         case __SPELL_FIRECIRCLE_WITH_RED_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_RED_BALL:
         case __SPELL_METEOR_WHITE_WITH_RED_BALL:
         case __SPELL_METEOR_PURPLE_WITH_RED_BALL:
@@ -18996,7 +18994,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_RED_BALL:
         case __SPELL_GREATBOLT_RED_WITH_RED_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_RED_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19017,7 +19015,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_HEALSERIOUS_WITH_BLUE_BALL:
         case __SPELL_ICECLOUD_WITH_BLUE_BALL:
         case __SPELL_POISONCLOUD_WITH_BLUE_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_BLUE_BALL:
         case __SPELL_METEOR_BLACK_WITH_BLUE_BALL:
         case __SPELL_METEOR_WHITE_WITH_BLUE_BALL:
@@ -19038,7 +19036,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_BLUE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_BLUE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_BLUE_BALL:
-           // END DIALSOFT NEW SPELLS
+
            
            Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19056,7 +19054,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GATEWAY_1_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_WITH_YELLOW_BALL:
         case __SPELL_ICECLOUD_WITH_YELLOW_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_YELLOW_BALL:
         case __SPELL_METEOR_BLACK_WITH_YELLOW_BALL:
         case __SPELL_METEOR_WHITE_WITH_YELLOW_BALL:
@@ -19077,7 +19075,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_RED_WITH_YELLOW_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_YELLOW_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19096,7 +19094,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_PENTACLE_WITH_GREEN_BALL:
         case __SPELL_POISONCLOUD_WITH_GREEN_BALL:
         case __SPELL_ROCKFLY_WITH_GREEN_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_GREEN_BALL:
         case __SPELL_METEOR_BLACK_WITH_GREEN_BALL:
         case __SPELL_METEOR_WHITE_WITH_GREEN_BALL:
@@ -19117,7 +19115,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_GREEN_BALL:
         case __SPELL_GREATBOLT_RED_WITH_GREEN_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_GREEN_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19136,7 +19134,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_HEALING_WITH_WHITE_BALL:
         case __SPELL_HEALSERIOUS_WITH_WHITE_BALL:
         case __SPELL_ICECLOUD_WITH_WHITE_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_WITH_WHITE_BALL:
         case __SPELL_METEOR_BLACK_WITH_WHITE_BALL:
         case __SPELL_METEOR_WHITE_WITH_WHITE_BALL:
@@ -19157,7 +19155,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_WHITE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_WHITE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_WHITE_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19177,7 +19175,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_SEMIBIGEXPLOSION_WITH_BLACK_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_BLACK_BALL:
         case __SPELL_FIRECIRCLE_WITH_BLACK_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_BLACK_BALL:
         case __SPELL_METEOR_WHITE_WITH_BLACK_BALL:
         case __SPELL_METEOR_PURPLE_WITH_BLACK_BALL:
@@ -19197,7 +19195,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_BLACK_BALL:
         case __SPELL_GREATBOLT_RED_WITH_BLACK_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_BLACK_BALL:
-           // END DIALSOFT NEW SPELLS
+
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19221,7 +19219,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_SEMIBIGEXPLOSION_WITH_PURPLE_BALL:
         case __SPELL_SMALLEXPLOSION_WITH_PURPLE_BALL:
         case __SPELL_FIRECIRCLE_WITH_PURPLE_BALL:
-           // BEGIN DIALSOFT NEW SPELLS
+
         case __SPELL_METEOR_BLACK_WITH_PURPLE_BALL:
         case __SPELL_METEOR_WHITE_WITH_PURPLE_BALL:
         case __SPELL_METEOR_PURPLE_WITH_PURPLE_BALL:
@@ -19241,7 +19239,6 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
         case __SPELL_GREATBOLT_CANDY_WITH_PURPLE_BALL:
         case __SPELL_GREATBOLT_RED_WITH_PURPLE_BALL:
         case __SPELL_GREATBOLT_BLACK_WITH_PURPLE_BALL:
-           // END DIALSOFT NEW SPELLS
 
             Object->onAttack[0].CopyWave(&SoundFX[112]);
             Object->Up = 0;
@@ -19570,7 +19567,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             break;
             
         case __MONSTER_WOLF:
-        case __MONSTER_WHITECAT://dialsoft white cat
+        case __MONSTER_WHITECAT:
             Object->onAttack[0].CopyWave(&SoundFX[9]);
             Object->onAttack[1].CopyWave(&SoundFX[9]);
             Object->onAttack[2].CopyWave(&SoundFX[9]);
@@ -20641,7 +20638,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Left = 3;
             Object->Right = 2;
             break;
-		//Dialsoft new code BEGIN
+
 		case __MONSTER_DARKGOBLIN:
             Object->onAttack[0].CopyWave(&SoundFX[11]);
             Object->onAttack[1].CopyWave(&SoundFX[11]);
@@ -20880,7 +20877,7 @@ void VisualObjectList::SetMonsterStats(int Type, TFCObject *Object) {
             Object->Right = 1;
             Object->TextCorrection = -96;
             break;
-		//Dialsoft new code END            
+         
       };
    }
    Object->MaxWidth = VObject3D[Object->Type3D]->MaxWidth+32;

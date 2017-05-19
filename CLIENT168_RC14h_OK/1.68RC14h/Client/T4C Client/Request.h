@@ -1,7 +1,3 @@
-// Request.h: interface for the Request class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_REQUEST_H__9F2C9BB6_CBA7_40AF_80A4_09A1CE1CE220__INCLUDED_)
 #define AFX_REQUEST_H__9F2C9BB6_CBA7_40AF_80A4_09A1CE1CE220__INCLUDED_
 

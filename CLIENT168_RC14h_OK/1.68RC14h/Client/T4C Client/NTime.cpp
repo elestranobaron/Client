@@ -1,7 +1,3 @@
-// NTime.cpp: implementation of the NTime class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include <windows.h>
 #include <stdio.h>
@@ -15,7 +11,6 @@
 #include "Fading.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "Lightmap.h"
 
 

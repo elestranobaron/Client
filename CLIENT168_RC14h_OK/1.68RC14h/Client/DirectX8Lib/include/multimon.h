@@ -1,19 +1,3 @@
-//=============================================================================
-//
-// multimon.h -- Stub module that fakes multiple monitor apis on Win32 OSes
-//               without them.
-//
-// By using this header your code will get back default values from
-// GetSystemMetrics() for new metrics, and the new multimonitor APIs
-// will act like only one display is present on a Win32 OS without
-// multimonitor APIs.
-//
-// Exactly one source must include this with COMPILE_MULTIMON_STUBS defined.
-//
-// Copyright (c) 1985-1998, Microsoft Corporation
-//
-//=============================================================================
-
 #ifdef __cplusplus
 extern "C" {            // Assume C declarations for C++
 #endif // __cplusplus

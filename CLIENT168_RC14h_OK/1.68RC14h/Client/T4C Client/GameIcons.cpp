@@ -1,7 +1,3 @@
-// GameIcons.cpp: implementation of the GameIcons class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #pragma warning(disable:4786)
 #include "pch.h"
 #include "GameIcons.h"

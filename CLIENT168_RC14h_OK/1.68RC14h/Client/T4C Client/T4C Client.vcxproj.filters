@@ -413,11 +413,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="NewInterface\Todo.txt">
-      <Filter>Source Files\New Interface</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="App.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -545,9 +540,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MemMapFile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MemoryManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Mouse.h">

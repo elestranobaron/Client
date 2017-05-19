@@ -1,23 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Sprite.cpp
-//      Project:   TFC Client
-//      Creation:  29 June, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         06-29-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide fonction to load a Sprite from a Image or an ID
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***      
-
 #include "pch.h"
 #include <windows.h>
 #pragma warning( disable: 4786 )
@@ -28,7 +8,6 @@
 #include "MacroHandler.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "V2PalManager.h"
 #include "MemMapFile.h"
 #include "SaveGame.h"

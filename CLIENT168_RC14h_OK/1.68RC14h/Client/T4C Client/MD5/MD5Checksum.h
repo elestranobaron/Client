@@ -1,7 +1,3 @@
-// MD5Checksum.h: interface for the MD5Checksum class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_MD5CHECKSUM_H__2BC7928E_4C15_11D3_B2EE_A4A60E20D2C3__INCLUDED_)
 #define AFX_MD5CHECKSUM_H__2BC7928E_4C15_11D3_B2EE_A4A60E20D2C3__INCLUDED_
 

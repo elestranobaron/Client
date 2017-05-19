@@ -1,4 +1,3 @@
-// wcout -- initialize standard wide output stream
 #include <fstream>
 #include <iostream>
 

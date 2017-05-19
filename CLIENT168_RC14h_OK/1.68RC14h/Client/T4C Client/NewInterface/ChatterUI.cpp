@@ -1,5 +1,3 @@
-// ChatterUI.cpp
-//
 #pragma warning( disable : 4291 )
 
 #include "../pch.h"
@@ -7,7 +5,6 @@
 #include "ChatterUI.h"
 #include "RootBoxUI.h"
 #include <process.h>
-#include "../MemoryManager.h"
 #include "../SysMsg.h"
 #include "../App.h"
 #include "../Global.h"

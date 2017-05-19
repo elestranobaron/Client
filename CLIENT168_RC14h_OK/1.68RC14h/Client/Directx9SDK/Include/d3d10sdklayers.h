@@ -1,19 +1,3 @@
-
-
-/* this ALWAYS GENERATED file contains the definitions for the interfaces */
-
-
- /* File created by MIDL compiler version 7.00.0555 */
-/* Compiler settings for d3d10sdklayers.idl:
-    Oicf, W1, Zp8, env=Win64 (32b run), target_arch=AMD64 7.00.0555 
-    protocol : all , ms_ext, c_ext, robust
-    error checks: allocation ref bounds_check enum stub_data 
-    VC __declspec() decoration level: 
-         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
-         DECLSPEC_UUID(), MIDL_INTERFACE()
-*/
-/* @@MIDL_FILE_HEADING(  ) */
-
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
 
 

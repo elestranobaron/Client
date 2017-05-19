@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AMVA.h
-//
-// Desc: DirectShowMotionComp include file.
-//
-// Copyright (c) 1997 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __AMVA_INCLUDED__
 #define __AMVA_INCLUDED__
 

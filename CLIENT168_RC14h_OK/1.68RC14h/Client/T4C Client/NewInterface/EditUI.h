@@ -1,6 +1,3 @@
-// EditUI.h
-//
-
 #if !defined(EditUI_h)
 #define EditUI_h
 

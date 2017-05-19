@@ -1,4 +1,3 @@
-// instances -- force DLL instances for Microsoft
 #define __FORCE_INSTANCE
 
 #include <complex>

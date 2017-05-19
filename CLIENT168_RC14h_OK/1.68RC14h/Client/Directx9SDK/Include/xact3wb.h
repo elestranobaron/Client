@@ -1,12 +1,3 @@
-/***************************************************************************
- *
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *
- *  File:       xact3wb.h
- *  Content:    XACT 3 wave bank definitions.
- *
- ****************************************************************************/
-
 #ifndef __XACT3WB_H__
 #define __XACT3WB_H__
 

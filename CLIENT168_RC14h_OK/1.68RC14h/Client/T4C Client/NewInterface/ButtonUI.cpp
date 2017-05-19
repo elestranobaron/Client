@@ -1,10 +1,6 @@
-// ButtonUI.cpp
-//
-
 #include "../pch.h"
 
 #include "ButtonUI.h"
-#include "../MemoryManager.h"
 
 namespace{
 

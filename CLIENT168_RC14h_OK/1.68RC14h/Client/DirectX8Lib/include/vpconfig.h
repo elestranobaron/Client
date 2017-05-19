@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: VPConfig.h
-//
-// Desc: An interface exposed by the decoder to help it and the filter
-//       configuring the videoport to communicate.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __IVPConfig__
 #define __IVPConfig__
 

@@ -1,7 +1,3 @@
-// TextPageUI.h: interface for the TextPageUI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_TEXTPAGEUI_H__E665B792_96BD_11D3_85B7_00E02922FA40__INCLUDED_)
 #define AFX_TEXTPAGEUI_H__E665B792_96BD_11D3_85B7_00E02922FA40__INCLUDED_
 

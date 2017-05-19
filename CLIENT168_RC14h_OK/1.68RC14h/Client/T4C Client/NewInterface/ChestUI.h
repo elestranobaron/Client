@@ -1,27 +1,3 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: ChestUI.h
-//      Project:   TFC Client
-//      Plateform: Win32
-//      Creation:  11/04/2004
-//      Author:    Scotch
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Change History
-//
-//         Date            Ver.      Author         Purpose
-//         11/04/2004      1.0       Scotch         Initial developpement
-//
-//      Description
-//          In Game Chest Interface header file.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***           Copyright (c) 2004 Dialsoft           . All rights reserved.              ***
-
-// Includes
-
 #if !defined(ChestUI_h)
 #define ChestUI_h
 

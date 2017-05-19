@@ -77,9 +77,6 @@
     <None Include="T4CLauncher.def">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="res\LINK.CUR">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\NORMAL01.CUR">
       <Filter>Resource Files</Filter>
     </None>
@@ -149,9 +146,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\BackIntro.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="res\BtnFrame2.bmp">
       <Filter>Resource Files</Filter>
     </Image>
@@ -164,22 +158,7 @@
     <Image Include="res\CCHSB.bmp">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="res\CreditDialsoft.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="res\CreditIntro.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="res\CreditV2.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="res\CreditVircom.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="res\IpContour.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="res\logo.bmp">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="res\MainDlg.bmp">
@@ -196,8 +175,5 @@
     <Library Include="..\DirectX8Lib\Lib\quartz.lib">
       <Filter>Lib Files</Filter>
     </Library>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,3 @@
-// SideMenu.h: interface for the SideMenu class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_SIDEMENU_H__9BEF6891_871C_11D3_85A5_00E02922FA40__INCLUDED_)
 #define AFX_SIDEMENU_H__9BEF6891_871C_11D3_85A5_00E02922FA40__INCLUDED_
 

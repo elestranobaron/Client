@@ -1,4 +1,3 @@
-// strstreambuf -- strstreambuf basic members
 #include <climits>
 #include <cstdlib>
 #include <cstring>

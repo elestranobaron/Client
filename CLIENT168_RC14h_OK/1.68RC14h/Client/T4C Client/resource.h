@@ -1,7 +1,3 @@
-//{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
-// Used by Resources.rc
-//
 #define ApplicationName                 1
 #define IDI_APP_ICON                    106
 #define IDB_BITMAP1                     114

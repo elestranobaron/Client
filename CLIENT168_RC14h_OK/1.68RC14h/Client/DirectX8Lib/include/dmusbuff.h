@@ -1,12 +1,3 @@
-/***************************************************************************
-*                                                                          *
-*   DMusBuff.h -- This module defines the buffer format for DirectMusic    *
-*                 Shared file between user mode and kernel mode components *
-*                                                                          *
-*   Copyright (c) 1998, Microsoft Corp. All rights reserved.               *
-*                                                                          *
-***************************************************************************/
-
 #ifndef _DMusBuff_
 #define _DMusBuff_
 

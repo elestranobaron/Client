@@ -1,12 +1,3 @@
-//*********************************************************************
-//*                  Microsoft Windows                               **
-//*            Copyright(c) Microsoft Corp., 1995-1997               **
-//*********************************************************************
-//
-//	DDRAWEX.H 
-//
-//	Header file for DirectDrawEx functionality
-
 #ifndef __DDRAWEXH__
 #define __DDRAWEXH__
 

@@ -1,6 +1,3 @@
-// RTMap.cpp: implementation of the RTMap class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 
 #include "RTMap.h"

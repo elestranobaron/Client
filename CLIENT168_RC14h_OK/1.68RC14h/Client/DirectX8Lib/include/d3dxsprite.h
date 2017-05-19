@@ -1,27 +1,3 @@
-///////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (C) 1999 Microsoft Corporation.  All Rights Reserved.
-//
-//  File:       d3dxsprite.h
-//  Content:    D3DX sprite helper functions
-//
-//      These functions allow you to use sprites with D3DX. A "sprite" is
-//      loosely defined as a 2D image that you want to transfer to the 
-//      rendering target. The source image can be a texture created
-//      with the help of the D3DX texture loader; though advanced users may
-//      want to create their own. A helper function (PrepareDeviceForSprite)
-//      is provided to make it easy to set up render states on a device. 
-//      (Again, advanced users can use their own created devices.) 
-//
-//      There are two general techniques for sprites; the simpler one just
-//      specifies a destination rectangle and a rotation anlge. A more 
-//      powerful technique supports rendering to non-rectangular quads.
-//
-//      Both techniques support clipping, alpha, and rotation. More
-//      details are below.
-//
-///////////////////////////////////////////////////////////////////////////
-
 #ifndef __D3DXSPRITE_H__
 #define __D3DXSPRITE_H__
 

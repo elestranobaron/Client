@@ -6,7 +6,6 @@
 #include "IDirectXDraw.h"
 #include "FormatText.h"
 #include "Packet.h"
-#include "MemoryManager.h"
 #include "Global.h"
 #include "SaveGame.h"
 extern CSaveGame g_SaveGame;

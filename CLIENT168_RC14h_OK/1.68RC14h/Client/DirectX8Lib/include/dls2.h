@@ -1,16 +1,3 @@
-/*
- 
- 	dls2.h
- 	
- 	Description:
- 
- 	Interface defines and structures for the DLS2 extensions of DLS.
- 
- 
-     Written by Microsoft 1998.  Released for public use.
- 
-*/
- 
 #ifndef _INC_DLS2
 #define _INC_DLS2
  

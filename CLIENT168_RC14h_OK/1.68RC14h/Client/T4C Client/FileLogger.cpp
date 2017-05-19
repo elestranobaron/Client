@@ -1,18 +1,7 @@
-// ********************************************************************************************
-// ***                                                                                      ***
-//      File Name: FileLogger.cpp
-//      Project:   Vircom Lib
-//      Creation:  10 July 1999
-//      Author:    Thomas (TH)
-// ***                                                                                      ***
-// ********************************************************************************************
-// *** Copyright (c) 1998-1999 Vircom. All rights reserved.                                 ***
-
 #pragma warning ( disable : 4786 )
 #include "pch.h"
 #include <windows.h>
 #include "FileLogger.h"
-#include "MemoryManager.h"
  
 
 #define DEFAULT_LOG_NAME    "LogUndefined.Log"

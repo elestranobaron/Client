@@ -1,17 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DVDMedia.h
-//
-// Desc: Contains typedefs and defines necessary for user mode (ring 3) DVD
-//       filters and applications.
-//
-//       This should be included in the DirectShow SDK for user mode filters.
-//       The types defined here should be kept in synch with ksmedia.h WDM 
-//       DDK for kernel mode filters.
-//
-// Copyright (c) 1997 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __DVDMEDIA_H__
 #define __DVDMEDIA_H__
 

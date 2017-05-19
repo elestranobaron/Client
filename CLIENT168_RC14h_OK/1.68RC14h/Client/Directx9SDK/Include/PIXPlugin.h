@@ -1,11 +1,3 @@
-//==================================================================================================
-// PIXPlugin.h
-//
-// Microsoft PIX Plugin Header
-//
-// Copyright (c) Microsoft Corporation, All rights reserved
-//==================================================================================================
-
 #pragma once
 
 #ifdef __cplusplus

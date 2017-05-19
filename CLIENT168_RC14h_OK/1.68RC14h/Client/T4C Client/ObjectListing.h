@@ -1,4 +1,3 @@
-// Here are *listed* ALL objects of the game! cool eh?
 #ifndef __STATICOBJECTREFERENCES_H
 #define __STATICOBJECTREFERENCES_H
 
@@ -88,7 +87,7 @@ const unsigned short __MONSTER_SANTA_CLAUS                     = 20064;
 const unsigned short __MONSTER_DRACONIAN_PLATE				   = 20065;
 const unsigned short __MONSTER_DRACONIAN_ROBE				   = 20066;
 const unsigned short __MONSTER_DRACONIAN_LEATHER			   = 20067;
-// New added by Dialsoft - BEGIN
+
 const unsigned short __MONSTER_DARKGOBLIN						= 20068;
 const unsigned short __MONSTER_GROUNDMUMMY						= 20069;
 const unsigned short __MONSTER_BURNTREE							= 20070;
@@ -172,7 +171,7 @@ const unsigned short __DEAD_SKIN_003_C                         = 25902;
 
 
 
-// New added by Dialsoft - END
+
 
 
 // INVISIBLE MONSTER ARE AT 21000 INSTEAD OF 20000 (+1000)
@@ -244,7 +243,7 @@ const unsigned short __MONSTER_SANTA_CLAUS_CORPSE              = 25064;
 const unsigned short __MONSTER_DRACONIAN_PLATE_CORPSE		   = 25065;
 const unsigned short __MONSTER_DRACONIAN_ROBE_CORPSE		   = 25066;
 const unsigned short __MONSTER_DRACONIAN_LEATHER_CORPSE		   = 25067;
-//Dialsoft new code
+
 const unsigned short __MONSTER_DARKGOBLIN_CORPSE			   = 25068;
 const unsigned short __MONSTER_GROUNDMUMMY_CORPSE			   = 25069;
 const unsigned short __MONSTER_BURNTREE_CORPSE				   = 25070;
@@ -319,7 +318,7 @@ const unsigned short __MONSTER_DRAGON_NOIR_CORPSE    			   = 25136;
 
 
 
-//Dialsoft new code end
+
 
 const unsigned short __SPELL_HEALING                           = 30001;
 const unsigned short __SPELL_LIGHTNINGBOLT                     = 30002;
@@ -451,7 +450,7 @@ const unsigned short __SPELL_SERAPH                            = 30128;
 const unsigned short __SPELL_EVIL_SERAPH_MALE                  = 30129;
 const unsigned short __SPELL_EVIL_SERAPH_FEMALE                = 30130;
 const unsigned short __SPELL_EVIL_SERAPH                       = 30131;
-//Dialsoft new spells
+
 const unsigned short __SPELL_MEDIUM_HEALING                    = 30132;
 const unsigned short __SPELL_ICE_TREE		                   = 30133;
 const unsigned short __SPELL_SUPRAHEAL		                   = 30134;
@@ -643,7 +642,7 @@ const unsigned short __SPELL_NEW_SUPRAHEAL                        = 30313;
 const unsigned short __SPELL_NEW_BOULDERS                         = 30314;
 
 
-//Dialsoft END
+
 
 /*
 //++NMNMNM [NEW TROWING Weopen ID VALUE]

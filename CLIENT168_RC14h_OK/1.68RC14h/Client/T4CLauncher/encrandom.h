@@ -1,7 +1,3 @@
-// Random.h: interface for the Random class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_RANDOM_H__LAUNCHER__INCLUDED_)
 #define AFX_RANDOM_H__LAUNCHER__INCLUDED_
 

@@ -1,7 +1,3 @@
-// TFCObject.h: interface for the TFCObject class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_TFCOBJECT_H__A3C19A62_D282_11D0_BEA9_444553540000__INCLUDED_)
 #define AFX_TFCOBJECT_H__A3C19A62_D282_11D0_BEA9_444553540000__INCLUDED_
 

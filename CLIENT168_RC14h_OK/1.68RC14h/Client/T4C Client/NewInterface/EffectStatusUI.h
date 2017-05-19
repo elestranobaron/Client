@@ -1,6 +1,3 @@
-// EffectStatusUI.h
-//
-
 #if !defined(EffectStatusUI_h)
 #define EffectStatusUI_h
 

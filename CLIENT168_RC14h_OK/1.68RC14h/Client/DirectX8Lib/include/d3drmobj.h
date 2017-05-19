@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1995-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:	d3drm.h
- *  Content:	Direct3DRM include file
- *
- ***************************************************************************/
-
 #ifndef _D3DRMOBJ_H_
 #define _D3DRMOBJ_H_
 

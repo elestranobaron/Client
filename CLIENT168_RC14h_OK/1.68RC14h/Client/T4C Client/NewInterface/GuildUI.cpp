@@ -1,5 +1,3 @@
-// GuildUI.cpp
-//
 #pragma warning( disable : 4291 )
 
 #include "../pch.h"
@@ -9,7 +7,6 @@
 #include "../Bitmap.h"
 #include "../Packet.h"
 #include "../VisualObjectList.h"
-#include "../MemoryManager.h"
 #include "../tileset.h"
 #include "..\GUILocalString.h"  //g_GUILocalString[]
 

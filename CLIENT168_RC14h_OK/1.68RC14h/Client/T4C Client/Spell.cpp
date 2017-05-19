@@ -4,7 +4,6 @@
 #include <windows.h>
 #include "Spell.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 Spell::Spell(void) {
    bAlreadyLoad = FALSE;

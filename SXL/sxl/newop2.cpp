@@ -1,4 +1,3 @@
-// newop2 operator new(size_t, const nothrow_t&) for Microsoft C++
 #include <cstdlib>
 #include <new>
 

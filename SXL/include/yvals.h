@@ -1,5 +1,3 @@
-/* yvals.h values header for Microsoft C/C++ */
-
 #if 1000 < _MSC_VER /*IFSTRIP=IGN*/
 #pragma once
 #endif

@@ -1,6 +1,3 @@
-// MainDialog.cpp : implementation file
-// Player.Password[i] ^= 128;
-
 #include "stdafx.h"
 #include "t4clauncher.h"
 #include "MainDialog.h"
@@ -244,7 +241,7 @@ BOOL CMainDialog::OnInitDialog()
    m_staticLinkWeb.SetFontSize(12);
    m_staticLinkWeb.SetForeColor(RGB(200,185,120));
    m_staticLinkWeb.SetLinkEffect(TRUE,IDC_LINK_CURSOR,TRUE);
-   m_staticLinkWeb.SetTextLink("www.dialsoft.com"); */ // steph désactivation
+   m_staticLinkWeb.SetTextLink("www.rebirth.com"); */ // steph désactivation
    m_staticConnectGeneral.SetFontBold(TRUE);
    m_staticConnectGeneral.SetFontName("Arial");
    m_staticConnectGeneral.SetFontSize(10);
@@ -370,249 +367,16 @@ BOOL CMainDialog::OnInitDialog()
   //200,185,120
    //200,200,200
 
-   CString s;
-   s =  "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-   s += "<img src='#%d'>";
-   s += "<br><br>";
-   s += "<font size='22' color='200,200,200' face='Arial'>";
-   s += m_strVersion;
-   s += "</font><br><br><br>";
-   s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>About</font><br><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>T4C <br>Copyright © Rebirth </font>";
-   //s += "<br><img src='#%d'><br><br>";
-   //s += "<font color='200,200,200' size='14' face='Arial'>(T4C)The 4th Coming</font><font color='230,50,10' size='16' style='b'> V2</font><font color='200,200,200' size='14'><br>Created with original T4C Sources and Copyright © Dialsoft </font>";
-   s += "<br><br><img src='#%d'><br><br><br>";
-      // Credit Zone...
 
 
 
 
 
-   //////////////////////////////////////////////////////////////////////////////////////////
-   // steph ajout
-   //////////////////////////////////////////////////////////////////////////////////////////
-   s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>== T4C: Rebirth Project Team ==</font><br><br>";
-	// -- 1.6 Coordination Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- Coordination Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Henry, Project Leader<br>";
-   s += "Shainon, Steph, Coders Leader<br>";
-   s += "<br></font><br><br>";
-	// -- 1.6 Coding Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- Coding Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Shainon, Steph, Core, Interface && Security Coders Leader<br>";
-   s += "<br></font><br><br>";
-
-
-
-
-
-
-
-
-   s += "<font color='200,200,200' size='20' face='Arial' style='b' style='u'>== T4C V2.0 Project Team ==</font><br><br>";
-
-   // -- 1.6 Coordination Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Coordination Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
-   s += "Carl \"Nightmare\" Vachon, Core, Interface && Security Coders Leader<br>";
-   s += "Kitten, Writing Unit Leader<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.6 Coding Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Coding Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Carl \"Nightmare\" Vachon, Core, Interface && Security Coders Leader<br>";
-   s += "Tiamat, Network && Internal Tools Coder<br>";
-   s += "Sébastien \"The Destiny\" Mériot, Editor's Coder<br>";
-   s += "<br></font><br><br>";
-
-   // -- Graphics Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Graphics Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Heschal<br>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand<br>";
-   s += "Nadine \"Lune\" Pelletier<br>";
-   s += "<br></font><br><br>";
-
-   // -- World Design Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 World Design Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Nadine \"Lune\" Pelletier<br>";
-   s += "<br></font><br><br>";
- 
-   // -- Sounds & Musics --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Sounds & Musics --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.6 writing unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.6 Writers Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Kitten<br>";
-   s += "Mouse<br>";
-   s += "Kujo<br>";
-   s += "Scarlett<br>";
-   s += "Redskull<br>";
-   s += "Kenko<br>";
-   s += "<br></font><br><br>";
-
-
-
-
-
-    // -- 1.5 coordination unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 Coordination Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
-   s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
-   s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
-   s += "Kitten, Writing Unit Leader<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.5 Coding Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 Coding Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Carlos \"FPGA\" Lima<br>";
-   s += "Ophise<br>";
-   s += "Tiamat<br>";
-   s += "Scotch<br>";
-   s += "Sébastien \"The Destiny\" Mériot<br>";
-   s += "Desboys<br>";
-   s += "Nara<br>";
-   s += "Tyrion<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.5 Graphics Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 Graphics Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Heschal<br>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.5 world design --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 World Design Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Romain \"Leo\" Wagner<br>";
-   s += "Anadroow<br>";
-   s += "Clariss<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.5 writing unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.5 Writers Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Kitten<br>";
-   s += "Blade<br>";
-   s += "Ostian<br>";
-   s += "Reorx<br>";
-   s += "Redskull<br>";
-   s += "<br></font><br><br>";
-
-
-
-
-
-    // -- 1.4 coordination unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 Coordination Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand, Project Leader<br>";
-   s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
-   s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
-   s += "Blade, Writing Leader<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.4 Coding Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 Coding Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Carlos \"FPGA\" Lima<br>";
-   s += "Ophise<br>";
-   s += "Tiamat<br>";
-   s += "Scotch<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.4 Graphics Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 Graphics Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.4 world design --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 World Design Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Romain \"Leo\" Wagner<br>";
-   s += "Anadroow<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.4 writing unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.4 Writers Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Blade<br>";
-   s += "Ostian<br>";
-   s += "Reorx<br>";
-   s += "<br></font><br><br>";
-
-
-
-
-    // -- 1.3 coordination unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.3 Coordination Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Marc Frigo, Rebirth Foundator && CEO<br>";
-   s += "Carlos \"FPGA\" Lima, Coders Leader<br>";
-   s += "Kilivan, Project Leader<br>";
-   s += "Romain \"Leo\" Wagner, World Design Unit Leader<br>";
-   s += "Blade, Writing Leader<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.3 Coding Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.3 Coding Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Carlos \"FPGA\" Lima<br>";
-   s += "Scotch<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.3 Graphics Unit --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.3 Graphics Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Loïc \"Black Lemming\" Jean-Fulcrand<br>";
-   s += "<br></font><br><br>";
-
-   // -- 1.3 world design --
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >-- 1.3 World Design Unit --</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Romain \"Leo\" Wagner<br>";
-   s += "<br></font><br><br>";
-
-
-   // ==Special Thanks To==
-   s += "<font color='200,200,200' size='16' face='Arial' style='b' >== Special Thanks To ==</font><br>";
-   s += "<font color='200,200,200' size='14' face='Arial'>";
-   s += "Thanks to all the Sysops, HGM and GM who shared their<br>";
-   s += "time to help us hunting the bugs !<br><br>";
-   s += "Thanks to all players, thanks for your patience,<br>";
-   s += "suggestions and support ! Thanks to Marc, who made this<br>";
-   s += "project possible.<br><br>";
-   s += "Thanks to all people we forgot and who helped us<br>";
-   s += " at one time or an other !<br>";
-   s += "Thanks to Darkfang for giving gold to newbies..<br>";
-   s += "<br></font><br><br>";
-   s += "<br><br>";
-   s += "<img src='#%d'><br><br><br><br><br><br><br><br>";
-
-
-
-
-   m_BGBitmapC.LoadBitmap(IDB_BMP_BACK_INTRO);
+   /* m_BGBitmapC.LoadBitmap(IDB_BMP_BACK_INTRO);
    m_dcBitmap.CreateCompatibleDC(NULL);
  
 	// Content Data
-	m_ctrlCredit.FormatDataString(s,IDB_CREDIT_INTRO,IDB_CREDIT_DIALSOFT,IDB_CREDIT_V2);
+	m_ctrlCredit.FormatDataString(s,IDB_CREDIT_INTRO,IDB_CREDIT_REBIRTH,IDB_CREDIT_V2); */ // steph désactivation
 	
 	// use our own function for background drawing
 	m_ctrlCredit.m_pBackgroundPaint = CMainDialog::DrawCreditsBackground;

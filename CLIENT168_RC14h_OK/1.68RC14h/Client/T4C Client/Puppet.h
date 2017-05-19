@@ -48,7 +48,7 @@
 #define PUPEQ_SKEL         16
 #define PUPEQ_BLACKWINGS   17
 #define PUPEQ_WHITEWINGS   18
-//Dialsoft new armor 
+
 #define PUPEQ_REDFEATHER		19
 #define PUPEQ_SPIKEDLEATHER		20
 #define PUPEQ_DARKWINGS			21
@@ -126,7 +126,7 @@
 #define PUPEQ_NM2_DECHUWINGS   83
 
 // Lucifer End
-//Dialsoft END
+
 
 // WEAPON
 #define PUPEQ_AXE				1
@@ -152,7 +152,7 @@
 #define PUPEQ_SKELAXE      21
 #define PUPEQ_SKELSWORD    22
 #define PUPEQ_HALBERD      23
-//Dialsoft new weapon
+
 #define PUPEQ_FIREFLAIL    24
 #define PUPEQ_TIGERAXE			25
 #define PUPEQ_ANCIENTAXE		26
@@ -271,7 +271,7 @@
 
 
 
-//Dialsoft END
+
 
 // SHIELD
 #define PUPEQ_ROMANSHIELD     1

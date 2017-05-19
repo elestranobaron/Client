@@ -1,17 +1,3 @@
-/*-========================================================================-_
- |                                 - XAPO -                                 |
- |        Copyright (c) Microsoft Corporation.  All rights reserved.        |
- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
- |PROJECT: XAPO                         MODEL:   Unmanaged User-mode        |
- |VERSION: 1.0                          EXCEPT:  No Exceptions              |
- |CLASS:   N / A                        MINREQ:  WinXP, Xbox360             |
- |BASE:    N / A                        DIALECT: MSC++ 14.00                |
- |>------------------------------------------------------------------------<|
- | DUTY: XAPO base classes                                                  |
- ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-  NOTES:
-    1.  See XAPO.h for the rules governing XAPO interface behaviour.        */
-
 #pragma once
 //--------------<D-E-F-I-N-I-T-I-O-N-S>-------------------------------------//
 #include "XAPO.h"

@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: MediaErr.h
-//
-// Desc: Shell error codes
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef _MEDIAERR_H_
 #define _MEDIAERR_H_
 

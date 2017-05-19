@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (c) Microsoft Corporation.  All rights reserved.
- *
- *  File:       dsconf.h
- *  Content:    DirectSound configuration interface include file
- *
- **************************************************************************/
-
 #ifndef __DSCONF_INCLUDED__
 #define __DSCONF_INCLUDED__
 

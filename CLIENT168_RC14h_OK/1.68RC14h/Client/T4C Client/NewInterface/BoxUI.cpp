@@ -1,9 +1,6 @@
-// BoxUI.cpp
-//
 #include "../pch.h"
 #include "BoxUI.h"
 #include "RootBoxUI.h"
-#include "../MemoryManager.h"
 #include "SideMenu.h"
 #include "ChatterUI.h"
 #include "MacroUI.h"

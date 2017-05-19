@@ -1,6 +1,3 @@
-// SliderUI.cpp: implementation of the SliderUI class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 #include "SliderUI.h"
 

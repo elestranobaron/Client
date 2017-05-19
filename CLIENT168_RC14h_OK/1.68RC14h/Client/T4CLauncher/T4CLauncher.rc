@@ -34,14 +34,14 @@ IDB_BACK_SERVER_DLG     BITMAP                  "res\\ServerDlg.bmp"
 
 IDB_BTN_FRAME3          BITMAP                  "res\\BtnFrame3.bmp"
 
-IDB_BMP_BACK_INTRO      BITMAP                  "res\\BackIntro.bmp"
-/* IDB_LOGO                BITMAP  DISCARDABLE     "res\\logo.bmp"
-IDB_CREDIT_VIRCOM       BITMAP  DISCARDABLE     "res\\CreditVircom.bmp" */ // steph désactivation
-IDB_CREDIT_DIALSOFT     BITMAP                  "res\\CreditDialsoft.bmp"
+/* IDB_BMP_BACK_INTRO      BITMAP                  "res\\BackIntro.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\logo.bmp"
+IDB_CREDIT_VIRCOM       BITMAP  DISCARDABLE     "res\\CreditVircom.bmp"
+IDB_CREDIT_REBIRTH     BITMAP                  "res\\CreditRebirth.bmp"
 
 IDB_CREDIT_INTRO        BITMAP                  "res\\CreditIntro.bmp"
 
-IDB_CREDIT_V2           BITMAP                  "res\\CreditV2.bmp"
+IDB_CREDIT_V2           BITMAP                  "res\\CreditV2.bmp" */ // steph désactivation
 
 IDB_BITMAP_HSB          BITMAP                  "res\\CCHSB.bmp"
 
@@ -232,7 +232,7 @@ BEGIN
 	
 	
     PUSHBUTTON      "Setup",IDC_BTN_SERVER_INFO,23,140,69,16,NOT WS_TABSTOP
-    PUSHBUTTON      "Credit",IDC_BTN_CREDIT,23,249,69,16,NOT WS_TABSTOP
+    PUSHBUTTON      "Credit",IDC_BTN_CREDIT,23,249,69,16,NOT WS_VISIBLE // steph NOT WS_VISIBLE au lieu de NOT WS_TABSTOP
     PUSHBUTTON      "_",IDC_BTN_MINIMIZE,366,1,28,15,NOT WS_TABSTOP
     LTEXT           "Title",IDC_STR_DLG_TITLE,81,3,202,12
     LTEXT           "Static",IDC_CONNECT_STATUS_GEN,177,101,227,16

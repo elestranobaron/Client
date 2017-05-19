@@ -1,13 +1,3 @@
-/* this file is a part of amp software, (C) tomislav uzelac 1996,1997
-
-	Origional code by: tomislav uzelac
-	Modified by:
-	* Dan Nelson - BSD mods.
-	* Andrew Richards - moved code from audio.c and added mixer support etc
-
- */
-
-
 #include <windows.h>
 #include <process.h>
 #include <mmsystem.h>
@@ -17,7 +7,6 @@
 #include <stdio.h>
 #include "audioIO.h"
 #include "global.h"
-#include "MemoryManager.h"
 
 #define WAV_BUFS (32)
 #define WAV_BUFL (16384)

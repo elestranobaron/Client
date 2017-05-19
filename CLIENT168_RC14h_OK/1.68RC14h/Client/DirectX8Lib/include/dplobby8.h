@@ -1,12 +1,3 @@
-/*==========================================================================
- *
- *  Copyright (C) 2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       DPLobby.h
- *  Content:    DirectPlay8 Lobby Include File
- *
- ***************************************************************************/
-
 #ifndef	__DPLOBBY_H__
 #define	__DPLOBBY_H__
 

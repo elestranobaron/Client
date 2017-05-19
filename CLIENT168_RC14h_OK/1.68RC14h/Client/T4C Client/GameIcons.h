@@ -1,7 +1,3 @@
-// GameIcons.h: interface for the GameIcons class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_GAMEICONS_H__622A0EA5_D8EC_11D3_8614_00E02922FA40__INCLUDED_)
 #define AFX_GAMEICONS_H__622A0EA5_D8EC_11D3_8614_00E02922FA40__INCLUDED_
 

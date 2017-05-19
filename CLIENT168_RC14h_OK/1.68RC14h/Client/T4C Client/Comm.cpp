@@ -4,7 +4,6 @@
 #include "COMM.h"
 #include "PowerDebug.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "App.h"
 #include "PacketTypes.h"//BLBLBL 07/12/2010
 

@@ -1,8 +1,3 @@
-// Request.cpp: implementation of the Request class.
-//
-//////////////////////////////////////////////////////////////////////
-
-
 //#include "HTTPrequest.h"
 #include "Request.h"
 

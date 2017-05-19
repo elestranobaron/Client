@@ -1,4 +1,3 @@
-// Include 
 #include "pch.h"
 #include <windows.h>
 #pragma warning( disable : 4786 )
@@ -10,7 +9,6 @@
 #include "Random.h"
 #include <stdio.h>
 #include "global.h"
-#include "MemoryManager.h"
 #include "App.h"
 #include "Sprite.h"
 #include "V2PalManager.h"

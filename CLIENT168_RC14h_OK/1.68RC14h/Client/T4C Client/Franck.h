@@ -1,4 +1,3 @@
-//#define GRBX_NOMOUSE
 #define GRBX_MOUSE
 //#define GRBX_NOVK
 #define GRBX_VK

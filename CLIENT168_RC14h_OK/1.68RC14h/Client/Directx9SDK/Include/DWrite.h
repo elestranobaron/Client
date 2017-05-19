@@ -1,12 +1,3 @@
-//+--------------------------------------------------------------------------
-//
-//  Copyright (c) Microsoft Corporation.  All rights reserved.
-//
-//  Abstract:
-//     DirectX Typography Services public API definitions.
-//
-//----------------------------------------------------------------------------
-
 #ifndef DWRITE_H_INCLUDED
 #define DWRITE_H_INCLUDED
 

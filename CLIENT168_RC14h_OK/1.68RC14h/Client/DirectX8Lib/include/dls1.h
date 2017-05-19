@@ -1,18 +1,3 @@
-/*==========================================================================;
-//
-//  dls1.h
-//
-//
-//  Description:
-//
-//  Interface defines and structures for the Instrument Collection Form
-//  RIFF DLS.
-//
-//
-//  Written by Sonic Foundry 1996.  Released for public use.
-//
-//=========================================================================*/
-
 #ifndef _INC_DLS1
 #define _INC_DLS1
 

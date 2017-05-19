@@ -1,4 +1,3 @@
-// newaop -- operator new[](size_t) REPLACEABLE
 #include <new>
 
  #if _HAS_ARRAY_NEW

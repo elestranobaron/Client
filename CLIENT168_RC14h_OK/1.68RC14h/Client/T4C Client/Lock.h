@@ -1,7 +1,3 @@
-// Lock.h: interface for the CLock class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_LOCK_H__5FD5B65A_35EB_11D2_83CE_00E02922FA40__INCLUDED_)
 #define AFX_LOCK_H__5FD5B65A_35EB_11D2_83CE_00E02922FA40__INCLUDED_
 

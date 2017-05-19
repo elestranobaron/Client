@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: BDATypes.h
-//
-// Desc: Typedefs and enums needed by both the WDM drivers and the user mode
-//       COM interfaces.
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef _BDATYPES_
 
 #define _BDATYPES_      1

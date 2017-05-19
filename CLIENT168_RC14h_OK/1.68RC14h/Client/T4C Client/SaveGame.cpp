@@ -1,6 +1,3 @@
-// SaveGame.cpp: implementation of the CSaveGame class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "SaveGame.h"
 #include "App.h"
 #include "Zlib/zlib.h"

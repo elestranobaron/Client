@@ -1,20 +1,8 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: LocalString.cpp
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
-// Include
 #include "pch.h"
 #include <windows.h>
 #include "LocalString.h"
 #include "Global.h"
 #include "PowerDebug.h"
-#include "MemoryManager.h"
 #include "TFCPlayer.h"
 #include <string>
 

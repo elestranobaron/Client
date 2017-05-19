@@ -1,7 +1,3 @@
-// UIMouseEvent.h: interface for the UIMouseEvent class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_UIMOUSEEVENT_H__44302F53_27EC_11D3_8531_00E02922FA40__INCLUDED_)
 #define AFX_UIMOUSEEVENT_H__44302F53_27EC_11D3_8531_00E02922FA40__INCLUDED_
 

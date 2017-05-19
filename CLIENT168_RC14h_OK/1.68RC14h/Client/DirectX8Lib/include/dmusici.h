@@ -1,12 +1,3 @@
-/************************************************************************
-*                                                                       *
-*   dmusici.h -- This module contains the API for the                   *
-*                DirectMusic performance layer                          *
-*                                                                       *
-*   Copyright (c) 1998-1999 Microsoft Corporation
-*                                                                       *
-************************************************************************/
-
 #ifndef _DMUSICI_
 #define _DMUSICI_
 

@@ -1,17 +1,3 @@
-/**************************************************************************
- *
- * Copyright (c) Microsoft Corporation. All rights reserved.
- *
- * Module Name:
- * 
- *     xact3.h
- * 
- * Abstract:
- * 
- *     XACT public interfaces, functions and data types
- *
- **************************************************************************/
-
 #pragma once
 
 #ifndef _XACT3_H_

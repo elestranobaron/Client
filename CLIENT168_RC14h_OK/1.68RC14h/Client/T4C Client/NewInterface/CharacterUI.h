@@ -1,6 +1,3 @@
-// CharacterUI.h
-//
-
 #if !defined(CharacterUI_h)
 #define CharacterUI_h
 

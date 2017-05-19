@@ -1,7 +1,3 @@
-// TFCPlayer.h: interface for the TFCPlayer class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_TFCPLAYER_H__08FC6543_CFEA_11D0_BEA9_444553540000__INCLUDED_)
 #define AFX_TFCPLAYER_H__08FC6543_CFEA_11D0_BEA9_444553540000__INCLUDED_
 

@@ -1,7 +1,3 @@
-// SliderUI.h: interface for the SliderUI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_SLIDERUI_H__E0278FC1_A35E_11D3_85C8_00E02922FA40__INCLUDED_)
 #define AFX_SLIDERUI_H__E0278FC1_A35E_11D3_85C8_00E02922FA40__INCLUDED_
 

@@ -1,13 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: GameMusic.h
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #ifndef GAMEMUSIC_H
 #define GAMEMUSIC_H
 

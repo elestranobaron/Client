@@ -1,24 +1,3 @@
-// **************************************************************************
-// ***                                                                    ***
-//      File Name: TileSet.H
-//      Project:   The Fourth Coming
-//      Creation:  May 30th, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                    ***
-// **************************************************************************
-// ***                                                                    ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         05-30-1997      1.0    TH             Initial development.
-//
-//		  Fonctions:
-//			  Provide TileSet Basic.
-//
-// ***                                                                    ***
-//	**************************************************************************
-// *** Copyright (c) 1996-1997 Vritual Dreams (r). All rights reserved.   ***
-
 #ifndef __Virtual_Dreams_TileSet_092819053097
 #define __Virtual_Dreams_TileSet_092819053097
  
@@ -342,7 +321,7 @@ class TileSet {
       //END NightMare
       //////////////////////
 
-	  // Dialsoft new floors
+
 	  CV2Sprite FloorLava[4][4];
 	  CV2Sprite FloorIce[10][9];
 		 

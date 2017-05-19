@@ -1,17 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: PacketHandling.cpp
-//      Project:   The 4th Coming
-//      Creation:  5 May, 1999
-//      Author:    Benoit Thomas (TH)
-//
-//      THESE ARE SENT PACKETS TO SERVER.
-//		for paquets received by server, go to Packet.cpp
-//
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #pragma warning( disable : 4291 )
 #pragma warning( disable : 4786 )
 
@@ -32,7 +18,6 @@
 #include "COMM.h"
 #include "NTime.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "Filelogger.h"
 #include "SaveGame.h"
 extern CSaveGame g_SaveGame;

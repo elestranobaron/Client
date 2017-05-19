@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: AMParse.h
-//
-// Desc: Interface to the parser to get current time.  This is useful for
-//       multifile playback.
-//
-// Copyright (c) 1996 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __AMPARSE__
 #define __AMPARSE__
 

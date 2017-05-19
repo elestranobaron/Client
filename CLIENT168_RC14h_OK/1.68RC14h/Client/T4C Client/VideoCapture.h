@@ -1,7 +1,3 @@
-// VideoCapture.h: interface for the VideoCapture class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_VIDEOCAPTURE_H__3020E7D3_2B3F_11D4_B59E_00E0296B9056__INCLUDED_)
 #define AFX_VIDEOCAPTURE_H__3020E7D3_2B3F_11D4_B59E_00E0296B9056__INCLUDED_
 

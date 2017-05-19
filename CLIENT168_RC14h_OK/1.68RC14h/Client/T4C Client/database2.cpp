@@ -6,7 +6,6 @@
 #include "PowerDebug.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "LocalString.h"
 #include "MacroHandler.h"
 

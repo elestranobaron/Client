@@ -1,5 +1,3 @@
-/* xlocinfo.h internal header for Microsoft C */
-
 #if 1000 < _MSC_VER /*IFSTRIP=IGN*/
 #pragma once
 #endif

@@ -1,6 +1,3 @@
-// ListUI.h
-//
-
 #if !defined(ListUI_h)
 #define ListUI_h
 

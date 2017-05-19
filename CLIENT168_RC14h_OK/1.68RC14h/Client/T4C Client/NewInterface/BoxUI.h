@@ -1,6 +1,3 @@
-// BoxUI.h
-//
-
 #if !defined(BoxUI_h)
 #define BoxUI_h
 

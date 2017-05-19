@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: VPType.h
-//
-// Desc: This file includes all the data structures defined for the IVPConfig
-//       interface.
-//
-// Copyright (c) 1997 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __IVPType__
 #define __IVPType__
 

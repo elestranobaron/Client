@@ -1,15 +1,3 @@
-
-/*=========================================================================*\
-
-    Copyright (c) Microsoft Corporation.  All rights reserved.
-
-    File: D2D1helper.h
-
-    Module Name: D2D
-
-    Description: Helper files over the D2D interfaces and APIs.
-
-\*=========================================================================*/
 #pragma once
 
 #ifndef _D2D1_HELPER_H_

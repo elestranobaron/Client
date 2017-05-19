@@ -1,7 +1,3 @@
-// NMVideoCapture.h: interface for the Global class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_NMVideoCapture_H__BE9CC3E6_9953_49D5_86F2_D3E2D40E7912__INCLUDED_)
 #define AFX_NMVideoCapture_H__BE9CC3E6_9953_49D5_86F2_D3E2D40E7912__INCLUDED_
 

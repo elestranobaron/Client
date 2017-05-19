@@ -1,11 +1,3 @@
-/************************************************************************
-*                                                                       *
-*   dmerror.h -- Error code returned by DirectMusic API's               *
-*                                                                       *
-*   Copyright (c) 1998-1999 Microsoft Corporation
-*                                                                       *
-************************************************************************/
-
 #ifndef _DMERROR_
 #define _DMERROR_
 

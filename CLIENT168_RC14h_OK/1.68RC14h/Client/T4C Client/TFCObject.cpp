@@ -1,13 +1,8 @@
-// TFCObject.cpp: implementation of the TFCObject class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include <windows.h>
 #include "TFCObject.h"
 #include "Icon3D.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "NewFont.h"
 
 const int MaxOverheadLines = 3; // DaP ajout de int

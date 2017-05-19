@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1994-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       ddraw.h
- *  Content:    DirectDraw include file
- *
- ***************************************************************************/
-
 #ifndef __DDRAW_INCLUDED__
 #define __DDRAW_INCLUDED__
 

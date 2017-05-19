@@ -1,4 +1,3 @@
-// ios_base -- ios_base basic members
 #include <new>
 #include <xiosbase>
 _STD_BEGIN

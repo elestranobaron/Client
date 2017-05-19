@@ -1,6 +1,3 @@
-// CreditsCtrl.cpp : implementation file
-//
-
 #include "..\stdafx.h"
 #include "CreditsCtrl.h"
 

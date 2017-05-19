@@ -1,7 +1,3 @@
-// DebugLoggerAPI.cpp: implementation of the DebugLoggerAPI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include <windows.h>
 #include "DebugLoggerAPI.h"
 

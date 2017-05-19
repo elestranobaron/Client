@@ -1,7 +1,3 @@
-//{{NO_DEPENDENCIES}}
-// fichier Include Microsoft Visual C++.
-// Utilisé par T4CLauncher.rc
-//
 #define IDD_MAIN_DIALOG                 108
 #define IDB_BACK_MAIN_DLG               109
 #define IDC_BTN_EXIT                    109
@@ -10,14 +6,14 @@
 #define IDC_BTN_SERVER_INFO             111
 #define IDC_BTN_OPTION                  112
 #define IDC_BTN_CREDIT                  113
-#define IDR_AVI_DIALSOFT                113
+#define IDR_AVI_REBIRTH                 113
 #define IDC_BTN_CONNECT                 114
 #define IDC_INTRO_AVI1                  115
 #define IDC_BTN_MINIMIZE                115
 #define IDC_AVI_INTRO_1                 116
 #define IDB_BTN_FRAME2                  116
 #define IDC_STR_DLG_TITLE               117
-/* #define IDC_STR_WEB_LINK                118
+/* #define IDC_STR_WEB_LINK             118
 #define IDC_LINK_CURSOR                 119 */ // steph désactivation								   
 #define IDC_PREVIEW_AVI                 119
 #define IDD_SERVER_DLG                  120
@@ -36,17 +32,17 @@
 #define IDB_BTN_FRAME3                  129
 #define IDC_STATIC_NAME                 129
 #define IDC_STATIC_IP                   130
-#define IDB_BMP_BACK_INTRO              130
+//#define IDB_BMP_BACK_INTRO            130 // steph désactivation
 #define IDC_STATIC_LOGIN                131
 #define IDC_STATIC_PASSWORD             132
 #define IDC_POINTER                     132
 #define IDC_STR_DLG_SERVER_TITLE        133
-//#define IDB_CREDIT_VIRCOM               133 // steph désactivation										   
-#define IDB_CREDIT_DIALSOFT             134
+/* #define IDB_CREDIT_VIRCOM            133										   
+#define IDB_CREDIT_REBIRTH              134 */  // steph désactivation
 #define IDC_STATIC_WINDOWED             134
-#define IDB_CREDIT_INTRO                135
+//#define IDB_CREDIT_INTRO              135 // steph désactivation
 #define IDC_STATIC_800X600              135
-#define IDB_CREDIT_V2                   136
+//#define IDB_CREDIT_V2                 136 // steph désactivation
 #define IDC_STATIC_640x480              136
 #define IDC_CONNECT_STATUS              137
 #define IDB_BTN_FRAME4                  137

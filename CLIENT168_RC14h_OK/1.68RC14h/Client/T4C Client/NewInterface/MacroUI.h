@@ -1,6 +1,3 @@
-// MacroUI.h
-//
-
 #if !defined(MacroUI_h)
 #define MacroUI_h
 

@@ -1,24 +1,3 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: Disp.cpp
-//      Project:   TFC Client
-//      Creation:  23/11/1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Change History
-//
-//         Date            Ver.      Author         Purpose
-//         23/11/1997      1.0       TH             Initial developpement
-//
-//      Description
-//          Font Structure.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***         Copyright (c) 1997-1998 Vircom. All rights reserved.                        ***
-
 #pragma warning( disable : 4291 )
 #pragma warning( disable : 4786 )
 
@@ -29,7 +8,6 @@
 #include "PowerDebug.h"
 #include "Disp.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "Filelogger.h"
 
 FontHandler * UniqueFontHandler = NULL;

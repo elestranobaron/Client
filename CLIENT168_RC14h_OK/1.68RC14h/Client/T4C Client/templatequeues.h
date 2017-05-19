@@ -1,5 +1,3 @@
-// Implements template queues for general uses
-
 #pragma warning( disable : 4291 )
 
 #ifndef __TEMPLATE_QUEUES

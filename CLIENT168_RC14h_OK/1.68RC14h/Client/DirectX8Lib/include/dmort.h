@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DMORt.h
-//
-// Desc: Miscellaneous runtime support for DirectShow Media Objects
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __DMORT_H__
 #define __DMORT_H__
 

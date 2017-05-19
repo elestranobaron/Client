@@ -1,6 +1,3 @@
-// InventoryUI.h
-//
-
 #if !defined(InventoryUI_h)
 #define InventoryUI_h
 

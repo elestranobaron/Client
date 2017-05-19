@@ -1,6 +1,3 @@
-// DropZoneUI.h
-//
-
 #if !defined(DropZoneUI_h)
 #define DropZoneUI_h
 

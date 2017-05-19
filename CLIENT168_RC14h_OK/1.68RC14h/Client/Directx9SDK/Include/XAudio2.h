@@ -1,12 +1,3 @@
-/**************************************************************************
- *
- * Copyright (c) Microsoft Corporation.  All rights reserved.
- *
- * File:    xaudio2.h
- * Content: Declarations for the XAudio2 game audio API.
- *
- **************************************************************************/
-
 #ifndef __XAUDIO2_INCLUDED__
 #define __XAUDIO2_INCLUDED__
 

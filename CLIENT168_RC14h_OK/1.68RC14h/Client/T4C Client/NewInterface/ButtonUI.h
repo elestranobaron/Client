@@ -1,6 +1,3 @@
-// ButtonUI.h
-//
-
 #if !defined(ButtonUI_h)
 #define ButtonUI_h
 

@@ -1,24 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Sprite3D.h
-//      Project:   TFC Client
-//      Creation:  8 July, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         ----            ----    ------      -------
-//         07-08-1997      1.0     TH          Initial development
-//
-//      Description
-//         Provide fonction to load a set of Sprite to form a 3D Sprite
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***
-
 #ifndef __Vircom_Sprite3D_105113070897
 #define __Vircom_Sprite3D_105113070897
 

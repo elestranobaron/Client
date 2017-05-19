@@ -1,4 +1,3 @@
-// nomemory -- report out of memory
 #include <new>
 _STD_BEGIN
 

@@ -1,12 +1,3 @@
-/* this file is a part of amp software, (C) tomislav uzelac 1996,1997
-*/
-
-/* audio.h  some global variables
- *
- * Created by: tomislav uzelac Mar/Apr, Jul 96
- * Last modified by:
- */
-
 #include <stdio.h>
 #include <Windows.h>
 

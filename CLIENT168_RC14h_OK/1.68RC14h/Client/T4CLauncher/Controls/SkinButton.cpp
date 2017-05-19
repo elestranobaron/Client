@@ -1,9 +1,3 @@
-// FILE DEFINITION
-//
-//
-
-// FILE INCLUDES
-
 #include "..\stdafx.h"
 #include "SkinButton.h"
 

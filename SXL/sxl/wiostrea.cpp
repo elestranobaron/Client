@@ -1,4 +1,3 @@
-// wiostream -- _Winit members, dummy for Microsoft
 #include <iostream>
 _STD_BEGIN
 

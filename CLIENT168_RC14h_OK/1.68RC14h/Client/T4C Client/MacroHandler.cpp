@@ -1,10 +1,8 @@
-// Include Files.
 #include "pch.h"
 #include <windows.h>
 #include "MacroHandler.h"
 #include "PowerDebug.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 
 UserCustom Custom;

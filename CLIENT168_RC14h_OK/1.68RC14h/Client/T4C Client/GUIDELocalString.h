@@ -1,13 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: GUIDELocalString.cpp
-//      Project:   The 4th Coming
-//      Creation:  15 Avril, 2017
-//      Author:    Steph (S)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #ifndef GUIDELOCALSTRING_H
 #define GUIDELOCALSTRING_H
 

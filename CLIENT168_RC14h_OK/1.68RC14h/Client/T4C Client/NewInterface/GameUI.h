@@ -1,6 +1,3 @@
-// GameUI.h
-//
-
 #if !defined(GameUI_h)
 //#ifndef GameUI_h
 #define GameUI_h

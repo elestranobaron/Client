@@ -1,5 +1,3 @@
-// GameUI.cpp
-//
 #pragma warning( disable : 4786 )
 #include "GameUI.h"
 
@@ -7,7 +5,6 @@
 
 #include "RootBoxUI.h"
 #include <algorithm>
-#include "../MemoryManager.h"
 
 // Chat box.
 #include "ChatterUI.h"

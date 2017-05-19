@@ -1,13 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: GUILocalString.h
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #ifndef GUILOCALSTRING_H
 #define GUILOCALSTRING_H
 

@@ -1,32 +1,3 @@
-// ********************************************************************************************
-// ***                                                                                      ***
-//      File Name: VDList.h
-//      Project:   TFC Client
-//      Creation:  May 30th 1997
-//      Author:    Benoit Thomas    (TH)
-//                 Francois Leblanc (FL)
-// ***                                                                                      ***
-// ********************************************************************************************
-// ***                                                                                      ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         05-30-1997      1.0    TH             Initial development
-//         06-01-1997      1.1    FL             Encapsulated list in DLL
-//         06-01-1997      1.1    FL             Added thread controls
-//         06-26-1997      1.2    FL             Added position saving
-//         06-26-1997      1.2    FL             Added floating list possibilities
-//         06-26-1997      1.2    FL             Restructured TemplateList 
-//         06-27-1997      1.3    FL             Adjusted QueryNext() and QueryPrevious() 
-//         07-04-1997      1.4    FL             Fixed CreatePrevious() and CreateNext() 
-//		   11-18-1997	   1.5    TH             A Little Clean Up.
-//
-//      Description
-//				Provide Template List.
-// ***                                                                                      ***
-//	********************************************************************************************
-// *** Copyright (c) 1997-1998 Vircom (r). All rights reserved.                             ***
-
 #pragma warning( disable : 4291 )
 
 #ifndef __Virtual_Dreams_TemplateList_075200111897

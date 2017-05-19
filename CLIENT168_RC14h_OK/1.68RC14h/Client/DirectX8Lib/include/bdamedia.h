@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: BDAMedia.h
-//
-// Desc: Broadcast Driver Architecture Multimedia Definitions.
-//
-// Copyright (c) 1996 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #if !defined(_KSMEDIA_)
 #error KSMEDIA.H must be included before BDAMEDIA.H
 #endif // !defined(_KSMEDIA_)

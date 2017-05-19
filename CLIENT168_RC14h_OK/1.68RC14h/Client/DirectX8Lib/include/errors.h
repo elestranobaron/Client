@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: Errors.h
-//
-// Desc:  ActiveMovie error defines.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __ERRORS__
 #define __ERRORS__
 

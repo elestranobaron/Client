@@ -1,17 +1,3 @@
-/*++
-
-Copyright (C) Microsoft Corporation, 1996 - 2000
-
-Module Name:
-
-    ksmedia.h
-
-Abstract:
-
-    WDM-CSA Multimedia Definitions.
-
---*/
-
 #if !defined(_KS_)
 #error KS.H must be included before KSMEDIA.H
 #endif // !defined(_KS_)

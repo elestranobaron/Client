@@ -1,11 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dpaddr.h
- *  Content:   DirectPlayAddress include file
- ***************************************************************************/
-
 #ifndef __DIRECTPLAYADDRESS__
 #define __DIRECTPLAYADDRESS__
 

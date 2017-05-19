@@ -1,7 +1,3 @@
-// VideoCapture.cpp: implementation of the VideoCapture class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include <windows.h>
 #include "VideoCapture.h"

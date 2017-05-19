@@ -1,19 +1,8 @@
-/***************************************************************************
- * Exception Filter Class				                                   *
- * Benoit Martin                                                           *
- * Copyright (C) 1997, Vircom Inc.										   *
- ***************************************************************************/
-
-// THIS CLASS MUST BE THREAD SAFE!!!
-// DO NOT FORGET TO INCLUDE "imagehlp.lib" in your LINK libraries..
-// StackWalk will no longer be called, if IMAGEHLP.DLL not present..
-
 #include <windows.h>
 #include <tchar.h>
 #include <stdio.h>
 #include <imagehlp.h>
 #include "ExpFltr.h"
-#include "MemoryManager.h"
 
 // static globals
 CRITICAL_SECTION CExpFltr::m_crit;

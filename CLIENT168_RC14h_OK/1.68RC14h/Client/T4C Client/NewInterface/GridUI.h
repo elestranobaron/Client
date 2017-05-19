@@ -1,6 +1,3 @@
-// GridUI.h
-//
-
 #if !defined(GridUI_h)
 #define GridUI_h
 

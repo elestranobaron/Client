@@ -1,21 +1,9 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Fading.cpp
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
-// Include
 #include "pch.h"
 #include <windows.h>
 #include "Fading.h"
 #include "IDirectXDraw.h"
 #include "TileSet.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 
 PalManagement g_Pal;

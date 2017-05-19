@@ -1,7 +1,3 @@
-// NTime.h: interface for the NTime class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_NTIME_H__CD03AB84_64D0_11D1_BEAA_00E0290586FC__INCLUDED_)
 #define AFX_NTIME_H__CD03AB84_64D0_11D1_BEAA_00E0290586FC__INCLUDED_
 

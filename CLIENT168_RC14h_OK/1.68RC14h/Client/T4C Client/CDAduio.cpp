@@ -8,7 +8,6 @@
 #include "PowerDebug.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 
 #define CD_MSG_OPEN   1

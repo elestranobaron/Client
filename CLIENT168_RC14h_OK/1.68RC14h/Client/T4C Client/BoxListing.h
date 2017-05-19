@@ -1,25 +1,3 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: BoxListing.h
-//      Project:   TFC Server
-//      Plateform: Windows NT 4.0 Workstation/Server
-//      Creation:  6/2/1998
-//      Author:    Francois Leblanc (FL)
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Change History
-//
-//         Date            Ver.      Author         Purpose
-//         6/2/1998        1.0       FL             Initial developpement
-//
-//      Description
-//          This file defines all the boxes IDs
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***           Copyright (c) 1997-1998 Vircom. All rights reserved.                      ***
-
 #define GWIDBOX_SKILLLIST	   	1
 #define GWIDBOX_BACKPACK	   	2
 #define GWIDBOX_SHOPLIST	   	3

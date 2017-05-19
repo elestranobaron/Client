@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1994-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dplay.h
- *  Content:    DirectPlay include file
- *
- ***************************************************************************/
-
 #ifndef __DPLAY_INCLUDED__
 #define __DPLAY_INCLUDED__
 

@@ -1,8 +1,5 @@
-// BuyUI.cpp
-//
 #include "../pch.h"
 #include "BuyUI.h"
-#include "../MemoryManager.h"
 #include "RootBoxUI.h"
 #include "../Global.h"
 #include "ChatterUI.h"

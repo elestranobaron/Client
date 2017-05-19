@@ -1,22 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: IDirectXImage.Cpp
-//      Project:   The Fourth Coming
-//      Creation:  31 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         03-31-1997      1.0    TH             Initial development
-//
-//      Description
-//         Provide fonction to load a image file.
-// ***                                                                  ***
-//	************************************************************************
-// *** Copyright (c) 1997-1998 Vircom. All rights reserved.             ***
 #include "pch.h"
 #include <windows.h>
 #include <string.h>
@@ -26,7 +7,6 @@
 #include "PowerDebug.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 extern Global g_Global;
 

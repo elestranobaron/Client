@@ -1,6 +1,3 @@
-// ControlUI.h
-//
-
 #if !defined(ControlUI_h)
 #define ControlUI_h
 

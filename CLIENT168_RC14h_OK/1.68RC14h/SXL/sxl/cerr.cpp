@@ -1,4 +1,3 @@
-// cerr -- initialize standard error stream
 #include <fstream>
 #include <iostream>
 

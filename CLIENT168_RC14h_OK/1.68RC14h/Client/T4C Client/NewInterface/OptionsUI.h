@@ -1,6 +1,3 @@
-// OptionsUI.h
-//
-
 #if !defined(OptionsUI_h)
 #define OptionsUI_h
 

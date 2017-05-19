@@ -1,6 +1,3 @@
-// NMTransListCtrl.cpp : implementation file
-//
-
 #include "..\stdafx.h"
 #include "NMTransListCtrl.h"
 

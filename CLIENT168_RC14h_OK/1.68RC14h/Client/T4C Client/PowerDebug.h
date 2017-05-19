@@ -1,7 +1,3 @@
-// PowerDebug.h: interface for the PowerDebug class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_POWERDEBUG_H__044C13E2_F97C_11D0_BEAA_444553540000__INCLUDED_)
 #define AFX_POWERDEBUG_H__044C13E2_F97C_11D0_BEAA_444553540000__INCLUDED_
 

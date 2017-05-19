@@ -1,18 +1,3 @@
-/*-========================================================================-_
- |                               - XACT3D3 -                                |
- |        Copyright (c) Microsoft Corporation.  All rights reserved.        |
- |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
- |VERSION:  0.1                         MODEL:   Unmanaged User-mode        |
- |CONTRACT: N / A                       EXCEPT:  No Exceptions              |
- |PARENT:   N / A                       MINREQ:  Win2000, Xbox360           |
- |PROJECT:  XACT3D                      DIALECT: MS Visual C++ 7.0          |
- |>------------------------------------------------------------------------<|
- | DUTY: XACT 3D support                                                    |
- ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
-  NOTES:
-    1.  See X3DAudio.h for information regarding X3DAudio types.            */
-
-
 #ifndef __XACT3D3_H__
 #define __XACT3D3_H__
 

@@ -1,4 +1,3 @@
-// iostream -- ios::Init members, dummy for MS
 #include <iostream>
 _STD_BEGIN
 

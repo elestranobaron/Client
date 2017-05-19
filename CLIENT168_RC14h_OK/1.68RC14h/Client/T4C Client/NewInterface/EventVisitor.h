@@ -1,6 +1,3 @@
-// EventVisitor.h
-//
-
 #if !defined(EventVisitor_h)
 #define EventVisitor_h
 

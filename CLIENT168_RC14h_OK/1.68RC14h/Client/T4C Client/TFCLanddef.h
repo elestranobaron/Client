@@ -1,21 +1,3 @@
-// **************************************************************************
-// ***                                                                    ***
-//      File Name: TFCLANDDEF.H
-//      Project:   The Fourth Coming
-//      Creation:  April 4, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                    ***
-// **************************************************************************
-// ***                                                                    ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         04-04-1997      2.0    TH             Initialie Devellopment.
-//
-// ***                                                                    ***
-//	**************************************************************************
-// *** Copyright (c) 1996-1997 Vritual Dreams (r). All rights reserved.   ***
-
 #ifndef __TFC_LAND_DEF_H
 #define __TFC_LAND_DEF_H
 
@@ -2453,10 +2435,10 @@ const unsigned int
 	DUNGEONROCK_2_SPEC_1_BORDER_NE_SW_2_4	= 3932,
 	DUNGEONROCK_2_SPEC_1_BORDER_NE_SW_2_5	= 3933,
 
-	//Dialsoft Rain sprite : 
+
    SPEC_WOOD_PRISON				  = 3934,
 
-   // Static sprites // Dialsoft of course
+   // Static sprites
    SPEC_TOMB_OF_DARKNESS		= 3938,
    SPEC_BANC_TEMPLE             = 3939, //F63 //NAD
    SPEC_CRYPT2                  = 3940,

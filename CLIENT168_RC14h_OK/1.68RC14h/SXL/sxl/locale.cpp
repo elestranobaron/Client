@@ -1,4 +1,3 @@
-// locale -- class locale member functions
 #include <cstdlib>
 #include <istream>
 #include <locale>

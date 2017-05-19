@@ -6,7 +6,6 @@
 #include "TFCObject.h"
 #include "COMM.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 
 UINT Puppet::Pow2[32];
@@ -201,7 +200,7 @@ void Puppet::LoadBodyPart(void) {
 	PuppetPart[113].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupSeraphWhiteWings", 0, 0, 0 );
 	PuppetPart[114].LoadSprite3D(13, 9, 0, 0, 0, 0, "PupHalberd", 0, 0, 0 );
 	
-	//Dialsoft new graphics
+
 	PuppetPart[115].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupRedFeHelmet", 0, 0, 0 );
 	PuppetPart[116].LoadSprite3D(13, 9, 0, 0, 0, 0, "PupFireFlail", 0, 0, 0 );
 	PuppetPart[117].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupSpikeLeatherBody", 0, 0, 0 );
@@ -432,7 +431,7 @@ void Puppet::LoadBodyPart(void) {
 	PuppetPart[262].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupGobmask", 0, 0, 0);
 	PuppetPart[263].LoadSprite3D(13, 9, 0, 0, 0, 0, "PupFlower", 0, 0, 0);
 	PuppetPart[264].LoadSprite3D(13, 9, 0, 0, 0, 0, "PupNecroStaff", 0, 0, 0);
-	//Dialsoft END
+
    KEEPALIVE
 
    // NEW CAPES    
@@ -923,7 +922,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
          }
 		break;
       case PUPEQ_LEATHER: 
-      case PUPEQ_SPIKEDLEATHER:  // Dialsoft spiked armor arm left
+      case PUPEQ_SPIKEDLEATHER:
 			Object->VisiblePart -= Pow2[1]; 
 		break;
 		//Tiamat Changes Start
@@ -1479,7 +1478,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
    			Object->BodyPart[4] = &PuppetPart[71]; 
          }
 		break;
-		//Dialsoft added spiked armor body
+
 		case PUPEQ_SPIKEDLEATHER:		 
          if (Object->Type == 10011) 
          {
@@ -1617,7 +1616,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
 			   Object->BodyPart[4] = &PuppetPart[404]; 
          }
       break;
-		//Dialsoft end
+
    }
    
 	// HEAD
@@ -1820,7 +1819,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
          }
 		break;
       case PUPEQ_LEATHER:
-	   case PUPEQ_SPIKEDLEATHER:  // Dialsoft spiked armor arm right
+	   case PUPEQ_SPIKEDLEATHER:
 			Object->VisiblePart -= Pow2[7]; 
 		break;
 	//Tiamat changes
@@ -2026,7 +2025,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
 			PuppetPart[111].LoadSprite3D(13, 9, 0, 0, 0, "PupSkeletonSword", 0, 0, 0); 
 			Object->BodyPart[8] = &PuppetPart[111]; 
 		   break;
-//Dialsoft new weapons
+
 		case PUPEQ_FIREFLAIL:		 	 
 			PuppetPart[116].LoadSprite3D(13, 9, 0, 0, 0, "PupFireFlail", 0, 0, 0); 
 			Object->BodyPart[8] = &PuppetPart[116]; 
@@ -2322,7 +2321,7 @@ void Puppet::SetPuppet(TFCObject *Object) {
       
 
 
-//Dialsoft end
+
 
 	}
 
@@ -2786,12 +2785,12 @@ void Puppet::SetPuppet(TFCObject *Object) {
 			PuppetPart[109].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupSkeletonHelm", 0, 0, 0); 
 			Object->BodyPart[11] = &PuppetPart[109]; 
 		break;
-	//Dialsoft new helmets
+
 	case PUPEQ_REDFEATHER: 
 			PuppetPart[115].LoadSprite3D(13, 9, 0, 0, 0, 9, "PupRedFeHelmet", 0, 0, 0); 
 			Object->BodyPart[11] = &PuppetPart[115]; 
 		break;
-	//Dialsoft end
+
 	}
 
 	// CAPE

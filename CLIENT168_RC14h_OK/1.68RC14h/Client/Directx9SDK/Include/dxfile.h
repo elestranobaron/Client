@@ -1,13 +1,3 @@
-/***************************************************************************
- *
- *  Copyright (C) 1998-1999 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dxfile.h
- *
- *  Content:    DirectX File public header file
- *
- ***************************************************************************/
-
 #ifndef __DXFILE_H__
 #define __DXFILE_H__
 

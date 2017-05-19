@@ -1,17 +1,3 @@
-//------------------------------------------------------------------------------
-// File: EvCode.h
-//
-// Desc: List of standard Quartz event codes and the expected params.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
-// Event codes are broken into two groups
-//   -- system event codes
-//   -- extension event codes
-// All system event codes are below EC_USER
-
 #define EC_SYSTEMBASE                       0x00
 #define EC_USER                             0x8000
 

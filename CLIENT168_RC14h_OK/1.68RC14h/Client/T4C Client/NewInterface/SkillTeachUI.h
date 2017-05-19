@@ -1,6 +1,3 @@
-// SkillTeachUI.h
-//
-
 #if !defined(SkillTeachUI_h)
 #define SkillTeachUI_h
 

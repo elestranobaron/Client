@@ -1,8 +1,5 @@
-// EffectStatusUI.cpp
-//
 #include "../pch.h"
 #include "EffectStatusUI.h"
-#include "../MemoryManager.h"
 #include "RootBoxUI.h"
 #include "SideMenu.h"
 #include "SpellUI.h"

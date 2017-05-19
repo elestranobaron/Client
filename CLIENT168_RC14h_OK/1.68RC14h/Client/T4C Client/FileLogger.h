@@ -1,23 +1,3 @@
-// ********************************************************************************************
-// ***                                                                                      ***
-//      File Name: FileLogger.h
-//      Project:   Vircom Lib
-//      Creation:  25 Mars 1999
-//      Author:    Thomas (TH)
-// ***                                                                                      ***
-//	********************************************************************************************
-// ***                                                                                      ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         03-25-1999      1.0    TH             Initial development
-//
-//      Description
-//         Provide an Interface for loggin in a file.
-// ***                                                                                      ***
-//	********************************************************************************************
-// *** Copyright (c) 1998-1999 Vircom. All rights reserved.                                 ***
-
 #ifndef VIRCOMLIB_FILELOGGER_TH093930032599
 #define VIRCOMLIB_FILELOGGER_TH093930032599
 

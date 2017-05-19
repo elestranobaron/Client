@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DXVA.h
-//
-// Desc: DirectX Video Acceleration header file.
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __DIRECTX_VA__
 #define __DIRECTX_VA__
 

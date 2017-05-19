@@ -1,4 +1,3 @@
-// cin -- initialize standard input stream
 #include <fstream>
 #include <iostream>
 

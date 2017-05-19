@@ -1,6 +1,3 @@
-// Global.cpp: implementation of the Global class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "Global.h"
 #include <stdio.h>
 #include <shlobj.h>

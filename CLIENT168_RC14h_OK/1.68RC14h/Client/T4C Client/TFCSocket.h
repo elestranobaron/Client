@@ -1,24 +1,3 @@
-// **************************************************************************
-// ***                                                                    ***
-//      File Name: TFCSocket.h
-//      Project:   The Fourth Coming
-//      Creation:  May 30th, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                    ***
-// **************************************************************************
-// ***                                                                    ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         06-27-1997      1.0    TH             Initial development.
-//
-//		  Fonctions:
-//			  Provide Socket Receive Function
-//
-// ***                                                                    ***
-//	**************************************************************************
-// *** Copyright (c) 1996-1997 Vritual Dreams (r). All rights reserved.   ***
-
 #ifndef __Virtual_Dreams_TFCSocket_123524062797
 #define __Virtual_Dreams_TFCSocket_123524062797
 

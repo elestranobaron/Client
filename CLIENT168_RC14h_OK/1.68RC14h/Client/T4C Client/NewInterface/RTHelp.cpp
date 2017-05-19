@@ -1,6 +1,3 @@
-// RTHelp.cpp: implementation of the RTHelp class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 
 #include "RTHelp.h"

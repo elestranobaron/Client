@@ -1,10 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1996-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dplobby.h
- *  Content:    DirectPlayLobby include file
- ***************************************************************************/
 #ifndef __DPLOBBY_INCLUDED__
 #define __DPLOBBY_INCLUDED__
 

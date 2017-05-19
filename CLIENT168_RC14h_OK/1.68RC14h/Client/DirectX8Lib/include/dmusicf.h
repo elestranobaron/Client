@@ -1,11 +1,3 @@
-/************************************************************************
-*                                                                       *
-*   dmusicf.h -- This module defines the DirectMusic file formats       *
-*                                                                       *
-*   Copyright (c) 1998-1999 Microsoft Corporation
-*                                                                       *
-************************************************************************/
-
 #ifndef _DMUSICF_
 #define _DMUSICF_
 

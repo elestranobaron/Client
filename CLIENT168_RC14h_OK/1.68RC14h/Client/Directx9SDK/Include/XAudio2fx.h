@@ -1,12 +1,3 @@
-/**************************************************************************
- *
- * Copyright (c) Microsoft Corporation.  All rights reserved.
- *
- * File:    xaudio2fx.h
- * Content: Declarations for the audio effects included with XAudio2.
- *
- **************************************************************************/
-
 #ifndef __XAUDIO2FX_INCLUDED__
 #define __XAUDIO2FX_INCLUDED__
 

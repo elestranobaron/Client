@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DV.h
-//
-// Desc: DV typedefs and defines.
-//
-// Copyright (c) 1997 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef _DV_H_
 #define _DV_H_
 

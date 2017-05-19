@@ -1,15 +1,3 @@
-//------------------------------------------------------------------------------
-// File: EDevDefs.h
-//
-// Desc: External Device (such as a VCR) control interface parameter and
-//       value definitions.  
-//
-//       Note:  new constants added:  ED_BASE+800L -> ED_BASE+811L
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #ifndef __EDEVDEFS__
 #define __EDEVDEFS__
 

@@ -1,7 +1,3 @@
-// RTItemI.h: interface for the RTItemI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_RTITEMI_H__INCLUDED_)
 #define AFX_RTITEMI_H__INCLUDED_
 

@@ -1,6 +1,3 @@
-// BuyUI.h
-//
-
 #if !defined(BuyUI_h)
 #define BuyUI_h
 

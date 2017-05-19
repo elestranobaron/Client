@@ -1,4 +1,3 @@
-// wcin -- initialize standard wide input stream
 #include <fstream>
 #include <iostream>
 

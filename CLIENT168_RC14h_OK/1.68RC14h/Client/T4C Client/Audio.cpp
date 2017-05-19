@@ -1,16 +1,3 @@
-/* this file is a part of amp software, (C) tomislav uzelac 1996,1997
-*/
-
-/* audio.c	main amp source file 
- *
- * Created by: tomislav uzelac	Apr 1996 
- * Karl Anders Oygard added the IRIX code, 10 Mar 1997.
- * Ilkka Karvinen fixed /dev/dsp initialization, 11 Mar 1997.
- * Lutz Vieweg added the HP/UX code, 14 Mar 1997.
- * Dan Nelson added FreeBSD modifications, 23 Mar 1997.
- * Andrew Richards complete reorganisation, new features, 25 Mar 1997
- */ 
-
 #pragma warning(disable : 4244)
 
 #include <string.h> // steph ajout
@@ -32,7 +19,6 @@
 #include "SystemInfo.h"
 #include "macrohandler.h"
 
-#include "MemoryManager.h"
 
 FILE *f;
 

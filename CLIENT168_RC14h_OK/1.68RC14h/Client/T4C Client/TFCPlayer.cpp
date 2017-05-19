@@ -1,14 +1,9 @@
-// TFCPlayer.cpp: implementation of the TFCPlayer class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include <windows.h>
 #include "TFCPlayer.h"
 #include "Global.h"
 #include "Packet.h"
 #include <stdio.h>
-#include "MemoryManager.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

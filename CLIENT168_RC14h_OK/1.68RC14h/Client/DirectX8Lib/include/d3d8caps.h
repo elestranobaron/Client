@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1995-2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       d3d8caps.h
- *  Content:    Direct3D capabilities include file
- *
- ***************************************************************************/
-
 #ifndef _D3D8CAPS_H
 #define _D3D8CAPS_H
 

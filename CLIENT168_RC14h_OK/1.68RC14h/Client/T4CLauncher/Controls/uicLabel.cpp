@@ -1,7 +1,3 @@
-// FILE DEFINITION
-
-
-// FILE INCLUDES
 #include "..\stdafx.h"
 #include "uicLabel.h"
 

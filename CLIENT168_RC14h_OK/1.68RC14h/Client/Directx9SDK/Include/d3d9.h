@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) Microsoft Corporation.  All Rights Reserved.
- *
- *  File:   d3d9.h
- *  Content:    Direct3D include file
- *
- ****************************************************************************/
-
 #ifndef _D3D9_H_
 #define _D3D9_H_
 

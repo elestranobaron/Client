@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1995-2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dsound.h
- *  Content:    DirectSound include file
- *
- **************************************************************************/
-
 #define COM_NO_WINDOWS_H
 #include <objbase.h>
 #include <float.h>

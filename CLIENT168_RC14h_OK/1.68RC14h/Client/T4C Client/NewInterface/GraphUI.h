@@ -1,6 +1,3 @@
-// GraphUI.h
-//
-
 #if !defined(GraphUI_h)
 #define GraphUI_h
 

@@ -1,7 +1,3 @@
-// PowerDebug.cpp: implementation of the PowerDebug class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #include "pch.h"
 #include <windows.h>
 #include "PowerDebug.h"
@@ -11,7 +7,6 @@
 #include <mmsystem.h>
 #include <stdio.h>
 #include "Global.h"
-#include "MemoryManager.h"
 #include "DebugLoggerAPI.h"
 
 //#define __LOG__  //BLBLBL 26 mars 2009 : mode LOG activé.

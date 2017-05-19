@@ -1,13 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: LocalString.h
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
-
 #ifndef LOCALSTRING_H
 #define LOCALSTRING_H
 

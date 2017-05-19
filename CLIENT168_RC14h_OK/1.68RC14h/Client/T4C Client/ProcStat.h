@@ -1,9 +1,3 @@
-/******************************************
-	Statistics of a Process/Threads
-	Copyright 1999 Vircom Inc.
-	Benoit Martin
-*******************************************/
-
 #ifndef __PROCSTAT_H_
 #define __PROCSTAT_H_
 

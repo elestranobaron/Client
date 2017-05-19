@@ -1,12 +1,3 @@
-/*==========================================================================;
- *
- *  Copyright (C) 1995-2000 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       d3d8types.h
- *  Content:    Direct3D capabilities include file
- *
- ***************************************************************************/
-
 #ifndef _D3D8TYPES_H_
 #define _D3D8TYPES_H_
 

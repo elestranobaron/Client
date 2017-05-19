@@ -1,12 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: App.cpp
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
 #include "pch.h"
 // Include 
 #include "App.h"
@@ -22,7 +13,6 @@
 #include "GUILocalString.h"   
 #include "GUIDELocalString.h" // steph ajout
 #include "NewInterface/RootBoxUI.h"
-#include "MemoryManager.h"
 #include "NewFont.h"
 #include "Lock.h"
 

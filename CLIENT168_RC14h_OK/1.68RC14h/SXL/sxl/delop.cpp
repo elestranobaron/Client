@@ -1,4 +1,3 @@
-// delop -- operator delete(void *) REPLACEABLE
 #include <cstdlib>
 #include <xstddef>
 

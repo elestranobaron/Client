@@ -1,32 +1,3 @@
-// ********************************************************************************************
-// ***                                                                                      ***
-//      File Name: Logger.h
-//      Project:   Vircom Lib
-//      Creation:  29 January 1999
-//      Author:    Thomas (TH)
-// ***                                                                                      ***
-// ********************************************************************************************
-// ***                                                                                      ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         01-29-1999      1.00   TH             Initial development
-//		   01-30-1999	   1.01	  FL             AutoLock class added.
-//		   02-11-1999	   1.02   TH             Added comment.
-//         02-17-1999      1.03   FL             Changed namespace to 'vir'
-//         03-05-1999      1.04   FL             Added DL_ALL debugging level.
-//         07-10-1999      1.05   TH             Added LOG_LEVEL that *will* replace DEBUG_LEVEL  
-//                                               in version 2.0.
-//
-//      Description
-//         Provide an Interface for the logger.
-// ***                                                                                      ***
-// ********************************************************************************************
-// *** Copyright (c) 1998-1999 Vircom. All rights reserved.                                 ***
-
-// The following prevent the Logger to be included multiple time in a single cpp file. I used
-// the following: VIRCOMLIB to identify the library, LOGGER for the name of the object, TH for
-// my name and 07:22:16 is the time, 01/29/99 the date.
 #ifndef VIRCOMLIB_LOGGER_TH072216012999
 #define VIRCOMLIB_LOGGER_TH072216012999
 

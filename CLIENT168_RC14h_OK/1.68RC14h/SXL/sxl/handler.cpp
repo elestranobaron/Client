@@ -1,4 +1,3 @@
-// handler.cpp -- minimal std::set_new_handler
 #include <new>
 
 typedef int (__cdecl *new_hand)(size_t);

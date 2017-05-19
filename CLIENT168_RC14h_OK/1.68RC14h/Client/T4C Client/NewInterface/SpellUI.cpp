@@ -1,11 +1,8 @@
-// SpellUI.cpp
-//
 #include "../pch.h"
 
 #pragma warning( disable : 4786 )
 
 #include "SpellUI.h"
-#include "../MemoryManager.h"
 
 #include "RootBoxUI.h"
 #include "ChatterUI.h"

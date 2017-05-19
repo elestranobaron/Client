@@ -1,5 +1,3 @@
-/* iso646.h standard header */
-
 #if 1000 < _MSC_VER /*IFSTRIP=IGN*/
 #pragma once
 #endif

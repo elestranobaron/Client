@@ -1,7 +1,3 @@
-// Rain.h: interface for the Rain class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(_NM__WEATHER__INCLUDED_)
 #define _NM__WEATHER__INCLUDED_
 

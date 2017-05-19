@@ -1,4 +1,3 @@
-#include "../T4C Client/MemoryManager.h"
 #include "newstring.h"
 
 // *** CONSTRUCTOR ********************************************************** //

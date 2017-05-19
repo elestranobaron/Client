@@ -1,5 +1,3 @@
-// CharacterUI.cpp
-//
 #pragma warning( disable : 4291 )
 
 #include "../pch.h"
@@ -7,7 +5,6 @@
 #include "RootBoxUI.h"
 #include "CharacterUI.h"
 #include "../Bitmap.h"
-#include "../MemoryManager.h"
 #include "ChatterUI.h"
 #include "InventoryUI.h"
 #include "../tileset.h"

@@ -1,4 +1,3 @@
-// newaop2 -- operator new[](size_t, const nothrow_t&) REPLACEABLE
 #include <new>
 
  #if _HAS_ARRAY_NEW

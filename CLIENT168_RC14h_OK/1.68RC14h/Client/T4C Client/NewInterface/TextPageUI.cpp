@@ -1,6 +1,3 @@
-// TextPageUI.cpp: implementation of the TextPageUI class.
-//
-//////////////////////////////////////////////////////////////////////
 #include "../pch.h"
 
 #include "TextPageUI.h"

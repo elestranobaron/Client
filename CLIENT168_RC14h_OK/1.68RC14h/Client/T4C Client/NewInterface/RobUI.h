@@ -1,7 +1,3 @@
-// RobUI.h: interface for the RobUI class.
-//
-//////////////////////////////////////////////////////////////////////
-
 #if !defined(AFX_ROBUI_H__B28850E5_16DC_11D4_8681_00E02922FA40__INCLUDED_)
 #define AFX_ROBUI_H__B28850E5_16DC_11D4_8681_00E02922FA40__INCLUDED_
 

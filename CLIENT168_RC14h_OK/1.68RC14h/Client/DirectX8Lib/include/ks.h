@@ -1,18 +1,3 @@
-/*++
-
-Copyright (C) Microsoft Corporation, 1996 - 1999
-
-Module Name:
-
-    ks.h
-
-Abstract:
-
-    Windows Driver Model/Connection and Streaming Architecture (WDM-CSA)
-    core definitions.
-
---*/
-
 #if !defined(_KS_)
 #define _KS_
 

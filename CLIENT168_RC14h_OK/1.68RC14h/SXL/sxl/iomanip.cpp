@@ -1,4 +1,3 @@
-// iomanip -- instantiations of iomanip
 #include <iomanip>
 _STD_BEGIN
 		// FUNCTION resetiosflags

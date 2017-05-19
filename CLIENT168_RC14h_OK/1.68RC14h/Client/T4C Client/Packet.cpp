@@ -1,10 +1,3 @@
-///////////////////////////////////////////////////////////////////////
-//  Packet.cpp                                                       //
-//  PACKETS RECEIVED FROM THE SERVER                                 //
-//  for packets sent by client, go to packethandling.cpp             //
-//																	 //
-///////////////////////////////////////////////////////////////////////
-
 #pragma warning( disable : 4786 )
 #pragma warning( disable : 4291 )
 
@@ -56,7 +49,6 @@
 #include "NewInterface/GuildUI.h"
 
 
-#include "MemoryManager.h"
 
 #include "Weather.h"
 #include "SaveGame.h"
@@ -1250,7 +1242,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_PENTACLE:
 			case __SPELL_SHOCKWAVE:
 			case __SPELL_GREATBOLT:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_GREATBOLT_AZURE:
 			case __SPELL_GREATBOLT_CRIMSON:
 			case __SPELL_GREATBOLT_LIME:
@@ -1259,7 +1251,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY:
 			case __SPELL_GREATBOLT_RED:
 			case __SPELL_GREATBOLT_BLACK:
-				// END DIALSOFT NEW SPELLS
+
 			case __SPELL_CURSE:
 			case __SPELL_ELECTRICSHIELD:
 			case __SPELL_SEMIBIGEXPLOSION:
@@ -1271,7 +1263,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GLACIER:
 			case __SPELL_GATEWAY_1:
 			case __SPELL_METEORS:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_BLACK:
 			case __SPELL_METEOR_WHITE:
 			case __SPELL_METEOR_PURPLE:
@@ -1283,7 +1275,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_METEOR_DARK:
 			case __SPELL_METEOR_BLUE:
 			case __SPELL_METEOR_VIOLET:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_BOULDERS: 
 			case __SPELL_FIRECIRCLE: 
@@ -1299,7 +1291,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_BLUEWIPE:
 			case __SPELL_FIREWIPE:
 			case __SPELL_REDWIPE:
-				//Dialsoft new spells
+
 			case __SPELL_MEDIUM_HEALING:
 			case __SPELL_ICE_TREE:
 			case __SPELL_SUPRAHEAL:
@@ -1311,7 +1303,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_NEW_SUPRAHEAL://BLBL tentative d'ajouter deux nouveaux sorts depuis les DDA
 			case	__SPELL_NEW_BOULDERS://BLBL tentative d'ajouter deux nouveaux sorts depuis les DDA
 				
-				//Dialsoft end
+
 				LOG << "* DBG = SpellCasting 1, " << TARGET << ", " << CASTER << ", " << TPOSX << ", " << TPOSY << ", " << CPOSX << ", " << CPOSY << "\r\n";
 				if (!TARGET && !TPOSX && !TPOSY)
 					TARGET = CASTER;
@@ -1349,14 +1341,14 @@ void HandlePacket(TFCPacket *Msg) {
 				
 			case __SPELL_FIREBALL:
 			case __SPELL_FIREBOLT:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_FIREBOLT_BLACK:
 			case __SPELL_FIREBOLT_WHITE:
 			case __SPELL_FIREBOLT_YELLOW:
 			case __SPELL_FIREBOLT_GREEN:
 			case __SPELL_FIREBOLT_BLUE:
 			case __SPELL_FIREBOLT_PURPLE:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_LIGHTNINGBOLT:
 			case __SPELL_ICESHARD:
@@ -1373,7 +1365,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_SEMIBIGEXPLOSION_WITH_RED_BALL:
 			case __SPELL_SMALLEXPLOSION_WITH_RED_BALL:
 			case __SPELL_FIRECIRCLE_WITH_RED_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_BLACK_WITH_RED_BALL:
 			case __SPELL_METEOR_WHITE_WITH_RED_BALL:
 			case __SPELL_METEOR_PURPLE_WITH_RED_BALL:
@@ -1393,14 +1385,14 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_RED_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_RED_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_RED_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_FREEZE_WITH_BLUE_BALL:
 			case __SPELL_GLACIER_WITH_BLUE_BALL:
 			case __SPELL_GREATBOLT_WITH_BLUE_BALL:
 			case __SPELL_ICECLOUD_WITH_BLUE_BALL:
 			case __SPELL_POISONCLOUD_WITH_BLUE_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_WITH_BLUE_BALL:
 			case __SPELL_METEOR_BLACK_WITH_BLUE_BALL:
 			case __SPELL_METEOR_WHITE_WITH_BLUE_BALL:
@@ -1421,12 +1413,12 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_BLUE_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_BLUE_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_BLUE_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_FREEZE_WITH_YELLOW_BALL:
 			case __SPELL_GREATBOLT_WITH_YELLOW_BALL:
 			case __SPELL_ICECLOUD_WITH_YELLOW_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_WITH_YELLOW_BALL:
 			case __SPELL_METEOR_BLACK_WITH_YELLOW_BALL:
 			case __SPELL_METEOR_WHITE_WITH_YELLOW_BALL:
@@ -1447,7 +1439,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_YELLOW_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_YELLOW_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_YELLOW_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_BOULDERS_WITH_GREEN_BALL:
 			case __SPELL_ENTANGLE_WITH_GREEN_BALL:
@@ -1455,7 +1447,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_FLAK2_WITH_GREEN_BALL:
 			case __SPELL_PENTACLE_WITH_GREEN_BALL:
 			case __SPELL_POISONCLOUD_WITH_GREEN_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_WITH_GREEN_BALL:
 			case __SPELL_METEOR_BLACK_WITH_GREEN_BALL:
 			case __SPELL_METEOR_WHITE_WITH_GREEN_BALL:
@@ -1476,11 +1468,11 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_GREEN_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_GREEN_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_GREEN_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_FLAK_WITH_WHITE_BALL:
 			case __SPELL_FLAK2_WITH_WHITE_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_WITH_WHITE_BALL:
 			case __SPELL_METEOR_BLACK_WITH_WHITE_BALL:
 			case __SPELL_METEOR_WHITE_WITH_WHITE_BALL:
@@ -1501,7 +1493,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_WHITE_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_WHITE_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_WHITE_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_CURSE_WITH_BLACK_BALL:
 			case __SPELL_ENTANGLE_WITH_BLACK_BALL:
@@ -1510,7 +1502,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_SEMIBIGEXPLOSION_WITH_BLACK_BALL:
 			case __SPELL_SMALLEXPLOSION_WITH_BLACK_BALL:
 			case __SPELL_FIRECIRCLE_WITH_BLACK_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_BLACK_WITH_BLACK_BALL:
 			case __SPELL_METEOR_WHITE_WITH_BLACK_BALL:
 			case __SPELL_METEOR_PURPLE_WITH_BLACK_BALL:
@@ -1530,7 +1522,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_BLACK_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_BLACK_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_BLACK_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_FLAK_WITH_PURPLE_BALL:
 			case __SPELL_FLAK2_WITH_PURPLE_BALL:
@@ -1541,7 +1533,7 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_SEMIBIGEXPLOSION_WITH_PURPLE_BALL:
 			case __SPELL_SMALLEXPLOSION_WITH_PURPLE_BALL:
 			case __SPELL_FIRECIRCLE_WITH_PURPLE_BALL:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_METEOR_BLACK_WITH_PURPLE_BALL:
 			case __SPELL_METEOR_WHITE_WITH_PURPLE_BALL:
 			case __SPELL_METEOR_PURPLE_WITH_PURPLE_BALL:
@@ -1561,18 +1553,18 @@ void HandlePacket(TFCPacket *Msg) {
 			case __SPELL_GREATBOLT_CANDY_WITH_PURPLE_BALL:
 			case __SPELL_GREATBOLT_RED_WITH_PURPLE_BALL:
 			case __SPELL_GREATBOLT_BLACK_WITH_PURPLE_BALL:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_NEWFIREBALL:
 			case __SPELL_NEWFIREBALL2:
-				// BEGIN DIALSOFT NEW SPELLS
+
 			case __SPELL_NEWFIREBALL_BLACK:
 			case __SPELL_NEWFIREBALL_WHITE:
 			case __SPELL_NEWFIREBALL_AZURE:
 			case __SPELL_NEWFIREBALL_MAGENTA:
 			case __SPELL_NEWFIREBALL_YELLOW:
 			case __SPELL_NEWFIREBALL_PURPLE:
-				// END DIALSOFT NEW SPELLS
+
 				
 			case __SPELL_ELECTRICSHIELD_WITH_PURPLE_BALL:
 				EvilSpell = true;
@@ -1755,24 +1747,24 @@ void HandlePacket(TFCPacket *Msg) {
 			  switch (SPELLID) {
 			  case __SPELL_FIREBALL:      SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_FIREBOLT:      SummonID = __SPELL_SMALLEXPLOSION;  break;
-				  // BEGIN DIALSOFT NEW SPELLS
+
 			  case __SPELL_FIREBOLT_BLACK:		SummonID = __SPELL_SMALLEXPLOSION;  break;
 			  case __SPELL_FIREBOLT_WHITE:			SummonID = __SPELL_SMALLEXPLOSION;  break;
 			  case __SPELL_FIREBOLT_YELLOW:		SummonID = __SPELL_SMALLEXPLOSION;  break;
 			  case __SPELL_FIREBOLT_GREEN:		SummonID = __SPELL_SMALLEXPLOSION;  break;
 			  case __SPELL_FIREBOLT_BLUE:			SummonID = __SPELL_SMALLEXPLOSION;  break;
 			  case __SPELL_FIREBOLT_PURPLE:		SummonID = __SPELL_SMALLEXPLOSION;  break;
-				  // END DIALSOFT NEW SPELLS
+
 			  case __SPELL_NEWFIREBALL:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL2:  SummonID = __SPELL_GREATEXPLOSION;  break;
-				  // BEGIN DIALSOFT NEW SPELLS
+
 			  case __SPELL_NEWFIREBALL_BLACK:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL_WHITE:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL_AZURE:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL_MAGENTA:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL_YELLOW:   SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_NEWFIREBALL_PURPLE:   SummonID = __SPELL_GREATEXPLOSION;  break;
-				  // END DIALSOFT NEW SPELLS
+
 				  
 			  case __SPELL_LIGHTNINGBOLT: SummonID = __SPELL_ELECTRICSHIELD;  break;
 			  case __SPELL_ICESHARD:      SummonID = __SPELL_ICECLOUD;        break;
@@ -1816,7 +1808,7 @@ void HandlePacket(TFCPacket *Msg) {
 			  case __SPELL_GLACIER_WITH_BLUE_BALL:				SummonID = __SPELL_GLACIER;  break;
 			  case __SPELL_GREATBOLT_WITH_BLUE_BALL:				SummonID = __SPELL_GREATBOLT;  break;
 			  case __SPELL_GREATBOLT_WITH_YELLOW_BALL:			SummonID = __SPELL_GREATBOLT;  break;
-				  // BEGIN DIALSOFT NEW SPELLS
+
 			  case __SPELL_GREATBOLT_AZURE_WITH_RED_BALL:			SummonID = __SPELL_GREATBOLT_AZURE;  break;
 			  case __SPELL_GREATBOLT_CRIMSON_WITH_RED_BALL:		SummonID = __SPELL_GREATBOLT_CRIMSON;  break;
 			  case __SPELL_GREATBOLT_LIME_WITH_RED_BALL:			SummonID = __SPELL_GREATBOLT_LIME;  break;
@@ -1873,7 +1865,7 @@ void HandlePacket(TFCPacket *Msg) {
 			  case __SPELL_GREATBOLT_CANDY_WITH_PURPLE_BALL:		SummonID = __SPELL_GREATBOLT_CANDY;  break;
 			  case __SPELL_GREATBOLT_RED_WITH_PURPLE_BALL:		SummonID = __SPELL_GREATBOLT_RED;  break;
 			  case __SPELL_GREATBOLT_BLACK_WITH_PURPLE_BALL:		SummonID = __SPELL_GREATBOLT_BLACK;  break;
-				  // END DIALSOFT NEW SPELLS
+
 				  
 			  case __SPELL_GREATEXPLOSION_WITH_RED_BALL:		SummonID = __SPELL_GREATEXPLOSION;  break;
 			  case __SPELL_GREATEXPLOSION_WITH_BLACK_BALL:		SummonID = __SPELL_GREATEXPLOSION;  break;
@@ -1892,7 +1884,7 @@ void HandlePacket(TFCPacket *Msg) {
 			  case __SPELL_METEOR_WITH_RED_BALL:					SummonID = __SPELL_METEORS;  break;
 			  case __SPELL_METEOR_WITH_BLACK_BALL:				SummonID = __SPELL_METEORS;  break;
 			  case __SPELL_METEOR_WITH_PURPLE_BALL:				SummonID = __SPELL_METEORS;  break;
-				  // BEGIN DIALSOFT NEW SPELLS
+
 			  case __SPELL_METEOR_BLACK_WITH_RED_BALL:			SummonID = __SPELL_METEOR_BLACK;  break;
 			  case __SPELL_METEOR_WHITE_WITH_RED_BALL:			SummonID = __SPELL_METEOR_WHITE;  break;
 			  case __SPELL_METEOR_PURPLE_WITH_RED_BALL:			SummonID = __SPELL_METEOR_PURPLE;  break;
@@ -1974,7 +1966,7 @@ void HandlePacket(TFCPacket *Msg) {
 			  case __SPELL_METEOR_DARK_WITH_PURPLE_BALL:			SummonID = __SPELL_METEOR_DARK;  break;
 			  case __SPELL_METEOR_BLUE_WITH_PURPLE_BALL:			SummonID = __SPELL_METEOR_BLUE;  break;
 			  case __SPELL_METEOR_VIOLET_WITH_PURPLE_BALL:		SummonID = __SPELL_METEOR_VIOLET;  break;
-				  // END DIALSOFT NEW SPELLS
+
 				  
 			  case __SPELL_PENTACLE_WITH_RED_BALL:				SummonID = __SPELL_PENTACLE;  break;
 			  case __SPELL_PENTACLE_WITH_GREEN_BALL:				SummonID = __SPELL_PENTACLE;  break;

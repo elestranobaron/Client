@@ -1,5 +1,3 @@
-// InventoryUI.cpp
-//
 #pragma warning( disable : 4291 )
 
 #include "../pch.h"
@@ -11,7 +9,6 @@
 #include "ChestUI.h"
 #include "TradeUI.h"
 #include "RTHelp.h"
-#include "../MemoryManager.h"
 #include "ChatterUI.h"
 #include "..\SaveGame.h"
 #include "..\GUILocalString.h"  //g_GUILocalString[]

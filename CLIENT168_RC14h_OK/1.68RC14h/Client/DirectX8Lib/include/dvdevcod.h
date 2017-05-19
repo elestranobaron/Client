@@ -1,12 +1,3 @@
-//------------------------------------------------------------------------------
-// File: DVDevCod.h
-//
-// Desc: List of standard DVD-Video event codes and the expected params.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #define EC_DVDBASE                          0x0100
 
 #ifndef EXCLUDE_DVDEVCODE_ENUMS

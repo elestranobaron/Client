@@ -1,10 +1,7 @@
-// MacroUI.cpp
-//
 #include "../pch.h"
 #pragma warning( disable:4786 )
 
 #include "MacroUI.h"
-#include "../MemoryManager.h"
 #include "RootBoxUI.h"
 #include "ChatterUI.h"
 

@@ -1,10 +1,7 @@
-// GridUI.cpp
-//
 #include "../pch.h"
 #include "GridUI.h"
 #include "EventVisitor.h"
 #include <algorithm>
-#include "../MemoryManager.h"
 
 using namespace std;
 

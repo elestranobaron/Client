@@ -1,16 +1,3 @@
-/*-------------------------------------------------------------------------------------
- *
- * Copyright (c) Microsoft Corporation
- *
- *-------------------------------------------------------------------------------------*/
-
-
-/* this ALWAYS GENERATED file contains the definitions for the interfaces */
-
-
- /* File created by MIDL compiler version 7.00.0555 */
-/* @@MIDL_FILE_HEADING(  ) */
-
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
 
 

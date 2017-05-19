@@ -1,17 +1,7 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Autolock.cpp
-//      Project:   The 4th Coming
-//      Creation:  Friday, September 24, 1999
-//      Author:    Ben Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// *** Copyright (c) 1997-1999 Vircom. All rights reserved.             ***
 #include "pch.h"
 #include <Windows.h>
 #include "Autolock.h"
 #include "Global.h"
-#include "MemoryManager.h"
  
 //*********************************************************************************
 Autolock::Autolock

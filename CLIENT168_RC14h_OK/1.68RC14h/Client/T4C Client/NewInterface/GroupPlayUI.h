@@ -1,6 +1,3 @@
-// GroupPlayUI.h
-//
-
 #if !defined(GroupPlayUI_h)
 #define GroupPlayUI_h
 

@@ -1,17 +1,3 @@
-/*++
-
-Copyright (C) Microsoft Corporation, 1996 - 1999
-
-Module Name:
-
-    ksproxy.h
-
-Abstract:
-
-    Interface definitions for WDM-CSA proxy filters.
-
---*/
-
 #ifndef __KSPROXY__
 #define __KSPROXY__
 

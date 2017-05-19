@@ -1,6 +1,3 @@
-// MacroDialog.cpp : implementation file
-//
-
 #include "stdafx.h"
 #include "t4clauncher.h"
 #include "MacroDialog.h"

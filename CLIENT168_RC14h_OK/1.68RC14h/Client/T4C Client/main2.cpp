@@ -1,12 +1,3 @@
-// ************************************************************************
-// ***                                                                  ***
-//      File Name: Main.cpp
-//      Project:   The 4th Coming
-//      Creation:  25 Mars, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                  ***
-// ************************************************************************
-// ***                                                                  ***
 //#include "pch.h" // steph désactivation
 
 #pragma warning( disable : 4786 )
@@ -43,7 +34,6 @@
 #include "Mouse.h"
 #include <new.h>
 #include "NTime.h"
-#include "MemoryManager.h"
 #include "ObjectListing.h"
 #include "old.h"
 #include "Packet.h"
@@ -1471,7 +1461,7 @@ bool CreateWnd ( void )
 
 	hWnd = CreateWindow ( 
 		"AppClass", // Window Class Name
-		"T4C: Rebirth", // Application Name
+		"The Fourth Coming: Rebirth", // Application Name
 		WS_POPUP,// | WS_MAXIMIZE, // Style
 		(GetSystemMetrics(SM_CXSCREEN)-g_Global.GetScreenW())/2, // left
 		(GetSystemMetrics(SM_CYSCREEN)-g_Global.GetScreenH())/2, // top
@@ -2000,11 +1990,11 @@ void InitializeTFCData(void)
 	LOG << "1, ";
 	/////////////////////////////////
 	/* //NMDELNM
-	if (!RegistryKey.Open(HKEY_CURRENT_USER, "Software\\Dialsoft\\T4C_V2")) 
+	if (!RegistryKey.Open(HKEY_CURRENT_USER, "Software\\Rebirth\\T4C_V2")) 
 	{
 	LOG << "2, ";
 	OutputDebugString("**** CREATING REGISTRY ****\r\n");
-	RegistryKey.Create(HKEY_CURRENT_USER, "Software\\Dialsoft\\T4C_V2");
+	RegistryKey.Create(HKEY_CURRENT_USER, "Software\\Rebirth\\T4C_V2");
 	}
 	*/
 	
@@ -2909,11 +2899,11 @@ void InitializeTFCData(void)
      g_Var.vsfProgressB.CreateSprite("EnterProgressBar");
      g_Var.vsfProgressT.CreateSprite("EnterProgressTick");
      g_Var.vsfMapZone  .CreateSprite("MapZoneDisplay");
-     g_Var.vsfCode[0]  .CreateSprite("Marc");
-     g_Var.vsfCode[1]  .CreateSprite("Lemming");
-     g_Var.vsfCode[2]  .CreateSprite("Destiny");
-     g_Var.vsfCode[3]  .CreateSprite("crush");
-     g_Var.vsfCode[4]  .CreateSprite("Heschal");
+     g_Var.vsfCode[0]  .CreateSprite("Alpha");
+     g_Var.vsfCode[1]  .CreateSprite("Bêta");
+     g_Var.vsfCode[2]  .CreateSprite("Gamma");
+     g_Var.vsfCode[3]  .CreateSprite("Delta");
+     g_Var.vsfCode[4]  .CreateSprite("Epsilon");
      g_Var.wDisplayDisk    = 0;
      g_Var.wDisplayMap     = 0;
      g_Var.wProgressCnt    = 0;
@@ -2952,7 +2942,7 @@ void InitializeTFCData(void)
      } */ // steph désactivation
 	 
 	 Connect_Title2    .LoadSprite(""); // steph Connect_Title2 retiré
-     /* Connect_D         .LoadSprite("Connect2_Dialsoft");
+     /* Connect_D         .LoadSprite("Connect2_Rebirth");
 	 
      Connect_V         .LoadSprite("Connect2_Vircom"); */ // steph désactivation
      Connect_Main_Back .LoadSprite("Connect_Main_Back");

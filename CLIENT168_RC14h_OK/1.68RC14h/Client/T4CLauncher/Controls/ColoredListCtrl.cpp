@@ -1,6 +1,3 @@
-// ColoredListCtrl.cpp : implementation file
-//
-
 #include "..\StdAfx.h" // steph ..\StdAfx.h au lieu de stdafx.h
 #include "ColoredListCtrl.h"
 

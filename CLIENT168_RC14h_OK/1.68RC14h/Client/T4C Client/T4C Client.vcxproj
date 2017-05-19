@@ -1475,9 +1475,6 @@
     <ResourceCompile Include="Resources.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="NewInterface\Todo.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="Apparence.h" />
     <ClInclude Include="Audio.h" />
@@ -1527,7 +1524,6 @@
     <ClInclude Include="MD5\MD5Checksum.h" />
     <ClInclude Include="MD5\MD5ChecksumDefines.h" />
     <ClInclude Include="MemMapFile.h" />
-    <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="MouseAction.h" />
     <ClInclude Include="NewFont.h" />

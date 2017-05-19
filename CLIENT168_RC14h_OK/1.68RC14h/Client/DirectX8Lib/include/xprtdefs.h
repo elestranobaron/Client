@@ -1,24 +1,3 @@
-//===========================================================================
-//
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
-// KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-// IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
-// PURPOSE.
-//
-// Copyright (c) 1992 - 1999  Microsoft Corporation.  All Rights Reserved.
-//
-//===========================================================================
-//
-// filename XPrtDefs.h (Derived from edevdefs.h)
-//
-// External Device (like a VCR) control interface parameter and value definitions
-//
-// Note:new constants added: ED_BASE+800L -> ED_BASE+811L
-//
-// 1-30-98:
-//   New constant added for DVCR: ED_BASE+900L -> ED_BASE+1000L
-// 
-
 #ifndef __XPRTDEFS__
 #define __XPRTDEFS__
 

@@ -1,6 +1,3 @@
-// DropButton.cpp : implementation file
-//
-
 #include "..\stdafx.h"
 #include "DropBtn.h"
 

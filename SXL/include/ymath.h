@@ -1,5 +1,3 @@
-/* ymath.h internal header */
-
 #if 1000 < _MSC_VER /*IFSTRIP=IGN*/
 #pragma once
 #endif

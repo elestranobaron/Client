@@ -4,7 +4,6 @@
 #include "IDirectXDraw.h"
 #include "PowerDebug.h"
 #include "Global.h"
-#include "MemoryManager.h"
 
 FormatText::FormatText(void) {
    String = NULL;

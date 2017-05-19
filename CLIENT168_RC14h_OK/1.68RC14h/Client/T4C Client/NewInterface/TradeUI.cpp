@@ -1,27 +1,7 @@
-// *******************************************************************************************
-// ***                                                                                     ***
-//      File Name: TradeUI.cpp
-//      Project:   TFC Client
-//      Plateform: Win32
-//      Creation:  08/12/2005
-//      Author:    Carlos Lima <carlos@dialsoft.com>
-// ***                                                                                     ***
-// *******************************************************************************************
-// ***                                                                                     ***
-//      Description
-//          In Game Trade Interface.
-//          
-// ***                                                                                     ***
-//	*******************************************************************************************
-// ***           Copyright (c) 2005 Dialsoft           . All rights reserved.              ***
-
-// Includes
-
 #include "../pch.h"
 #include "TradeUI.h"
 #include "RootBoxUI.h"
 #include "GraphUI.h"
-#include "../MemoryManager.h"
 #include "ChatterUI.h"
 #include "../Bitmap.h"
 #include "..\GUILocalString.h"  //g_GUILocalString[]

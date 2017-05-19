@@ -1,13 +1,3 @@
-//------------------------------------------------------------------------------
-// File: Tune.h
-//
-// Desc: Additional infrastructure to extend the tuner.idl.  Works nicely
-//       from C++.
-//
-// Copyright (c) 1999 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
 #pragma once
 
 #ifndef TUNE_H

@@ -1,4 +1,3 @@
-// locale0 -- class locale basic member functions
 #include <climits>
 #include <locale>
 _STD_BEGIN

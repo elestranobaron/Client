@@ -1,11 +1,3 @@
-/*==========================================================================
- *
- *  Copyright (C) 1995-1997 Microsoft Corporation.  All Rights Reserved.
- *
- *  File:       dsetup.h
- *  Content:    DirectXSetup, error codes and flags
- ***************************************************************************/
-
 #ifndef __DSETUP_H__
 #define __DSETUP_H__
 

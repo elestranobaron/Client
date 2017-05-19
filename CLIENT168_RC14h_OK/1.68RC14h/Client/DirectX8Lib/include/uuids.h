@@ -1,23 +1,3 @@
-//------------------------------------------------------------------------------
-// File: uuids.h
-//
-// Desc: Contains the GUIDs for the MediaType type, subtype fields and format
-//       types for standard media types, and also class ids for well-known
-//       components.
-//
-// Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
-//------------------------------------------------------------------------------
-
-
-//
-//  We want to use this list for generating strings for debugging too
-//  so we redefine OUR_GUID_ENTRY depending on what we want to do
-//
-//  It is imperative that all entries in this file are declared using
-//  OUR_GUID_ENTRY as that macro might have been defined in advance of
-//  including this file.  See wxdebug.cpp in sdk\classes\base.
-//
-
 #ifndef OUR_GUID_ENTRY
     #define OUR_GUID_ENTRY(name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8) \
     DEFINE_GUID(name, l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);

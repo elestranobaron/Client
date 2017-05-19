@@ -1,4 +1,3 @@
-// fiopen -- _Fiopen(const char *, ios_base::openmode)
 #include <fstream>
 _STD_BEGIN
 

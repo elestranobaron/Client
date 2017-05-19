@@ -1,4 +1,3 @@
-// xlocale -- class locale exotic char member functions
 #include <istream>
 #include <locale>
 _STD_BEGIN

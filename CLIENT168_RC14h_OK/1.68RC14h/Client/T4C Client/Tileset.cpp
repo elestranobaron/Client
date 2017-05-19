@@ -1,24 +1,3 @@
-// **************************************************************************
-// ***                                                                    ***
-//      File Name: TileSet.Cpp
-//      Project:   The Fourth Coming
-//      Creation:  May 30th, 1997
-//      Author:    Benoit Thomas (TH)
-// ***                                                                    ***
-// **************************************************************************
-// ***                                                                    ***
-//      Change History
-//
-//         Date            Ver.	  Author	     Purpose
-//         05-30-1997      1.0    TH             Initial development.
-//
-//		  Fonctions:
-//			  Provide TileSet Basic.
-//
-// ***                                                                    ***
-// **************************************************************************
-// *** Copyright (c) 1996-2003 Vircom inc. All rights reserved.           ***
-
 #pragma warning(disable : 4786)
 #pragma warning( disable : 4291 )
 
@@ -59,7 +38,6 @@
 #include "FileLogger.h"
 
 #include "App.h"
-#include "MemoryManager.h"
 
 #include "ProcStat.h"
 
@@ -5097,7 +5075,7 @@ void TileSet::CreateView(void) {
 		// ShinglesUnseenSide 1-4
 		// ShinglesBorders*.*
 		// Ambiguiter GRASS/CLEANGRASS
-		// Grass Rock <=== FAIRE ATTENTION
+		// Grass Rock <=== FAIRE GAFFE
 		// Grass Earth 
 		// Denivelation*.*
 		// Water Denivelation

@@ -1,4 +1,3 @@
-// Include.
 #include "pch.h"
 #include <windows.h>
 #include <stdio.h>
@@ -9,7 +8,6 @@
 #include "IDirectXDraw.h"
 #include "App.h"
 #include "Global.h"
-#include "MemoryManager.h"
 #include "V2PalManager.h"
 #include "MemMapFile.h"
 #include "TFCPlayer.h"

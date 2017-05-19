@@ -20,7 +20,6 @@
 #include "Global.h"
 #include "Packet.h"
 #include "UIMouseEvent.h"
-#include "MemoryManager.h"
 #include "SaveGame.h"
 extern CSaveGame g_SaveGame;
 
